@@ -30,9 +30,9 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             <Link to="/" className="card-link">
-              <button className="product-item-buy">Sotib Olish</button>
+              <button className="product-item-btn">Sotib Olish</button>
             </Link>
-            <Link to="/" className="card-link">
+            <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
             </Link>
           </div>
@@ -52,13 +52,13 @@ const Card = () => {
               <span className="product-item-price-new">13 650 000 сум</span>
             </div>
           </ul>
-          <div className="card-body">
-            <a href="/" className="card-link">
-              Card link
-            </a>
-            <a href="/" className="card-link">
-              Another link
-            </a>
+          <div className="card-movement">
+            <Link to="/" className="card-link">
+              <button className="product-item-btn">Sotib Olish</button>
+            </Link>
+            <Link to="/" className="product-item-basket">
+              <i className="fa-solid fa-basket-shopping"></i>
+            </Link>
           </div>
         </div>
         <div className="card" style={{ width: "18rem" }}>
@@ -76,13 +76,13 @@ const Card = () => {
               <span className="product-item-price-new">9 650 000 сум</span>
             </div>
           </ul>
-          <div className="card-body">
-            <a href="/" className="card-link">
-              Card link
-            </a>
-            <a href="/" className="card-link">
-              Another link
-            </a>
+          <div className="card-movement">
+            <Link to="/" className="card-link">
+              <button className="product-item-btn">Sotib Olish</button>
+            </Link>
+            <Link to="/" className="product-item-basket">
+              <i className="fa-solid fa-basket-shopping"></i>
+            </Link>
           </div>
         </div>
         <div className="card" style={{ width: "18rem" }}>
@@ -99,13 +99,13 @@ const Card = () => {
               <span className="product-item-price-new">7 150 000 сум</span>
             </div>
           </ul>
-          <div className="card-body">
-            <a href="/" className="card-link">
-              Card link
-            </a>
-            <a href="/" className="card-link">
-              Another link
-            </a>
+          <div className="card-movement">
+            <Link to="/" className="card-link">
+              <button className="product-item-btn">Sotib Olish</button>
+            </Link>
+            <Link to="/" className="product-item-basket">
+              <i className="fa-solid fa-basket-shopping"></i>
+            </Link>
           </div>
         </div>
       </div>
