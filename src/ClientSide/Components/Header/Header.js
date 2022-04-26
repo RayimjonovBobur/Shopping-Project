@@ -74,23 +74,26 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 const Header = () => {
   return (
     <div className="header">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+      <nav className="navbar navbar-light bg-light">
+        <div className="container-fluid">
           <Logo />
-          <form class="d-flex">
+
+          <form className="d-flex">
             <input
-              class="header-search-input"
+              className="header-search-input"
               type="search"
               placeholder="Qidirish"
               aria-label="Search"
             />
-            <button class="btn btn-primary header-search-btn">Qidirish</button>
+            <button className="btn btn-primary header-search-btn">
+              Qidirish
+            </button>
           </form>
           <div className="header-top-list ">
             <div className="trek">
               <Link to="/trek">
                 <Treker /> <br />
-                {/* <i class="fa-solid fa-truck"></i> <br /> */}
+                {/* <i className="fa-solid fa-truck"></i> <br /> */}
               </Link>
               <span>Trek</span>
             </div>
@@ -110,52 +113,56 @@ const Header = () => {
         </div>
       </nav>
       <hr />
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <div class=" navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link to="/" class="nav-link active" aria-current="page">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <div className=" navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to="/" className="nav-link active" aria-current="page">
                   Barcha bo'limlar
                 </Link>
               </li>{" "}
-              <li class="nav-item">
-                <Link to="/" class="nav-link active" aria-current="page">
+              <li className="nav-item">
+                <Link
+                  to="/news"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Yangiliklar
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/newcomers" className="nav-link active">
                   Yangi kelganlar
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/discounts" className="nav-link active">
                   Chegirmalar
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/payininstallments" className="nav-link active">
                   Bo'lib to'lash
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/books" className="nav-link active">
                   Kitoblar
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/furniture" className="nav-link active">
                   Mebel
                 </Link>
               </li>{" "}
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/phone" className="nav-link active">
                   Telefonlar va gadjetlar
                 </Link>
               </li>{" "}
-              <li class="nav-item">
-                <Link to="/" class="nav-link active">
+              <li className="nav-item">
+                <Link to="/airconditioners" className="nav-link active">
                   Konditsionerlar
                 </Link>
               </li>

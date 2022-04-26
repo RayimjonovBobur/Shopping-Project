@@ -1,10 +1,19 @@
 import React from "react";
 import "./App.scss";
-import { Router } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import { Navbar } from "./AdminSite/page/Navbar/Navbar";
 import Header from "./ClientSide/Components/Header/Header";
 import Footer from "./ClientSide/Components/Footer/Footer";
 import FilterData from "./ClientSide/Components/FilterData/FilterData";
+import News from "./ClientSide/Components/News/News";
+import MinaPage from "./ClientSide/Pages/MinaPage";
+import Newcomers from "./ClientSide/Components/Newcomers/Newcomers";
+import Discounts from "./ClientSide/Components/Discounts/Discounts";
+import PayInInstallments from "./ClientSide/Components/Payininstallments/PayInInstallments";
+import Books from "./ClientSide/Components/Books/Books";
+import Furniture from "./ClientSide/Components/Furniture/Furniture";
+import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
+import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
 
 const languages = [
   {
@@ -77,9 +86,17 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 function App() {
   return (
     <div className="App">
-      <Header />
-      <FilterData />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<MinaPage />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/newcomers" element={<Newcomers />} />
+        <Route path="/discounts" element={<Discounts />} />
+        <Route path="/payininstallments" element={<PayInInstallments />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/furniture" element={<Furniture />} />
+        <Route path="/phone" element={<PhoneGadgets />} />
+        <Route path="/airconditioners" element={<AirConditioners />} />
+      </Routes>
     </div>
   );
 }
