@@ -1,72 +1,11 @@
 import React, { useState } from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "../../utilities/icons";
 import "../../../App.scss";
 
 const Card = () => {
-  const [clickClount, setClickCount] = useState(0);
-
-  const prevCarouselItem = () => {
-    if (clickClount !== 0) {
-      let firstCard = document.getElementsByClassName("card");
-      if (clickClount <= firstCard.length - 3) {
-        setClickCount(clickClount - 1);
-
-        for (let i = 0; i < firstCard.length; i++) {
-          console.log(firstCard[i]);
-          let a = firstCard[i].style.transform.substring(
-            10,
-            firstCard[i].style.transform.length - 3
-          );
-          firstCard[i].style.transform = `translate(${+a + 339}px)`;
-        }
-      }
-    }
-  };
-  const nextCarouselItem = () => {
-    let firstCard = document.getElementsByClassName("card");
-    if (clickClount < firstCard.length - 3) {
-      setClickCount(clickClount + 1);
-      for (let i = 0; i < firstCard.length; i++) {
-        console.log(firstCard[i]);
-        let a = firstCard[i].style.transform.substring(
-          10,
-          firstCard[i].style.transform.length - 3
-        );
-        firstCard[i].style.transform = `translate(${+a - 339}px)`;
-      }
-    }
-  };
-  const isActiveNextBtn = () => {
-    let firstCard = document.getElementsByClassName("card");
-    if (clickClount === 0 || clickClount < firstCard.length - 3) {
-      return "projects-head__enabled-btn";
-    } else {
-      return "projects-head__disabled-btn";
-    }
-  };
-
   return (
-    <div className="card-container mb-5 mt-4">
+    <div className="card-container mb-3 mt-4">
       <div className="d-flex">
         <h6 className="title m-3">Jaziramadagi haloskor</h6>
-        <div className="projects-head__btns">
-          <button
-            className={
-              clickClount !== 0
-                ? "projects-head__enabled-btn"
-                : "projects-head__disabled-btn"
-            }
-            onClick={() => prevCarouselItem()}
-          >
-            <ArrowLeftIcon />
-          </button>
-          <button
-            className={isActiveNextBtn()}
-            onClick={() => nextCarouselItem()}
-          >
-            <ArrowRightIcon />
-          </button>
-        </div>
       </div>
       <div className="card-content">
         <div class="card" style={{ width: "18rem" }}>

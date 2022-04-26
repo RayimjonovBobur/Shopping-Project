@@ -4,9 +4,6 @@ import Maxsus from "../../../assates/images/maxsus.jpg";
 import Books from "../../../assates/images/kitob.jpg";
 import "../../../App.scss";
 import Card from "../Card/Card";
-import Test from "../Card/Test";
-import Tests from "../Card/Tests";
-
 const FilterData = () => {
   return (
     <div>
@@ -255,9 +252,7 @@ const FilterData = () => {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            {/* <Test /> */}
-            <Tests />
-            {/* <Card /> */}
+            <Card />
           </div>
         </div>
       </div>
