@@ -2,14 +2,8 @@ import React from "react";
 import Kon from "../../../assates/images/konditsaner.jpg";
 import Maxsus from "../../../assates/images/maxsus.jpg";
 import Books from "../../../assates/images/kitob.jpg";
-import homi from "../../../assates/images/homi.png";
-import homi2 from "../../../assates/images/homi2.png";
-import homi3 from "../../../assates/images/homi3.png";
 import "../../../App.scss";
 import Card from "../Card/Card";
-import Test from "../Card/Test";
-import Tests from "../Card/Tests";
-
 const FilterData = () => {
   return (
     <div>
@@ -258,9 +252,7 @@ const FilterData = () => {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            {/* <Test /> */}
-            <Tests />
-            {/* <Card /> */}
+            <Card />
           </div>
         </div>
       </div>
