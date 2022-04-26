@@ -2,7 +2,6 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --body-color: #fff;
   --body-font: "Roboto", sans-serif;
   --backgroundColor: #fff;
   --border-bottom: 1px solid #e6e6e6;
@@ -10,6 +9,7 @@
   --line-height: 19px;
   --border-radius: 20px;
   --marginTop: 12px;
+  --card-left: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +29,7 @@
 
 /*=============== BASE ===============*/
 * {
-  font-family: var(--body-font);
+  font-family: var(--backgroundColor);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -66,11 +66,11 @@ hr {
 @media (min-width: 768px) {
   .col-md-3 {
     flex: 0 0 auto;
-    width: 22%;
+    width: 19%;
   }
   .col-md-9 {
     flex: 0 0 auto;
-    width: 76%;
+    width: 79%;
     margin-left: 26px;
   }
 }
@@ -118,122 +118,114 @@ hr {
 .card-container {
   border-radius: 15px;
   background-color: #fff;
+  height: 482px;
+  -webkit-box-shadow: -1px 7px 17px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -1px 7px 17px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -1px 7px 17px 0px rgba(34, 60, 80, 0.2);
+  .card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #babcc4;
+    line-height: var(--line-height);
+    padding: var(--card-padding);
+    border-bottom: var(--border-bottom);
+  }
   .card-content {
     display: inline-flex;
-
+    // height: 100%;
     border-radius: var(--border-radius);
+
     .card {
-      border: 1px solid #e6e6e6;
-    }
-  }
-}
+      width: 249px !important;
+      margin-right: 10px;
+      border: none;
+      border-left: 1px solid #e6e6e6;
 
-/*      SERVICES START        */
-.projects-section {
-  padding: 0 80px !important;
+      .card-body {
+        justify-content: center;
+        margin: auto;
 
-  .projects-head {
-    padding: 60px 0 50px 0;
-    display: flex;
-    align-items: center;
-
-    .projects-head__title {
-      display: inline-block;
-      font-weight: bold;
-      width: 50%;
-    }
-
-    .projects-head__btns {
-      width: 50%;
-      margin: 0;
-      height: 100% !important;
-      text-align: right;
-      display: inline-block;
-
-      button {
-        border-radius: 50%;
-        border: none;
-        color: #fff;
-        margin: 0 4px;
-        background-color: var(--main-text-color);
-      }
-
-      .projects-head__enabled-btn {
-        transition: 0.4s;
-        height: 50px;
-        width: 50px;
-        padding-bottom: 2px;
-
-        svg {
-          width: 16px;
-          height: 16px;
-        }
-      }
-
-      .projects-head__disabled-btn {
-        transition: 0.4s;
-        opacity: 0.3;
-        padding-bottom: 2px;
-        width: 38px;
-        height: 38px;
-
-        svg {
-          width: 13px;
-          height: 13px;
-        }
-      }
-    }
-  }
-
-  .projects-container {
-    .projects-slider {
-      column-gap: 22px;
-      overflow: hidden;
-      display: flex;
-
-      .project-card {
-        background-color: #eaf7ff;
-        transition: 0.4s;
-        border-radius: 20px;
-        height: 480px !important;
-        position: relative;
-        padding: 30px 21px 20px 21px;
-
-        .project-card-img {
-          border-radius: 10px;
-          text-align: center;
-          overflow: hidden;
-          width: 275px;
-          height: 290px;
-
+        .card-img {
+          width: 100%;
+          max-height: 150px;
+          border-top-left-radius: var(--border-radius);
+          border-top-right-radius: var(--border-radius);
+          background-color: var(--backgroundColor);
+          border-bottom: 1px solid #e6e6e6;
+          border-bottom-left-radius: var(--border-radius);
+          border-bottom-right-radius: var(--border-radius);
           img {
-            width: 275px;
-            aspect-ratio: 1/1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
+      }
 
-        .project-card-info {
-          text-align: center;
+      .product-item-model {
+        color: #babcc4;
+        font-size: initial;
+        margin-left: var(--card-left);
+        // margin-bottom: 15px;
+      }
 
-          .project-card-title {
-            color: #1e4058;
-            font-weight: bold;
-            padding: 23px 0 5px 0;
-          }
+      .list-group-flush > .list-group-item {
+        border-width: 0 0 1px;
+        border: none;
+      }
+      .card-info {
+        height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 4px;
+        font-size: 14px;
+        color: inherit;
+        line-height: 20px;
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.3s ease;
+        margin-left: var(--card-left);
+      }
 
-          .project-card-text {
-            font-size: 14px;
-          }
+      .card-info:hover {
+        color: #008dff;
+      }
+      .product-item-price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: var(--card-left);
+        margin-top: 8px;
 
-          .project-card-button {
-            background-color: var(--main-text-color);
-            border-radius: 50px;
-            margin: 19px 0 0 0;
-            padding: 10px 0;
-            width: 100%;
-            border: none;
-            color: #fff;
-          }
+        .product-item-old-price {
+          font-size: 12px;
+          line-height: 20px;
+          -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+          color: #af5679;
+        }
+        .product-item-price-new {
+          font-size: 18px;
+          line-height: 20px;
+          color: #141821;
+          font-weight: 500;
+          margin-left: 0px;
+        }
+      }
+
+      .card-movement {
+        display: flex;
+        margin-left: var(--card-left);
+
+        a {
+          text-decoration: none;
+          color: #000;
         }
       }
     }
