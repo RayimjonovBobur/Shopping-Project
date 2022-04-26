@@ -14,6 +14,8 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
+import { useDispatch } from "react-redux";
+import { setValues } from "./AdminSite/Redux/stored_reducer";
 
 const languages = [
   {
@@ -84,8 +86,15 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 }
 
 function App() {
+  const dispatch = useDispatch();
+
+  const handle = () => {
+    dispatch(setValues("sds"));
+  };
+
   return (
     <div className="App">
+      <button onClick={() => handle()}>bt</button>
       <Routes>
         <Route path="/" element={<MinaPage />} />
         <Route path="/news" element={<News />} />
