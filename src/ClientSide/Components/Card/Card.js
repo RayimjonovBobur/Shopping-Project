@@ -30,9 +30,9 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             <Link to="/" className="card-link">
-              <button className="product-item-buy">Sotib Olish</button>
+              <button className="product-item-btn">Sotib Olish</button>
             </Link>
-            <Link to="/" className="card-link">
+            <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
             </Link>
           </div>

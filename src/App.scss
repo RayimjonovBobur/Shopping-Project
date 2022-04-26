@@ -222,10 +222,21 @@ hr {
       .card-movement {
         display: flex;
         margin-left: var(--card-left);
-
+        margin-top: 15px;
         a {
           text-decoration: none;
           color: #000;
+          margin-left: auto;
+        }
+        .product-item-btn {
+          outline: none;
+          border: none;
+          padding: 5px 15px;
+          // border-radius: var(--border-radius);
+          border-radius: 10px;
+          margin-right: 105px;
+          background-color: #008dff;
+          color: #fff;
         }
       }
     }

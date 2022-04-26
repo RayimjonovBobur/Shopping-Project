@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { setActive } from "../../../Redux/stored_reducer";
 import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
 import "./Header.scss";
+import { headerTemplate } from "./headerTemplate";
 
 const languages = [
   {
@@ -72,6 +75,12 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 }
 
 const Header = () => {
+  const { active } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
+
+  const handleChange = (e) => {
+    dispatch(setActive(e));
+  };
   return (
     <div className="header">
       <nav className="navbar navbar-light bg-light">
@@ -115,57 +124,21 @@ const Header = () => {
       <hr />
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <div className=" navbar-collapse" id="navbarNavDropdown">
+          <div className=" navbar-collapse " id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">
-                  Barcha bo'limlar
-                </Link>
-              </li>{" "}
-              <li className="nav-item">
-                <Link
-                  to="/news"
-                  className="nav-link active"
-                  aria-current="page"
-                >
-                  Yangiliklar
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/newcomers" className="nav-link active">
-                  Yangi kelganlar
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/discounts" className="nav-link active">
-                  Chegirmalar
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/payininstallments" className="nav-link active">
-                  Bo'lib to'lash
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/books" className="nav-link active">
-                  Kitoblar
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/furniture" className="nav-link active">
-                  Mebel
-                </Link>
-              </li>{" "}
-              <li className="nav-item">
-                <Link to="/phone" className="nav-link active">
-                  Telefonlar va gadjetlar
-                </Link>
-              </li>{" "}
-              <li className="nav-item">
-                <Link to="/airconditioners" className="nav-link active">
-                  Konditsionerlar
-                </Link>
-              </li>
+              {headerTemplate?.map((page, i) => {
+                return (
+                  <li className="nav-item">
+                    <Link
+                      to={page.to}
+                      className={`nav-link  ${active === i ? "active" : ""}`}
+                      onClick={() => handleChange(i)}
+                    >
+                      {page?.text}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

@@ -1,6 +1,17 @@
 .header {
   padding: 8px 3px;
   background-color: #fff;
+  .active {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      bottom: -10px;
+      height: 2px;
+      background: #008dff;
+    }
+  }
   .navbar > .container-fluid {
     background-color: #fff;
 

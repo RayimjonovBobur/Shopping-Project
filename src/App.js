@@ -1,10 +1,6 @@
 import React from "react";
 import "./App.scss";
 import { Route, Router, Routes } from "react-router-dom";
-import { Navbar } from "./AdminSite/page/Navbar/Navbar";
-import Header from "./ClientSide/Components/Header/Header";
-import Footer from "./ClientSide/Components/Footer/Footer";
-import FilterData from "./ClientSide/Components/FilterData/FilterData";
 import News from "./ClientSide/Components/News/News";
 import MinaPage from "./ClientSide/Pages/MinaPage";
 import Newcomers from "./ClientSide/Components/Newcomers/Newcomers";
@@ -14,8 +10,8 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
-import { useDispatch } from "react-redux";
-import { setValues } from "./AdminSite/Redux/stored_reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { setUsers } from "./Redux/stored_reducer";
 
 const languages = [
   {
@@ -88,13 +84,9 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 function App() {
   const dispatch = useDispatch();
 
-  const handle = () => {
-    dispatch(setValues("sds"));
-  };
 
   return (
     <div className="App">
-      <button onClick={() => handle()}>bt</button>
       <Routes>
         <Route path="/" element={<MinaPage />} />
         <Route path="/news" element={<News />} />
