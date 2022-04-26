@@ -21,7 +21,7 @@ const FilterData = () => {
                 <div class="panel-body search-widget">
                   <form action="" class=" form-inline">
                     <fieldset>
-                      <div class="row">
+                      <div class="row" style={{ paddingBottom: "1rem" }}>
                         <div class="col-xs-12">
                           <input
                             type="text"

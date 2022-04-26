@@ -77,6 +77,7 @@ const Header = () => {
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <Logo />
+
           <form class="d-flex">
             <input
               class="header-search-input"
@@ -120,7 +121,7 @@ const Header = () => {
                 </Link>
               </li>{" "}
               <li class="nav-item">
-                <Link to="/" class="nav-link active" aria-current="page">
+                <Link to="/news" class="nav-link active" aria-current="page">
                   Yangiliklar
                 </Link>
               </li>

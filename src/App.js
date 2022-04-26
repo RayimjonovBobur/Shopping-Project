@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.scss";
-import { Router } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import { Navbar } from "./AdminSite/page/Navbar/Navbar";
 import Header from "./ClientSide/Components/Header/Header";
 import Footer from "./ClientSide/Components/Footer/Footer";
 import FilterData from "./ClientSide/Components/FilterData/FilterData";
+import News from "./ClientSide/Components/News/News";
+import MinaPage from "./ClientSide/Pages/MinaPage";
 
 const languages = [
   {
@@ -77,9 +79,10 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 function App() {
   return (
     <div className="App">
-      <Header />
-      <FilterData />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<MinaPage />} />
+        <Route path="/news" element={<News />} />
+      </Routes>
     </div>
   );
 }
