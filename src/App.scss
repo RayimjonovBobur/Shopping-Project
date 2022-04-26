@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --body-color: #fff;
+  --body-font: "Roboto", sans-serif;
+  --backgroundColor: #fff;
+  --border-bottom: 1px solid #e6e6e6;
+  --card-padding: 10px 20px;
+  --line-height: 19px;
+  --border-radius: 20px;
+  --marginTop: 12px;
+}
+
+/*=============== BASE ===============*/
+* {
+  font-family: var(--body-font);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f7fd;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #fff !important;
+}
+
+hr {
+  margin: 0;
+  border: 0x !important;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1327px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 22%;
+  }
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 76%;
+    margin-left: 26px;
+  }
+}
+
+// <<<<<<<<<< Filter Data Scss >>>>>>>>>>>>
+.filer-content {
+  background-color: var(--backgroundColor);
+  -webkit-box-shadow: 2px 9px 28px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 9px 28px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 9px 28px 2px rgba(34, 60, 80, 0.2);
+  margin-top: var(--marginTop);
+  border-radius: var(--border-radius);
+
+  .panel-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #babcc4;
+    line-height: var(--line-height);
+    padding: var(--card-padding);
+    border-bottom: var(--border-bottom);
+  }
+  .checkbox-container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #282830;
+    line-height: var(--line-height);
+    padding: var(--card-padding);
+    border-bottom: var(--border-bottom);
+  }
+}
+
+.d-block {
+  display: block !important;
+  height: 22em;
+  border-radius: var(--border-radius);
+  margin-top: var(--marginTop);
+  -webkit-box-shadow: 1px 10px 28px -13px rgba(34, 60, 80, 0.35);
+  -moz-box-shadow: 1px 10px 28px -13px rgba(34, 60, 80, 0.35);
+  box-shadow: 1px 10px 28px -13px rgba(34, 60, 80, 0.35);
+}
+
+.card-container {
+  border-radius: 15px;
+  background-color: #fff;
+  .card-content {
+    display: inline-flex;
+
+    border-radius: var(--border-radius);
+    .card {
+      border: 1px solid #e6e6e6;
+    }
+  }
+}
+
+
+/*      SERVICES START        */
+.projects-section {
+  padding: 0 80px !important;
+
+  .projects-head {
+    padding: 60px 0 50px 0;
+    display: flex;
+    align-items: center;
+
+    .projects-head__title {
+      display: inline-block;
+      font-weight: bold;
+      width: 50%;
+    }
+
+    .projects-head__btns {
+      width: 50%;
+      margin: 0;
+      height: 100% !important;
+      text-align: right;
+      display: inline-block;
+
+      button {
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        margin: 0 4px;
+        background-color: var(--main-text-color);
+      }
+
+      .projects-head__enabled-btn {
+        transition: 0.4s;
+        height: 50px;
+        width: 50px;
+        padding-bottom: 2px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .projects-head__disabled-btn {
+        transition: 0.4s;
+        opacity: 0.3;
+        padding-bottom: 2px;
+        width: 38px;
+        height: 38px;
+
+        svg {
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+
+  .projects-container {
+    .projects-slider {
+      column-gap: 22px;
+      overflow: hidden;
+      display: flex;
+
+      .project-card {
+        background-color: #eaf7ff;
+        transition: 0.4s;
+        border-radius: 20px;
+        height: 480px !important;
+        position: relative;
+        padding: 30px 21px 20px 21px;
+
+        .project-card-img {
+          border-radius: 10px;
+          text-align: center;
+          overflow: hidden;
+          width: 275px;
+          height: 290px;
+
+          img {
+            width: 275px;
+            aspect-ratio: 1/1;
+          }
+        }
+
+        .project-card-info {
+          text-align: center;
+
+          .project-card-title {
+            color: #1e4058;
+            font-weight: bold;
+            padding: 23px 0 5px 0;
+          }
+
+          .project-card-text {
+            font-size: 14px;
+          }
+
+          .project-card-button {
+            background-color: var(--main-text-color);
+            border-radius: 50px;
+            margin: 19px 0 0 0;
+            padding: 10px 0;
+            width: 100%;
+            border: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.main_page {
+  background: #eaedf2;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .main-page_img {
+    background: #fff;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

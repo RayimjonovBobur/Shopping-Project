@@ -1,0 +1,128 @@
+.footer {
+  width: 97%;
+  margin: auto;
+  padding-bottom: 1rem;
+  .footer-app {
+    display: flex;
+    justify-content: space-evenly;
+    background: #008DFF;
+    border-radius: 20px;
+    height: 40vh;
+    overflow: hidden;
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      span {
+        color: white;
+        padding: 1.2rem;
+      }
+      .footer-button {
+        button {
+          background: transparent;
+          color: white;
+          border: none;
+          border: 1px solid white;
+          margin-left: 30px;
+          border-radius: 10px;
+          padding: .2rem 1.8rem ;
+          svg {
+            margin-left: -18px;
+          }
+          p {
+            font-size: .6rem;
+            padding: 0;
+            margin: 0;
+            margin-top: -2px;
+          }
+          .footer-google {
+            margin-left: 10px;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+}
+.footer-content-items {
+  background: #008DFF;
+  padding-top: 2rem;
+  .footer-content-item {
+    background: white;
+    border-radius: 20px;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0 2rem;
+   .footer-content-text {
+     p {
+       font-size: .9rem;
+       width: 80%;
+       margin-top: -4px;
+       color: #999;
+     }
+   }
+  }
+  .footer-content_row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: .5rem;
+    strong {
+      padding: .8rem 0;
+      color: white;
+      font-size: 1.2em;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: .3s;
+      &:hover {
+      transform: translateX(10px);
+      }
+    }
+    svg {
+      padding-right: 13px ;
+    }
+  }
+  .footer-content-hr {
+    color: #fff;
+    height: 2px;
+    margin-top: 10px;
+  }
+  .footer-content-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: .5rem 0;
+    .footer-content-payment {
+      span {
+        color: white;
+        font-size: .9rem;
+      }
+    }
+  .footer-content-icons {
+    display: flex;
+    span {
+      color: white;
+      font-size: .9rem;
+    }
+    .icon {
+      margin-left: 10px;
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  }
+  .footer-text {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 12px 0;
+  }
+}
