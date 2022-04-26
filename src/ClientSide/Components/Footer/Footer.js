@@ -15,6 +15,7 @@ import "./Footer.scss";
 import SliderFooter from "./SliderFooter";
 
 function Footer() {
+  let apple = true;
   return (
     <>
       <div className="footer">
@@ -22,25 +23,27 @@ function Footer() {
           <div className="footer-reklama ">
             <SliderFooter />
           </div>
-          <div className="footer-app">
-            <div className="footer-app-img">
-              <img src={app} alt="" />
-            </div>
-            <div className="footer-content">
-              <Logo />
-              <span>Sizning internet do'koningiz</span>
-              <div className="footer-button">
-                <button>
-                  <AppStore /> App Store
-                  <p>Orqali yuklash</p>
-                </button>
-                <button>
-                  <GooglePlay /> Google Play
-                  <p className={"footer-google"}>Orqali yuklash olign</p>
-                </button>
+          {apple ? (
+            <div className="footer-app">
+              <div className="footer-app-img">
+                <img src={app} alt="" />
+              </div>
+              <div className="footer-content">
+                <Logo />
+                <span>Sizning internet do'koningiz</span>
+                <div className="footer-button">
+                  <button>
+                    <AppStore /> App Store
+                    <p>Orqali yuklash</p>
+                  </button>
+                  <button>
+                    <GooglePlay /> Google Play
+                    <p className={"footer-google"}>Orqali yuklash olign</p>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
       <div className={"footer-content-items"}>
