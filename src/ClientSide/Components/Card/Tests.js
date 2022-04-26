@@ -24,7 +24,7 @@ const Tests = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <div className="card-content">
+        <div className="card-content ">
           <SwiperSlide>
             {" "}
             <div class="card" style={{ width: "18rem" }}>
