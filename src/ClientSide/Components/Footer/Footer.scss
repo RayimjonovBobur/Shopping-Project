@@ -1,5 +1,5 @@
 .footer {
-  width: 97%;
+  width: 98%;
   margin: auto;
   padding-bottom: 1rem;
   .footer-reklama {
@@ -7,6 +7,9 @@
     .swiper {
       background: #fff;
       border-radius: 20px;
+      .swiper-wrapper {
+        padding: 0 1rem;
+      }
     }
   }
   .footer-app {
