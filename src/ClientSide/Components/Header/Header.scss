@@ -1,9 +1,32 @@
 .header {
   padding: 8px 3px;
   background-color: #fff;
+  .active {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      bottom: -10px;
+      height: 2px;
+      background: #008dff;
+    }
+  }
+  // .header-item {
+  //   display: inline-block;
+  //   padding: 0 10px;
+  //   font-size: 14px;
+  //   font-weight: 500;
+  //   color: #282830;
+  //   line-height: var(--line-height);
+  //   cursor: pointer;
+  //   &:hover {
+  //     color: #008dff;
+  //   }
+  // }
+
   .navbar > .container-fluid {
     background-color: #fff;
-
     .header-search-input {
       width: 25em;
       height: 38px;

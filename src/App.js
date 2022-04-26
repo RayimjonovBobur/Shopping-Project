@@ -1,10 +1,6 @@
 import React from "react";
 import "./App.scss";
 import { Route, Router, Routes } from "react-router-dom";
-import { Navbar } from "./AdminSite/page/Navbar/Navbar";
-import Header from "./ClientSide/Components/Header/Header";
-import Footer from "./ClientSide/Components/Footer/Footer";
-import FilterData from "./ClientSide/Components/FilterData/FilterData";
 import News from "./ClientSide/Components/News/News";
 import MinaPage from "./ClientSide/Pages/MinaPage";
 import Newcomers from "./ClientSide/Components/Newcomers/Newcomers";
