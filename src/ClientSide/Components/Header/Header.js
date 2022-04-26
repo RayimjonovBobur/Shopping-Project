@@ -122,7 +122,7 @@ const Header = () => {
         </div>
       </nav>
       <hr />
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar small navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
             <ul className="navbar-nav">

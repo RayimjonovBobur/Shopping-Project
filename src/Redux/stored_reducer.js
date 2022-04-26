@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const allData = createSlice({
   name: "Admin panel",
   initialState: {
-    active: 0,
+    active: null,
   },
   reducers: {
     setActive: (state, { payload }) => {

@@ -10,8 +10,6 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
-import { useDispatch, useSelector } from "react-redux";
-import { setUsers } from "./Redux/stored_reducer";
 
 const languages = [
   {
@@ -82,9 +80,6 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 }
 
 function App() {
-  const dispatch = useDispatch();
-
-
   return (
     <div className="App">
       <Routes>
