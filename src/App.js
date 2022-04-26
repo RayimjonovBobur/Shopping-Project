@@ -10,6 +10,9 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
+import Main from "./AdminSite/page/Main/Main";
+import Category from "./AdminSite/page/Category/Category";
+import SubCategory from "./AdminSite/page/SubCategory/SubCategory";
 
 const languages = [
   {
@@ -92,6 +95,8 @@ function App() {
         <Route path="/furniture" element={<Furniture />} />
         <Route path="/phone" element={<PhoneGadgets />} />
         <Route path="/airconditioners" element={<AirConditioners />} />
+        <Route path="/admin" element={<Category />} />
+        <Route path="/admin/subCategory" element={<SubCategory />} />
       </Routes>
     </div>
   );

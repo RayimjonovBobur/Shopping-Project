@@ -1,66 +1,37 @@
-// import { headerMenu } from "../../grouping/grouping";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Logo } from "../../../assates/icons/Icons";
+import { setAdminActive } from "../../../Redux/stored_reducer";
 import "./navbar.scss";
-import { useState } from "react";
-import AccountPNG from "../../../assates/images/Ellipse 3.png";
+import { NavTamplate } from "./NavTamplate";
 
 export const Navbar = () => {
-  const [active, setActive] = useState(0);
-  const handleChange = (e) => {
-    setActive(e);
-  };
+  const { adminActive } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
 
-  const handleLog_out = () => {
-    // DELETE(`/logout-user/${user?.id}`).then((res) => {
-    //   if (res) {
-    //     // toast.success(res.data.message);
-    //   }
-    // });
-    // localStorage.clear();
-    // dispatch(setUser(null));
+  const handleClick = (i) => {
+    dispatch(setAdminActive(i));
   };
   return (
-    <div className={"header"}>
-      <div className={"header-logo"}>
-        <Logo />
-      </div>
-      <div className={"header-nav_link"}>
-        {/* {headerMenu?.map((page, i) => {
-          return (
-            <Link
-              key={i}
-              to={page?.path}
-              className={`menu__link ${active === i ? "active_link" : ""}`}
-              onClick={() => handleChange(i)}
-            >
-              <span>{page?.text}</span>
-            </Link>
-          );
-        })} */}
-      </div>
-      <div className="header__user-profile">
-        <div
-          placement="bottomRight"
-          title={
-            <div style={{ textAlign: "center" }}>
-              <img
-                className="user-profile-image"
-                src={AccountPNG}
-                alt="Foydalanuvchi rasmi"
-              />
-              <h3>Boburbek</h3>
-            </div>
-          }
-          trigger="click"
-        >
-          <img
-            className="user-profile-image"
-            src={AccountPNG}
-            alt="Foydalanuvchi rasmi"
-          />
+    <nav class="main navbar-expand-lg navbar-light bg-light">
+      <div class="mt-3">
+        <a class="navbar-brand" href="#">
+          <Logo />
+        </a>
+        <div class="mt-2">
+          <div class="navbar_item">
+            {NavTamplate?.map((page, i) => (
+              <Link
+                to={page.path}
+                className={`nav-link ${adminActive === i ? "active" : ""}`}
+                onClick={() => handleClick(i)}
+              >
+                {page.text}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };

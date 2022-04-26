@@ -1,16 +1,15 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
-import "./category.scss";
 
-function Category() {
+function SubCategory() {
   return (
     <>
       <Navbar />
       <div className="main-nav">
-        <h1>main</h1>
+        <h1>sub</h1>
       </div>
     </>
   );
 }
 
-export default Category;
+export default SubCategory;
