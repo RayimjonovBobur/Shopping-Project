@@ -42,7 +42,11 @@ function GlobalModal() {
                 >
                   Close
                 </button>
-                <button type="button" className="btn btn-primary mx-3">
+                <button
+                  type="button"
+                  data-bs-dismiss="modal"
+                  className="btn btn-primary mx-3"
+                >
                   Submit
                 </button>
               </div>
