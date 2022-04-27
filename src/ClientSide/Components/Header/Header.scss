@@ -28,6 +28,9 @@
   .navbar > .container-fluid {
     background-color: #fff;
 
+    .nav-items-group {
+      display: contents;
+    }
     .header-search-input {
       width: 25em;
       height: 38px;

@@ -8,13 +8,8 @@ const Test = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid " id="demo">
-          <a class="navbar-brand offcanvas-header" href="#">
+          <a class="navbar-brand " href="#">
             <Logo />
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-            ></button>
           </a>
           <form className="d-flex">
             <input
