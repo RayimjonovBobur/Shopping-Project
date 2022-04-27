@@ -109,6 +109,29 @@ const Card = () => {
               <i className="fa-solid fa-basket-shopping"></i>
             </Link>
           </div>
+        </div>{" "}
+        <div className="card">
+          <div className="card-body">
+            <img className="card-img" src={komp3} alt="" />
+          </div>
+          <ul className="list-group list-group-flush">
+            <h6 className="product-item-model">Model - Honor</h6>
+            <h6 className="card-info">
+              Ноутбук Honor MagicBook X 15 Core-i3, 8GB/256GB SSD (Space Gray)
+            </h6>
+            <div className="product-item-price">
+              <span className="product-item-old-price">7 500 000 сум</span>
+              <span className="product-item-price-new">7 150 000 сум</span>
+            </div>
+          </ul>
+          <div className="card-movement">
+            {/* <Link to="/" className="card-link"> */}
+            <button className="btn product-item-btn">Sotib Olish</button>
+            {/* </Link> */}
+            <Link to="/" className="product-item-basket">
+              <i className="fa-solid fa-basket-shopping"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

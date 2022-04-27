@@ -87,7 +87,7 @@ const Header = () => {
     <div className="header">
       <Test />
       <hr />
-      {/* <PageNavbar /> */}
+      {/* <PageNavbar />   */}
       {/* <nav className="navbar small navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
