@@ -11,28 +11,31 @@ const Test = () => {
           <a class="navbar-brand" href="#">
             <Logo />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <form className="d-flex">
-            <input
-              className="header-search-input"
-              type="search"
-              placeholder="Qidirish"
-              aria-label="Search"
-            />
-            <button className="btn btn-primary header-search-btn">
-              Qidirish
-            </button>
-          </form>
+
+          {/* <div className="nav-cor"> */}
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <form className="d-flex">
+                <input
+                  className="header-search-input"
+                  type="search"
+                  placeholder="Qidirish"
+                  aria-label="Search"
+                />
+                <button className="btn btn-primary header-search-btn">
+                  Qidirish
+                </button>
+              </form>
+          {/* </div> */}
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"

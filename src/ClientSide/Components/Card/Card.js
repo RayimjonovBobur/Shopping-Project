@@ -13,7 +13,7 @@ const Card = () => {
         <h6 className="card-title m-3">Jaziramadagi xaloskor</h6>
       </div>
       <div className="card-content">
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <div className="card-body">
             <img className="card-img" src={komp} alt="" />
           </div>
@@ -39,7 +39,7 @@ const Card = () => {
             </Link>
           </div>
         </div>
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <div className="card-body">
             <img className="card-img" src={komp1} alt="" />
           </div>
@@ -63,7 +63,7 @@ const Card = () => {
             </Link>
           </div>
         </div>
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <div className="card-body">
             <img className="card-img" src={komp2} alt="" />
           </div>
@@ -87,7 +87,7 @@ const Card = () => {
             </Link>
           </div>
         </div>
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <div className="card-body">
             <img className="card-img" src={komp3} alt="" />
           </div>
@@ -103,7 +103,7 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             {/* <Link to="/" className="card-link"> */}
-            <button className="btn producat-item-btn">Sotib Olish</button>
+            <button className="btn product-item-btn">Sotib Olish</button>
             {/* </Link> */}
             <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
