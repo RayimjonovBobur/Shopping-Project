@@ -8,7 +8,7 @@ const Test = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid " id="demo">
-          <a class="navbar-brand " href="#">
+          <a class="navbar-brand " href="/">
             <Logo />
           </a>
           <form className="d-flex">
