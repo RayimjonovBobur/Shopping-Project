@@ -26,7 +26,7 @@ function Footer() {
           {apple ? (
             <div className="footer-app">
               <div className="footer-app-img">
-                <img src={app} alt="" />
+                <img className="faimg" src={app} alt="" />
               </div>
               <div className="footer-content">
                 <Logo />

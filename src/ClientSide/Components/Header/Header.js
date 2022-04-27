@@ -5,6 +5,8 @@ import { setActive } from "../../../Redux/stored_reducer";
 import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
 import "./Header.scss";
 import { headerTemplate } from "./headerTemplate";
+import PageNavbar from "./PageNavbar";
+import Test from "./test";
 
 const languages = [
   {
@@ -83,46 +85,10 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <nav className="navbar navbar-light bg-light">
-        <div className="container-fluid">
-          <Logo />
-
-          <form className="d-flex">
-            <input
-              className="header-search-input"
-              type="search"
-              placeholder="Qidirish"
-              aria-label="Search"
-            />
-            <button className="btn btn-primary header-search-btn">
-              Qidirish
-            </button>
-          </form>
-          <div className="header-top-list ">
-            <div className="trek">
-              <Link to="/trek">
-                <Treker /> <br />
-                {/* <i className="fa-solid fa-truck"></i> <br /> */}
-              </Link>
-              <span>Trek</span>
-            </div>
-            <div className="lan">
-              <Language /> <br />
-              <span>O'zbekcha</span>
-            </div>
-            <div lassName="cart">
-              <Cart /> <br />
-              <span>Savatcha</span>
-            </div>
-            <div className="user">
-              <Avatar /> <br />
-              <span>Кабинет</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Test />
       <hr />
-      <nav className="navbar small navbar-expand-lg navbar-light bg-light">
+      {/* <PageNavbar /> */}
+      {/* <nav className="navbar small navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
             <ul className="navbar-nav">
@@ -142,7 +108,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };
