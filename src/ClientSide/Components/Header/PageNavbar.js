@@ -9,7 +9,7 @@ const PageNavbar = () => {
     <div>
       <nav class="navbar navbar-light bg-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <Logo />
           </a>
           <form className="d-flex">
