@@ -5,6 +5,7 @@ import { setActive } from "../../../Redux/stored_reducer";
 import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
 import "./Header.scss";
 import { headerTemplate } from "./headerTemplate";
+import Test from "./test";
 
 const languages = [
   {
@@ -83,7 +84,7 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <nav className="navbar navbar-light bg-light">
+      {/* <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
           <Logo />
 
@@ -102,7 +103,6 @@ const Header = () => {
             <div className="trek">
               <Link to="/trek">
                 <Treker /> <br />
-                {/* <i className="fa-solid fa-truck"></i> <br /> */}
               </Link>
               <span>Trek</span>
             </div>
@@ -120,9 +120,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
+      <Test />
       <hr />
-      <nav className="navbar small navbar-expand-lg navbar-light bg-light">
+      {/* <nav className="navbar small navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
             <ul className="navbar-nav">
@@ -142,7 +143,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };

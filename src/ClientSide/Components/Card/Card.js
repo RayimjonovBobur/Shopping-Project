@@ -30,7 +30,9 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             <Link to="/" className="card-link">
-              <button className="product-item-btn">Sotib Olish</button>
+              <button className="btn product-item-btn primary ">
+                Sotib Olish
+              </button>
             </Link>
             <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
@@ -54,7 +56,7 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             <Link to="/" className="card-link">
-              <button className="product-item-btn">Sotib Olish</button>
+              <button className="btn product-item-btn">Sotib Olish</button>
             </Link>
             <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
@@ -78,9 +80,9 @@ const Card = () => {
           </ul>
           <div className="card-movement">
             <Link to="/" className="card-link">
-              <button className="product-item-btn">Sotib Olish</button>
+              <button className="btn product-item-btn">Sotib Olish</button>
             </Link>
-            <Link to="/" className="product-item-basket">
+            <Link to="/" className=" product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
             </Link>
           </div>
@@ -100,9 +102,9 @@ const Card = () => {
             </div>
           </ul>
           <div className="card-movement">
-            <Link to="/" className="card-link">
-              <button className="product-item-btn">Sotib Olish</button>
-            </Link>
+            {/* <Link to="/" className="card-link"> */}
+            <button className="btn producat-item-btn">Sotib Olish</button>
+            {/* </Link> */}
             <Link to="/" className="product-item-basket">
               <i className="fa-solid fa-basket-shopping"></i>
             </Link>

@@ -33,6 +33,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none !important  ;
 }
 
 html {
@@ -76,6 +77,9 @@ hr {
   .card-container .card-content {
     display: inline-block;
   }
+  .card {
+    width: 249px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -83,7 +87,17 @@ hr {
     display: block !important;
   }
   .card-container .card-content .card .card-movement {
-    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 31px;
+    // display: flex;
+    // width: 160%;
+    .product-item-btn {
+      width: 10em;
+      height: 2em;
+    }
+    .product-item-basket {
+      margin-left: 24% !important;
+      padding: 5px 7px !important;
+    }
   }
   .d-block {
     max-height: 13em !important;
@@ -95,11 +109,53 @@ hr {
   .d-flex {
     display: flex !important;
     margin-top: 24px;
-    width: 23em;
+    width: 101%;
     justify-content: center;
   }
-  .header .header-top-list {
-    display: none !important;
+
+  .card-container {
+    background-color: aliceblue !important;
+    min-height: 0px;
+
+    .card-content .card {
+      justify-content: center;
+      margin: auto !important;
+      margin-bottom: 30px !important;
+      width: 88% !important;
+      border-radius: 20px;
+    }
+  }
+  .list-group {
+    border: none;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    flex-direction: row-reverse;
+  }
+  .filer-content {
+    justify-content: center;
+    margin: auto;
+    width: 93%;
+  }
+  .footer-content-items .footer-content-item {
+    display: block !important;
+    justify-content: space-evenly !important;
+    gap: 1rem !important;
+    padding: 1px 24px !important;
+  }
+  .footer-content-items .footer-content-item .footer-content-item-title {
+    font-size: 1.2em !important;
+  }
+  .footer-app-img {
+    display: none;
   }
 }
 
@@ -163,7 +219,7 @@ hr {
     border-radius: var(--border-radius);
 
     .card {
-      width: 249px !important;
+      width: 249px;
       margin-right: 10px;
       border: none;
       border-left: 1px solid #e6e6e6;
@@ -247,11 +303,9 @@ hr {
       }
 
       .card-movement {
-        // display: flex;
         margin-left: var(--card-left);
         margin-top: 15px;
         a {
-          text-decoration: none;
           color: #000;
           margin-left: auto;
         }
@@ -267,7 +321,6 @@ hr {
         .product-item-btn {
           outline: none;
           border: none;
-          padding: 5px 36px;
           border-radius: 10px;
           background-color: #008dff;
           color: #fff;
