@@ -4,18 +4,20 @@ export const allData = createSlice({
   name: "Admin panel",
   initialState: {
     active: null,
-    adminActive: 0,
+    curretPage: {},
   },
   reducers: {
     setActive: (state, { payload }) => {
+      console.log(payload);
       state.active = payload;
     },
-    setAdminActive: (state, { payload }) => {
-      state.adminActive = payload;
+
+    setCurrenPage: (state, { payload }) => {
+      state.curretPage = payload;
     },
   },
 });
 
-export const { setActive, setAdminActive } = allData.actions;
+export const { setActive, setCurrenPage } = allData.actions;
 
 export default allData.reducer;
