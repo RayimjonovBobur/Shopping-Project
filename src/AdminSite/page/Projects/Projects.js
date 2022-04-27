@@ -1,15 +1,16 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
+import GlobalTable from "../../Components/Table/GlobalTable";
 
-function SubCategory() {
+function Projects() {
   return (
     <>
       <Navbar />
       <div className="main-nav">
-        <h1>sub</h1>
+        <GlobalTable />
       </div>
     </>
   );
 }
 
-export default SubCategory;
+export default Projects;

@@ -1,16 +1,16 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
-import "./category.scss";
+import GlobalTable from "../../Components/Table/GlobalTable";
 
-function Category() {
+function Services() {
   return (
     <>
       <Navbar />
       <div className="main-nav">
-        <h1>main</h1>
+        <GlobalTable />
       </div>
     </>
   );
 }
 
-export default Category;
+export default Services;

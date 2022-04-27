@@ -1,0 +1,98 @@
+// Navbar
+.navbar-background {
+  background: var(--backgroundNav);
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 17%;
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: none !important;
+  }
+
+  a {
+    color: white;
+    cursor: pointer;
+    padding-left: 1.4rem;
+    &:hover {
+      background: #1e282c;
+      border-color: #1e282c;
+    }
+  }
+
+  .navbar_nav {
+    a {
+      border-left: 4px solid #1e282c;
+      &:hover {
+        border-color: rgb(63, 104, 240);
+      }
+    }
+    .active {
+      background: rgb(63, 104, 240);
+      border-color: rgb(63, 104, 240);
+      &:hover {
+        background: rgb(63, 104, 240);
+      }
+    }
+  }
+}
+
+.navbar-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: calc(100% - 230px);
+  background: #222d32;
+  margin-left: 230px;
+  .navbar_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 1rem;
+    .navbar_search {
+      display: flex;
+      button {
+        border: none;
+        background: #fff;
+        padding: 0 .5rem;
+      }
+      .form-control {
+        padding: 0.2rem 0.55rem;
+        border-radius: 2px;
+      }
+    }
+    .navbar_admin {
+      display: flex;
+      align-items: center;
+      h6 {
+        color: white;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+//
+
+.main-nav {
+  width: calc(100% - 270px);
+  margin-left: 250px;
+  margin-top: 70px;
+  background: #fff;
+  padding: 1rem;
+  height: 87vh;
+  border-radius: 10px;
+}
+
+

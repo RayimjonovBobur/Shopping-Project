@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Route,  Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import News from "./ClientSide/Components/News/News";
 import MinaPage from "./ClientSide/Pages/MinaPage";
 import Newcomers from "./ClientSide/Components/Newcomers/Newcomers";
@@ -10,9 +10,10 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
-import Main from "./AdminSite/page/Main/Main";
-import Category from "./AdminSite/page/Category/Category";
-import SubCategory from "./AdminSite/page/SubCategory/SubCategory";
+import Basic from "./AdminSite/page/Basic/Basic";
+import Projects from "./AdminSite/page/Projects/Projects";
+import Companies from "./AdminSite/page/Companies/Companies";
+import Services from "./AdminSite/page/Services/Services";
 
 // const languages = [
 //   {
@@ -95,8 +96,10 @@ function App() {
         <Route path="/furniture" element={<Furniture />} />
         <Route path="/phone" element={<PhoneGadgets />} />
         <Route path="/airconditioners" element={<AirConditioners />} />
-        <Route path="/admin" element={<Category />} />
-        <Route path="/admin/subCategory" element={<SubCategory />} />
+        <Route path="/admin" element={<Basic />} />
+        <Route path="/admin/projects" element={<Projects />} />
+        <Route path="/admin/companies" element={<Companies />} />
+        <Route path="/admin/services" element={<Services />} />
       </Routes>
     </div>
   );
