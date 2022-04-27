@@ -1,66 +1,57 @@
-// import { headerMenu } from "../../grouping/grouping";
-import { Link } from "react-router-dom";
-import { Logo } from "../../../assates/icons/Icons";
-import "./navbar.scss";
-import { useState } from "react";
-import AccountPNG from "../../../assates/images/Ellipse 3.png";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useLocation } from "react-router-dom";
+import { Logo, Seacrch } from "../../../assates/icons/Icons";
+import adminLogo from "../../../assates/images/Ellipse3.png";
+import { setActive, setCurrenPage } from "../../../Redux/stored_reducer";
+import "../unversal.scss";
+import { AllPages } from "../../grouping/grouping";
 
 export const Navbar = () => {
-  const [active, setActive] = useState(0);
-  const handleChange = (e) => {
-    setActive(e);
-  };
+  const { pathname } = useLocation();
+  const dispatch = useDispatch();
 
-  const handleLog_out = () => {
-    // DELETE(`/logout-user/${user?.id}`).then((res) => {
-    //   if (res) {
-    //     // toast.success(res.data.message);
-    //   }
-    // });
-    // localStorage.clear();
-    // dispatch(setUser(null));
-  };
   return (
-    <div className={"header"}>
-      <div className={"header-logo"}>
-        <Logo />
-      </div>
-      <div className={"header-nav_link"}>
-        {/* {headerMenu?.map((page, i) => {
-          return (
-            <Link
-              key={i}
-              to={page?.path}
-              className={`menu__link ${active === i ? "active_link" : ""}`}
-              onClick={() => handleChange(i)}
-            >
-              <span>{page?.text}</span>
-            </Link>
-          );
-        })} */}
-      </div>
-      <div className="header__user-profile">
-        <div
-          placement="bottomRight"
-          title={
-            <div style={{ textAlign: "center" }}>
-              <img
-                className="user-profile-image"
-                src={AccountPNG}
-                alt="Foydalanuvchi rasmi"
-              />
-              <h3>Boburbek</h3>
+    <>
+      <nav class="main navbar-expand-lg navbar-background">
+        <div class="pt-4">
+          <a class="navbar-brand p-4" href="#">
+            <Logo />
+          </a>
+          <div class="mt-4 ">
+            <div class="navbar_nav">
+              {AllPages?.map((page, i) => {
+                page?.path === pathname && dispatch(setCurrenPage(page));
+                return (
+                  <Link
+                    to={page.path}
+                    className={`nav-link ${
+                      pathname === page.path ? "active" : ""
+                    }`}
+                  >
+                    {page.text}
+                  </Link>
+                );
+              })}
             </div>
-          }
-          trigger="click"
-        >
-          <img
-            className="user-profile-image"
-            src={AccountPNG}
-            alt="Foydalanuvchi rasmi"
-          />
+          </div>
+        </div>
+      </nav>
+      <div className="navbar-top">
+        <div className="navbar_content">
+          <div className="navbar_search">
+            <input
+              type="text"
+              className="form-control"
+              placeholder={"Search..."}
+            />
+            <button>{<Seacrch />}</button>
+          </div>
+          <div className="navbar_admin">
+            <img src={adminLogo} alt="" />
+            <h6>Admin</h6>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

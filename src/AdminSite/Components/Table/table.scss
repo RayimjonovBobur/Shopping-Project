@@ -1,0 +1,23 @@
+.table {
+  thead {
+    tr {
+      border-color: #f0f0f0;
+      background: #fafafa;
+    }
+  }
+  tbody {
+    border-top: none !important;
+    tr {
+      border-color: #f0f0f0;
+      background: #fafafa;
+    }
+  }
+
+  .table_btn {
+    border: none;
+    background: transparent ;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 2px;
+  }
+}
