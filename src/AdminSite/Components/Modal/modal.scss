@@ -1,0 +1,44 @@
+.ReactModal__Overlay {
+  background: transparent !important;
+  backdrop-filter: blur(5px);
+}
+
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+  background: #1ecd83;
+  h5 {
+    margin-left: 6px;
+    color: #fff;
+  }
+
+  .header-modal_icon {
+    margin-right: 6px;
+    margin-top: 6px;
+    background: red;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+    svg {
+      path {
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.ReactModal__Content {
+  padding: 0 !important;
+}

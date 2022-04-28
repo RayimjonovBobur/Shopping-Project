@@ -1,10 +1,25 @@
-import { NUMBER, STRING } from "./InputTypes";
+import { IMG, NUMBER, STRING } from "./InputTypes";
 
-const ModalInputs = ({ type }) => {
+const ModalInputs = (props) => {
+  const { placeholder, name, gridRow, gridColumn, type, haldleChange } = props;
+
   let input = null;
   switch (type) {
     case STRING:
-      input = <input type="text" />;
+      input = (
+        <input
+          name={name}
+          className="form-control"
+          placeholder={placeholder}
+          style={{ gridColumn: gridColumn, gridRow: gridRow }}
+          type="text"
+          onChange={(e) =>
+            haldleChange({
+              [e.target.name]: e.target.value,
+            })
+          }
+        />
+      );
       break;
     case NUMBER:
       input = <input type="number" />;
@@ -17,3 +32,5 @@ const ModalInputs = ({ type }) => {
   }
   return input;
 };
+
+export default ModalInputs;

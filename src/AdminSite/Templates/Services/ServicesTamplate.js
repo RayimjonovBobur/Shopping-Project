@@ -1,6 +1,7 @@
 export const ServicesTamplate = {
   text: "Xizmatlar",
   path: "/admin/services",
+  isOpenModal: false,
   columns: [
     {
       text: "#",

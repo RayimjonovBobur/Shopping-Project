@@ -1,10 +1,16 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Delete, Edit } from "../../../assates/icons/Icons";
+import { toggleModal } from "../../../Redux/stored_reducer";
 import "./table.scss";
 
 function GlobalTable() {
-  const { curretPage } = useSelector((state) => state?.users_reducer);
+  const { currentPage, values } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
+
+  const handleEdit = () => {
+    dispatch(toggleModal(true));
+  };
 
   return (
     <>
@@ -12,258 +18,30 @@ function GlobalTable() {
         <table className="table table-bordered " id="table">
           <thead>
             <tr>
-              {curretPage?.columns?.map((column, i) => {
+              {currentPage?.columns?.map((column, i) => {
                 return <th scope="col">{column?.text}</th>;
               })}
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td width={140}>
-                <button className="table_btn">
-                  <Edit />
-                </button>
-                <button className="table_btn">
-                  <Delete />{" "}
-                </button>
-              </td>
-            </tr>
+            {values?.map((value, i) => {
+              return (
+                <tr>
+                  <th scope="row">{i + 1}</th>
+                  <td>{value?.name}</td>
+                  <td>{value?.last}</td>
+                  <td>{value?.handle}</td>
+                  <td width={140}>
+                    <button className="table_btn" onClick={handleEdit}>
+                      <Edit />
+                    </button>
+                    <button className="table_btn">
+                      <Delete />{" "}
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

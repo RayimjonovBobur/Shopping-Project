@@ -1,4 +1,5 @@
 import React from "react";
+import GlobalModal from "../../Components/Modal/GlobalModal";
 import GlobalTable from "../../Components/Table/GlobalTable";
 import { Navbar } from "../Navbar/Navbar";
 
@@ -7,7 +8,10 @@ function Companies() {
     <>
       <Navbar />
       <div className="main-nav">
-        <GlobalTable/>
+        <div className="mb-3">
+          <GlobalModal />
+        </div>
+        <GlobalTable />
       </div>
     </>
   );

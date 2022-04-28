@@ -3,21 +3,28 @@ import { createSlice } from "@reduxjs/toolkit";
 export const allData = createSlice({
   name: "Admin panel",
   initialState: {
+    values: [],
     active: null,
-    curretPage: {},
+    currentPage: {},
   },
   reducers: {
+    setValues: (state, { payload }) => {
+      state.values = payload;
+    },
     setActive: (state, { payload }) => {
       console.log(payload);
       state.active = payload;
     },
-
     setCurrenPage: (state, { payload }) => {
-      state.curretPage = payload;
+      state.currentPage = payload;
+    },
+    toggleModal: (state, { payload }) => {
+      state.currentPage.isOpenModal = payload;
     },
   },
 });
 
-export const { setActive, setCurrenPage } = allData.actions;
+export const { setValues, setActive, setCurrenPage, toggleModal } =
+  allData.actions;
 
 export default allData.reducer;
