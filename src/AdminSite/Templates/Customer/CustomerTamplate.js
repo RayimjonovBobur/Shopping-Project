@@ -1,9 +1,12 @@
-import { STRING } from "../../Components/Modal/InputTypes";
+import { IMG, STRING } from "../../Components/Modal/InputTypes";
 
-export const BasicTemplate = {
-  text: "Doshboard",
-  path: "/admin",
+export const CustomerTamplate = {
+  text: "Mijozlarimiz",
+  path: "/admin/customer",
   isOpenModal: false,
+  modal: {
+    width: 600,
+  },
   form: [
     {
       grid: {
@@ -12,40 +15,39 @@ export const BasicTemplate = {
       },
       inputs: [
         {
-          name: "name",
+          name: "brend",
           type: STRING,
-          placeholder: "Name",
+          placeholder: "Brend",
           gridColumn: "1 / 3",
         },
         {
-          name: "last",
-          type: STRING,
-          placeholder: "Last",
+          name: "img",
+          type: IMG,
+          placeholder: "Rasm",
           gridColumn: "3 / 5",
         },
         {
-          name: "handle",
+          name: "link",
           type: STRING,
-          placeholder: "Handle",
+          placeholder: "Link",
           gridColumn: "1 / 5",
           gridRow: "2 / 2",
         },
       ],
     },
   ],
-
   columns: [
     {
-      text: "#",
+      text: "№",
     },
     {
-      text: "First",
+      text: "Brend",
     },
     {
-      text: "Last",
+      text: "Rasm",
     },
     {
-      text: "Handle",
+      text: "Link",
     },
     {
       text: "Action",

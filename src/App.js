@@ -10,10 +10,12 @@ import Books from "./ClientSide/Components/Books/Books";
 import Furniture from "./ClientSide/Components/Furniture/Furniture";
 import PhoneGadgets from "./ClientSide/Components/PhonesandGadgets/PhoneGadgets";
 import AirConditioners from "./ClientSide/Components/AirConditioners/AirConditioners";
-import Basic from "./AdminSite/page/Basic/Basic";
-import Projects from "./AdminSite/page/Projects/Projects";
-import Companies from "./AdminSite/page/Companies/Companies";
-import Services from "./AdminSite/page/Services/Services";
+import Doshboard from "./AdminSite/page/Doshboard/Doshboard";
+import Kategorya from "./AdminSite/page/Kategorya/Kategorya";
+import Product from "./AdminSite/page/Product/Product";
+import Slider from "./AdminSite/page/Slider/Slider";
+import Partner from "./AdminSite/page/Partner/Partner";
+import Customer from "./AdminSite/page/Customer/Customer";
 
 // const languages = [
 //   {
@@ -96,10 +98,12 @@ function App() {
         <Route path="/furniture" element={<Furniture />} />
         <Route path="/phone" element={<PhoneGadgets />} />
         <Route path="/airconditioners" element={<AirConditioners />} />
-        <Route path="/admin" element={<Basic />} />
-        <Route path="/admin/projects" element={<Projects />} />
-        <Route path="/admin/companies" element={<Companies />} />
-        <Route path="/admin/services" element={<Services />} />
+        <Route path="/admin" element={<Doshboard />} />
+        <Route path="/admin/kategoriya" element={<Kategorya />} />
+        <Route path="/admin/product" element={<Product />} />
+        <Route path="/admin/slider" element={<Slider />} />
+        <Route path="/admin/partner" element={<Partner />} />
+        <Route path="/admin/customer" element={<Customer />} />
       </Routes>
     </div>
   );

@@ -1,21 +1,31 @@
+.table-wrapper {
+  overflow-y: scroll;
+  height: 70vh;
+}
+
 .table {
   thead {
     tr {
-      border-color: #f0f0f0;
-      background: #fafafa;
+      position: sticky;
+      top: 0;
+      border-color: #dbdbdb;
+      background: #f4f7fd;
     }
   }
   tbody {
     border-top: none !important;
     tr {
       border-color: #f0f0f0;
-      background: #fafafa;
+      background: #fff;
+    }
+    tr:nth-child(2n) {
+      background: #f5f9fe;
     }
   }
 
   .table_btn {
     border: none;
-    background: transparent ;
+    background: transparent;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 2px;

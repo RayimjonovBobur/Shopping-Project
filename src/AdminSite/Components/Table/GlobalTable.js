@@ -1,64 +1,58 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Delete, Edit } from "../../../assates/icons/Icons";
+import { toggleModal } from "../../../Redux/stored_reducer";
 import "./table.scss";
 
 function GlobalTable() {
-  const { curretPage } = useSelector((state) => state?.users_reducer);
+  const { currentPage, values } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
+
+  const handleEdit = () => {
+    dispatch(toggleModal(true));
+  };
+
   return (
     <>
-      <table className="table table-bordered">
-        <thead>
-          <tr>
-            {curretPage?.columns?.map((column, i) => {
-              return <th scope="col">{column?.text}</th>;
+      <div className="table-wrapper">
+        <table className="table table-bordered " id="table">
+          <thead>
+            <tr>
+              {currentPage?.columns?.map((column, i) => {
+                return (
+                  <th scope="col" style={{ width: column?.width }}>
+                    {column?.text}
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            {values?.map((value, i) => {
+              return (
+                <tr>
+                  <th scope="row">{i + 1}</th>
+                  <td>{value?.name}</td>
+                  <td>{value?.last}</td>
+                  <td width={140}>
+                    <a
+                      class="btn btn-light"
+                      data-bs-toggle="modal"
+                      href="#exampleModalToggle"
+                      role="button"
+                    >
+                      <Edit />
+                    </a>
+                    <a className="btn btn-light mx-2">
+                      <Delete />{" "}
+                    </a>
+                  </td>
+                </tr>
+              );
             })}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td width={140}>
-              <button className="table_btn">
-                <Delete />{" "}
-              </button>
-              <button className="table_btn">
-                <Edit />
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td width={140}>
-              <button className="table_btn">
-                <Delete />{" "}
-              </button>
-              <button className="table_btn">
-                <Edit />
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-            <td width={140}>
-              <button className="table_btn">
-                <Delete />{" "}
-              </button>
-              <button className="table_btn">
-                <Edit />
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }
