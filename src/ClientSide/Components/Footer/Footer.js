@@ -15,7 +15,7 @@ import "./Footer.scss";
 import SliderFooter from "./SliderFooter";
 
 function Footer() {
-  let apple = true;
+  let apple = false;
   return (
     <>
       <div className="footer container">
@@ -48,39 +48,41 @@ function Footer() {
       </div>
       <div className={"footer-content-items "}>
         <div className="container">
-          <div className={"footer-content-item"}>
-            <div className={"footer-content-text"}>
-              <div className={"footer-content_img"}>
-                <GooglePlay />
+          {apple ? (
+            <div className={"footer-content-item"}>
+              <div className={"footer-content-text"}>
+                <div className={"footer-content_img"}>
+                  <GooglePlay />
+                </div>
+                <h6>Endi bozorga borishga hojat yo`q</h6>
+                <p> Bizda qulay narxlar va uyga yetkazib berish mavjud </p>
               </div>
-              <h6>Endi bozorga borishga hojat yo`q</h6>
-              <p> Bizda qulay narxlar va uyga yetkazib berish mavjud </p>
-            </div>
-            <div className={"footer-content-text"}>
-              <div className={"footer-content_igm"}>
-                <GooglePlay />
+              <div className={"footer-content-text"}>
+                <div className={"footer-content_igm"}>
+                  <GooglePlay />
+                </div>
+                <h6>Tez yetkazib berish</h6>
+                <p> Bizning xizmatimiz sizni ajablantiradi </p>
               </div>
-              <h6>Tez yetkazib berish</h6>
-              <p> Bizning xizmatimiz sizni ajablantiradi </p>
-            </div>
-            <div className={"footer-content-text"}>
-              <div className={"footer-content_img"}>
-                <GooglePlay />
+              <div className={"footer-content-text"}>
+                <div className={"footer-content_img"}>
+                  <GooglePlay />
+                </div>
+                <h6>Siz uchun qulayliklar</h6>
+                <p>
+                  Nosozlik yuzaga kelganda tez rasmiylashtirish va qaytarish
+                  kafolati
+                </p>
               </div>
-              <h6>Siz uchun qulayliklar</h6>
-              <p>
-                Nosozlik yuzaga kelganda tez rasmiylashtirish va qaytarish
-                kafolati
-              </p>
-            </div>
-            <div className={"footer-content-text"}>
-              <div className={"footer-content_img"}>
-                <GooglePlay />
+              <div className={"footer-content-text"}>
+                <div className={"footer-content_img"}>
+                  <GooglePlay />
+                </div>
+                <h6>Bo'lib to'lash</h6>
+                <p>12 yoki 18 oy davomida oldindan to'lov yo'q</p>
               </div>
-              <h6>Bo'lib to'lash</h6>
-              <p>12 yoki 18 oy davomida oldindan to'lov yo'q</p>
             </div>
-          </div>
+          ) : null}
           <div className={"footer"}>
             <div className="row">
               <div className={"col-md-8"}>
