@@ -3,6 +3,7 @@ import { STRING } from "../../Components/Modal/InputTypes";
 export const BasicTemplate = {
   text: "Doshboard",
   path: "/admin",
+  icon: "HomeIcon",
   isOpenModal: false,
   form: [
     {
