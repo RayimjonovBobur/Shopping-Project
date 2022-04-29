@@ -1,10 +1,4 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { setActive } from "../../../Redux/stored_reducer";
-import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
-import "./Header.scss";
-import { headerTemplate } from "./headerTemplate";
+import React from "react";
 import PageNavbar from "./PageNavbar";
 import Test from "./test";
 
@@ -77,17 +71,10 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 }
 
 const Header = () => {
-  const { active } = useSelector((state) => state?.users_reducer);
-  const dispatch = useDispatch();
-
-  const handleChange = (e) => {
-    dispatch(setActive(e));
-  };
   return (
     <div className="header">
-      <Test />
+      <PageNavbar />
       <hr />
-      {/* <PageNavbar /> */}
       {/* <nav className="navbar small navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
