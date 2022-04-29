@@ -19,7 +19,11 @@ function GlobalTable() {
           <thead>
             <tr>
               {currentPage?.columns?.map((column, i) => {
-                return <th scope="col">{column?.text}</th>;
+                return (
+                  <th scope="col" style={{ width: column?.width }}>
+                    {column?.text}
+                  </th>
+                );
               })}
             </tr>
           </thead>
@@ -30,14 +34,18 @@ function GlobalTable() {
                   <th scope="row">{i + 1}</th>
                   <td>{value?.name}</td>
                   <td>{value?.last}</td>
-                  <td>{value?.handle}</td>
                   <td width={140}>
-                    <button className="table_btn" onClick={handleEdit}>
+                    <a
+                      class="btn btn-light"
+                      data-bs-toggle="modal"
+                      href="#exampleModalToggle"
+                      role="button"
+                    >
                       <Edit />
-                    </button>
-                    <button className="table_btn">
+                    </a>
+                    <a className="btn btn-light mx-2">
                       <Delete />{" "}
-                    </button>
+                    </a>
                   </td>
                 </tr>
               );

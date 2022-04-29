@@ -3,7 +3,7 @@ import GlobalModal from "../../Components/Modal/GlobalModal";
 import GlobalTable from "../../Components/Table/GlobalTable";
 import { Navbar } from "../Navbar/Navbar";
 
-function Companies() {
+function Partner() {
   return (
     <>
       <Navbar />
@@ -17,4 +17,4 @@ function Companies() {
   );
 }
 
-export default Companies;
+export default Partner;

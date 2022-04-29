@@ -1,14 +1,14 @@
-// .table-wrapper {
-//   overflow-y: scroll;
-//   height: 70vh;
-// }
+.table-wrapper {
+  overflow-y: scroll;
+  height: 70vh;
+}
 
 .table {
   thead {
     tr {
       position: sticky;
       top: 0;
-      border-color: #f0f0f0;
+      border-color: #dbdbdb;
       background: #f4f7fd;
     }
   }

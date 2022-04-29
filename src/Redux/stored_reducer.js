@@ -19,6 +19,7 @@ export const allData = createSlice({
       state.currentPage = payload;
     },
     toggleModal: (state, { payload }) => {
+      console.log(payload);
       state.currentPage.isOpenModal = payload;
     },
   },

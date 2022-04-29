@@ -9,25 +9,27 @@
   background: #fff;
   top: 58px;
   bottom: 0;
-  width: 15%;
+  width: 210px;
   -webkit-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
   a {
     border-left: 4px solid #fff;
+    transition: all 0.2s;
     color: #000;
-    transition: all .2s;
     &:hover {
       border-color: var(--inputColor);
       background: var(--inputColor);
-      color: #fff;
       letter-spacing: 1px;
-      font-weight: bold;
     }
   }
-  .active {
+  .activee {
     background: #f4f7fd;
+    color: #000;
     border-color: var(--inputColor);
+    a {
+      color: #000;
+    }
     &:hover {
       background: #f4f7fd;
       color: #000;
@@ -83,7 +85,6 @@
 }
 
 //
-
 .main-nav {
   width: calc(100% - 280px);
   margin-left: 250px;
@@ -95,6 +96,19 @@
   -webkit-box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 1px 9px 0px rgba(34, 60, 80, 0.2);
+  // opacity: 0;
+  // animation: anim 0.5s forwards;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateY(2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .btn {

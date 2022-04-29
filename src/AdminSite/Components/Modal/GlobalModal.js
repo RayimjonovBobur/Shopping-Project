@@ -1,101 +1,105 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import Modal from "react-modal";
 import { useDispatch, useSelector } from "react-redux";
-import { AddIcon, XIcon } from "../../../assates/icons/Icons";
-import { setValues, toggleModal } from "../../../Redux/stored_reducer";
-import "./modal.scss";
+import { XIcon } from "../../../assates/icons/Icons";
+import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    width: "50%",
-  },
-};
-
-const GlobalModal = () => {
-  let subtitle;
+function GlobalModal() {
   const { currentPage, values } = useSelector((state) => state?.users_reducer);
-  const dispatch = useDispatch();
   const [data, setData] = useState([]);
-
-  console.log(values);
+  const dispatch = useDispatch();
+  const [item, setItem] = useState(false);
 
   const haldleChange = (e) => {
     setData({ ...data, ...e });
+    if (e == "") {
+      setItem(false);
+    } else {
+      setItem(true);
+    }
   };
-
-  function openModal() {
-    dispatch(toggleModal(true));
-  }
-
-  function afterOpenModal() {
-    subtitle.style.color = "#f00";
-  }
-
-  function closeModal() {
-    dispatch(toggleModal(false));
-    dispatch(setValues([...values, data]));
-  }
-
+  const handleSubmit = () => {
+    if (item) {
+      dispatch(setValues([...values, data]));
+    }
+    setItem(false);
+  };
   return (
-    <div>
-      <button className="btn btn1 btn-outline-primary" onClick={openModal}>
-        <AddIcon /> Qo'shish
-      </button>
-      <Modal
-        isOpen={currentPage?.isOpenModal}
-        onAfterOpen={afterOpenModal}
-        style={customStyles}
-        contentLabel="Example Modal"
+    <>
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
       >
-        <div className="header-modal p-1">
-          <h5>{currentPage?.text}</h5>
-          <div
-            className="header-modal_icon"
-            onClick={() => dispatch(toggleModal(false))}
-          >
-            <XIcon />
-          </div>
-        </div>
-        <br />
-        <div className="p-3">
-          {currentPage?.form?.map((form) => (
-            <div
-              key={form?.grid}
-              style={{
-                display: "grid",
-                gridTemplateColumns: form.grid?.columns,
-                gridAutoRows: form.grid?.rows,
-                gap: "12px",
-              }}
-            >
-              {form?.inputs?.map((input) => {
-                return <ModalInputs {...input} haldleChange={haldleChange} />;
-              })}
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style={{ width: currentPage?.modal?.width }}
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">
+                Modal 1
+              </h5>
+
+              <div
+                className="header-modal_icon "
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <XIcon />
+              </div>
             </div>
-          ))}
-          <div className="mt-4 text-center ">
-            <button className="btn btn-outline-secondary" onClick={closeModal}>
-              Orqaga
-            </button>
-            <button
-              className="btn btn-outline-primary mx-4"
-              onClick={closeModal}
-            >
-              Saqlash
-            </button>
+            <div class="modal-body">
+              {currentPage?.form?.map((form) => (
+                <div
+                  key={form?.grid}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: form.grid?.columns,
+                    gridAutoRows: form.grid?.rows,
+                    gap: "12px",
+                  }}
+                >
+                  {form?.inputs?.map((input) => {
+                    return (
+                      <ModalInputs {...input} haldleChange={haldleChange} />
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-outline-secondary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Orqaga
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle={item ? "modal" : ""}
+                onClick={handleSubmit}
+              >
+                Saqlash
+              </button>
+            </div>
           </div>
         </div>
-      </Modal>
-    </div>
+      </div>
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        href="#exampleModalToggle"
+        role="button"
+      >
+        Qo'shish
+      </a>
+    </>
   );
-};
+}
 
 export default GlobalModal;

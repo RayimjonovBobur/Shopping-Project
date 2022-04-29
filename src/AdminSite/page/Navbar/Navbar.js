@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-top ">
+      <div className="navbar-top">
         <div className="navbar_content">
           <div>
             <Logo />
@@ -32,7 +32,7 @@ export const Navbar = () => {
             return (
               <Link
                 to={page.path}
-                className={`nav-link ${pathname === page.path ? "active" : ""}`}
+                className={`nav-link ${pathname === page.path ? "activee" : ""}`}
               >
                 {page.text}
               </Link>

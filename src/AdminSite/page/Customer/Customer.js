@@ -1,9 +1,9 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
-import GlobalTable from "../../Components/Table/GlobalTable";
 import GlobalModal from "../../Components/Modal/GlobalModal";
+import GlobalTable from "../../Components/Table/GlobalTable";
 
-function Services() {
+function Customer() {
   return (
     <>
       <Navbar />
@@ -17,4 +17,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Customer;

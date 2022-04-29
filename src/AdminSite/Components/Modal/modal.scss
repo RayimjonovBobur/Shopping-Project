@@ -1,20 +1,26 @@
-.ReactModal__Overlay {
-  background: transparent !important;
-  backdrop-filter: blur(5px);
-}
-
-.header-modal {
-  display: flex;
-  justify-content: space-between;
-  background: #1ecd83;
-  h5 {
-    margin-left: 6px;
-    color: #fff;
+.modal {
+  backdrop-filter: blur(3px);
+  .modal-dialog {
+    .modal-content {
+      border: none;
+    }
+    .modal-header {
+      padding: 0.3rem 0.8rem;
+      background: #1ecd83;
+      color: #fff;
+      h5 {
+        font-size: 1.1em;
+      }
+    }
+    .modal-footer {
+      display: block;
+      padding: 0.3rem 0.8rem;
+      border: none;
+      justify-content: start;
+      text-align: center;
+    }
   }
-
   .header-modal_icon {
-    margin-right: 6px;
-    margin-top: 6px;
     background: red;
     border-radius: 50%;
     width: 18px;
@@ -39,6 +45,13 @@
   }
 }
 
-.ReactModal__Content {
-  padding: 0 !important;
+.form-select {
+  width: auto !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none !important;
+    margin: 1.75rem auto;
+  }
 }

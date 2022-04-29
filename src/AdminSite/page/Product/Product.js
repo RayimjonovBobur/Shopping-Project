@@ -2,10 +2,10 @@ import React from "react";
 import GlobalModal from "../../Components/Modal/GlobalModal";
 import GlobalTable from "../../Components/Table/GlobalTable";
 import { Navbar } from "../Navbar/Navbar";
-import "../unversal.scss";
-function Basic() {
+
+function Product() {
   return (
-    <div className="background">
+    <>
       <Navbar />
       <div className="main-nav">
         <div className="mb-3">
@@ -13,8 +13,8 @@ function Basic() {
         </div>
         <GlobalTable />
       </div>
-    </div>
+    </>
   );
 }
 
-export default Basic;
+export default Product;

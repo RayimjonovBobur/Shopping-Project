@@ -3,13 +3,14 @@ import { Navbar } from "../Navbar/Navbar";
 import GlobalTable from "../../Components/Table/GlobalTable";
 import GlobalModal from "../../Components/Modal/GlobalModal";
 
-function Projects() {
+function Kategorya() {
   return (
     <>
       <Navbar />
-      <div className="main-nav">
-        <div className="mb-3">
+      <div className={`main-nav `}>
+        <div className="mb-3 modalll">
           <GlobalModal />
+          {/* <Modall /> */}
         </div>
         <GlobalTable />
       </div>
@@ -17,4 +18,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Kategorya;
