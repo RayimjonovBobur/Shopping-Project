@@ -3,6 +3,7 @@ import { IMG, STRING } from "../../Components/Modal/InputTypes";
 export const CustomerTamplate = {
   text: "Mijozlarimiz",
   path: "/admin/customer",
+  icon: "UserIcon",
   isOpenModal: false,
   modal: {
     width: 600,

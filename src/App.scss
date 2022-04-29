@@ -147,7 +147,7 @@ hr {
     display: block !important;
   }
   .card-container .card-content .card .card-movement {
-    margin-bottom: 31px;
+    // margin-bottom: 31px;
     // display: flex;
     // width: 160%;
     .product-item-btn {
@@ -273,6 +273,7 @@ hr {
     display: grid;
     border-radius: var(--border-radius);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
     .card {
       width: 249px;
       margin-right: 10px;
@@ -282,7 +283,7 @@ hr {
       -webkit-box-shadow: 6px 17px 31px -2px rgba(34, 60, 80, 0.2);
       -moz-box-shadow: 6px 17px 31px -2px rgba(34, 60, 80, 0.2);
       box-shadow: 6px 17px 31px -2px rgba(34, 60, 80, 0.2);
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
       .card-body {
         justify-content: center;
         margin: auto;
@@ -345,7 +346,7 @@ hr {
         flex-direction: column;
         margin-left: var(--card-left);
         margin-top: 8px;
-        height: 104px;
+
         .product-item-old-price {
           font-size: 12px;
           line-height: 20px;
@@ -364,8 +365,9 @@ hr {
 
       .card-movement {
         margin-left: var(--card-left);
-        margin-top: 23em;
-        margin-bottom: 33px;
+        // margin-top: 23em;
+        // margin-bottom: 33px;
+        height: 45px;
         a {
           color: #000;
           margin-left: auto;
@@ -386,8 +388,8 @@ hr {
           border-radius: 10px;
           background-color: #008dff;
           color: #fff;
-          margin: 0;
           width: 74%;
+          margin-top: 8px;
         }
       }
     }
@@ -404,28 +406,20 @@ hr {
 // Test
 .hovereffect {
   width: 100%;
-  height: 86%;
+  height: 92%;
   float: left;
   overflow: hidden;
   position: relative;
   cursor: default;
-  transition: all 0.4s ease-in-out;
+  transition: 0.4s;
   &:hover {
-    height: 100%;
+    height: 100% !important;
   }
 }
 
 .hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
   opacity: 0;
-  // background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hovereffect img {
@@ -468,12 +462,6 @@ hr {
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
-
-// .hovereffect:hover img {
-//   -ms-transform: scale(1.2);
-//   -webkit-transform: scale(1.2);
-//   transform: scale(1.2);
-// }
 
 .hovereffect:hover .overlay {
   opacity: 1;

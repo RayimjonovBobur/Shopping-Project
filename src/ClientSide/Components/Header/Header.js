@@ -176,9 +176,8 @@ const Header = () => {
                 aria-labelledby="offcanvasNavbarLabel"
               >
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    Offcanvas
-                  </h5>
+                  <Logo />
+
                   <button
                     type="button"
                     class="btn-close text-reset"

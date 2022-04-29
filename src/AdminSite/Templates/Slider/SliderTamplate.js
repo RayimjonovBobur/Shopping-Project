@@ -3,6 +3,7 @@ import { IMG, STRING } from "../../Components/Modal/InputTypes";
 export const SliderTamplate = {
   text: "Slider",
   path: "/admin/slider",
+  icon: "PartnerIcon",
   isOpenModal: false,
   modal: {
     width: 500,

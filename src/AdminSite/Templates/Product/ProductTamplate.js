@@ -3,6 +3,7 @@ import { IMG, SELECT, STRING } from "../../Components/Modal/InputTypes";
 export const ProductTamplate = {
   text: "Mahsulotlar",
   path: "/admin/product",
+  icon: "PartnerIcon",
   isOpenModal: false,
   modal: {
     width: 800,
@@ -98,7 +99,7 @@ export const ProductTamplate = {
     },
     {
       text: "Action",
-      width: '100px'
+      width: "100px",
     },
   ],
 };

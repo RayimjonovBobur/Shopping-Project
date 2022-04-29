@@ -99,7 +99,7 @@ function App() {
         <Route path="/phone" element={<PhoneGadgets />} />
         <Route path="/airconditioners" element={<AirConditioners />} />
         <Route path="/admin" element={<Doshboard />} />
-        <Route path="/admin/kategoriya" element={<Kategorya />} />
+        <Route path="/admin/category" element={<Kategorya />} />
         <Route path="/admin/product" element={<Product />} />
         <Route path="/admin/slider" element={<Slider />} />
         <Route path="/admin/partner" element={<Partner />} />
