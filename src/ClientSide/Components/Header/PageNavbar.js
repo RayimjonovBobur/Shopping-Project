@@ -14,7 +14,7 @@ const PageNavbar = () => {
           </a>
           <form className="d-flex">
             <input
-              className="header-search-input"
+              className="header-search-input form-control"
               type="search"
               placeholder="Qidirish"
               aria-label="Search"
