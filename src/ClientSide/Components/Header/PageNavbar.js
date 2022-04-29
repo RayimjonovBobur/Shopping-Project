@@ -48,35 +48,7 @@ const PageNavbar = () => {
               <span></span>
             </div>
           </button>
-          {/* <div
-                class="collapse1 navbar-collapse justify-content-end "
-                id="navbarNav"
-            >
-                <ul class="navbar-nav header-top-list ">
-               
-                <li class="nav-item">
-                    <div className="lan">
-                    <Language /> <br />
-                    <span>O'zbekcha</span>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <Link to="/">
-                    <div lassName="cart">
-                        <Cart /> <br />
-                        <span>Savatcha</span>
-                    </div>
-                    </Link>
-                </li>
-                <li class="nav-item">
-                    <div className="user">
-                    <Avatar /> <br />
-                    <span>Кабинет</span>
-                    </div>{" "}
-                </li>
-                </ul>
-            </div> */}
-          {/* <div
+          <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
@@ -137,7 +109,7 @@ const PageNavbar = () => {
                 </button>
               </form>
             </div>
-          </div> */}
+          </div>
         </div>
       </nav>
     </div>

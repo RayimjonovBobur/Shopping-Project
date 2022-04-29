@@ -135,37 +135,78 @@ const Header = () => {
       <hr />
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <div className=" navbar-collapse " id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              {headerTemplate?.map((page, i) => {
-                return (
-                  <li className="nav-item">
-                    <Link
-                      to={page.to}
-                      className={`nav-link  ${active === i ? "active" : ""}`}
-                      onClick={() => handleChange(i)}
-                    >
-                      {page?.text}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-            <button
-              className="hidden"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              style={{ marginLeft: "-248px", border: "none" }}
-            >
-              <div class="main-header_menu">
-                <span></span>
-                <span></span>
-                <span></span>
+          <div className=" navbar-collapsse  " id="navbarNavDropdown">
+            <div className="hidden2">
+              <ul className="navbar-nav">
+                {headerTemplate?.map((page, i) => {
+                  return (
+                    <li className="nav-item">
+                      <Link
+                        to={page.to}
+                        className={`nav-link  ${active === i ? "active" : ""}`}
+                        onClick={() => handleChange(i)}
+                      >
+                        {page?.text}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="hidden1">
+              <button
+                className="hidden"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style={{ marginLeft: "-248px", border: "none" }}
+              >
+                <div class="main-header_menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Offcanvas
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul className="navbar-nav ">
+                    {headerTemplate?.map((page, i) => {
+                      return (
+                        <li className="nav-item">
+                          <Link
+                            to={page.to}
+                            className={`nav-link  ${
+                              active === i ? "active" : ""
+                            }`}
+                            onClick={() => handleChange(i)}
+                          >
+                            {page?.text}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </nav>
