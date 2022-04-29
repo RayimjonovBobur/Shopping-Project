@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { setActive } from "../../../Redux/stored_reducer";
 import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
+import menu from "../../../assates/images/menu.png";
 import "./Header.scss";
 import { headerTemplate } from "./headerTemplate";
 import "../../../App.scss";
@@ -177,7 +178,6 @@ const Header = () => {
               >
                 <div class="offcanvas-header">
                   <Logo />
-
                   <button
                     type="button"
                     class="btn-close text-reset"
