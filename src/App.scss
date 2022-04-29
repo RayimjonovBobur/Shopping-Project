@@ -88,11 +88,17 @@ hr {
   .card {
     width: 249px !important;
   }
+  .card-body {
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 901px) {
   .col-md-3 {
     display: none;
+  }
+  .navbar > .container-fluid {
+    display: block;
   }
   .col-md-9 {
     width: 100%;
@@ -125,6 +131,19 @@ hr {
 // }
 @media (max-width: 480px) {
   .card-container .card-content {
+    display: block !important;
+  }
+  .hidden2 {
+    display: none;
+  }
+  .hidden1 {
+    display: block !important;
+  }
+  .header .header-top-list {
+    margin-left: 60px;
+  }
+
+  .hiddesn2 .navbar-collapse {
     display: block !important;
   }
   .card-container .card-content .card .card-movement {
@@ -460,4 +479,14 @@ hr {
 .hovereffect:hover a.info {
   // -webkit-transition-delay: 0.2s;
   // transition-delay: 0.2s;
+}
+
+.basket-btn {
+  outline: none;
+  border: none;
+  background: #fff;
+}
+
+.hidden1 {
+  display: none;
 }

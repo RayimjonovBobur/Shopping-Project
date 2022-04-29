@@ -79,7 +79,7 @@ export const ProductTamplate = {
       width: "80px",
     },
     {
-      text: "Kateqoriya",
+      text: "Kategoriya",
       width: "120px",
     },
     {

@@ -11,7 +11,7 @@ function GlobalModal() {
   const [item, setItem] = useState(false);
 
   const haldleChange = (e) => {
-    setData({ ...data, ...e });
+    setData({ ...data, ...e }); 
     if (e == "") {
       setItem(false);
     } else {
@@ -91,7 +91,7 @@ function GlobalModal() {
         </div>
       </div>
       <a
-        class="btn btn-primary"
+        class="btn btn-success"
         data-bs-toggle="modal"
         href="#exampleModalToggle"
         role="button"

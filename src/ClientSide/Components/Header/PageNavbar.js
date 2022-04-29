@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Logo } from "../../../assates/icons/Icons";
 import { Avatar, Cart, Language, Treker } from "../../utilities/icons";
 import "../../../App.scss";
+import "./Header.scss";
 
 const PageNavbar = () => {
   return (
@@ -24,49 +25,29 @@ const PageNavbar = () => {
             </button>
           </form>{" "}
           <div className="cart">
-            <Cart /> <br />
-            <span>Savatcha</span>
+            <button
+              class="basket-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <Cart /> <br />
+              <span>Savatcha</span>
+            </button>
           </div>
           <button
-            class="navbar-toggler"
-            type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style={{ marginLeft: "-248px" }}
+            style={{ marginLeft: "-248px", border: "none" }}
           >
-            <span class="navbar-toggler-icon"></span>
+            <div class="main-header_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
-          {/* <div
-                class="collapse1 navbar-collapse justify-content-end "
-                id="navbarNav"
-            >
-                <ul class="navbar-nav header-top-list ">
-               
-                <li class="nav-item">
-                    <div className="lan">
-                    <Language /> <br />
-                    <span>O'zbekcha</span>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <Link to="/">
-                    <div lassName="cart">
-                        <Cart /> <br />
-                        <span>Savatcha</span>
-                    </div>
-                    </Link>
-                </li>
-                <li class="nav-item">
-                    <div className="user">
-                    <Avatar /> <br />
-                    <span>Кабинет</span>
-                    </div>{" "}
-                </li>
-                </ul>
-            </div> */}
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
