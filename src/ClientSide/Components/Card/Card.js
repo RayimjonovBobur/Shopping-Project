@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import komp from "../../../assates/images/komp.jpg";
 import komp1 from "../../../assates/images/komp1.jpeg";
 import komp2 from "../../../assates/images/komp2.webp";

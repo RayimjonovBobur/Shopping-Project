@@ -1,55 +1,103 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { XIcon } from "../../../assates/icons/Icons";
+import { setValues } from "../../../Redux/stored_reducer";
+import ModalInputs from "./ModalInputs";
 
 function GlobalModal() {
+  const { currentPage, values } = useSelector((state) => state?.users_reducer);
+  const [data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const [item, setItem] = useState(false);
+
+  const haldleChange = (e) => {
+    setData({ ...data, ...e }); 
+    if (e == "") {
+      setItem(false);
+    } else {
+      setItem(true);
+    }
+  };
+  const handleSubmit = () => {
+    if (item) {
+      dispatch(setValues([...values, data]));
+    }
+    setItem(false);
+  };
   return (
     <>
-      <button
-        type="button"
-        className="btn btn-outline-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-      >
-        Qoshish
-      </button>
       <div
-        className="modal fade"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
+        class="modal fade"
+        id="exampleModalToggle"
         aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
       >
-        <div className="modal-dialog mt-5">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="staticBackdropLabel">
-                Modal title
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style={{ width: currentPage?.modal?.width }}
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">
+                Modal 1
               </h5>
-              <button
-                type="button"
-                className="btn-close"
+
+              <div
+                className="header-modal_icon "
                 data-bs-dismiss="modal"
                 aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              <div>
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" className="btn btn-primary mx-3">
-                  Submit
-                </button>
+              >
+                <XIcon />
               </div>
+            </div>
+            <div class="modal-body">
+              {currentPage?.form?.map((form) => (
+                <div
+                  key={form?.grid}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: form.grid?.columns,
+                    gridAutoRows: form.grid?.rows,
+                    gap: "12px",
+                  }}
+                >
+                  {form?.inputs?.map((input) => {
+                    return (
+                      <ModalInputs {...input} haldleChange={haldleChange} />
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-outline-secondary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Orqaga
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle={item ? "modal" : ""}
+                onClick={handleSubmit}
+              >
+                Saqlash
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <a
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        href="#exampleModalToggle"
+        role="button"
+      >
+        Qo'shish
+      </a>
     </>
   );
 }

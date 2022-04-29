@@ -1,11 +1,16 @@
 import { BasicTemplate } from "../Templates/Basic/BasicTamlate";
-import { CompaniesTamplate } from "../Templates/Companies/CompaniesTamplate";
-import { projectsTemplate } from "../Templates/Projects/ProjectsTamplate";
-import { ServicesTamplate } from "../Templates/Services/ServicesTamplate";
+import { CustomerTamplate } from "../Templates/Customer/CustomerTamplate";
+import { KategoriyaTamplate } from "../Templates/Kategoriya/KategoriyaTamplate";
+import { PartnerTamplate } from "../Templates/Partner/PartnerTamplate";
+import { ProductTamplate } from "../Templates/Product/ProductTamplate";
+
+import { SliderTamplate } from "../Templates/Slider/SliderTamplate";
 
 export const AllPages = [
   BasicTemplate,
-  projectsTemplate,
-  CompaniesTamplate,
-  ServicesTamplate,
+  KategoriyaTamplate,
+  ProductTamplate,
+  SliderTamplate,
+  PartnerTamplate,
+  CustomerTamplate,
 ];

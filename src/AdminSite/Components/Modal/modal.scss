@@ -1,0 +1,57 @@
+.modal {
+  backdrop-filter: blur(3px);
+  .modal-dialog {
+    .modal-content {
+      border: none;
+    }
+    .modal-header {
+      padding: 0.3rem 0.8rem;
+      background: #1ecd83;
+      color: #fff;
+      h5 {
+        font-size: 1.1em;
+      }
+    }
+    .modal-footer {
+      display: block;
+      padding: 0.3rem 0.8rem;
+      border: none;
+      justify-content: start;
+      text-align: center;
+    }
+  }
+  .header-modal_icon {
+    background: red;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+    svg {
+      path {
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.form-select {
+  width: auto !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none !important;
+    margin: 1.75rem auto;
+  }
+}
