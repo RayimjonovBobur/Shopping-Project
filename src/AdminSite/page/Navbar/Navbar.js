@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { Logo, Seacrch } from "../../../assates/icons/Icons";
+import { LogoAdmin, Seacrch } from "../../../assates/icons/Icons";
 import adminLogo from "../../../assates/images/Ellipse3.png";
 import { setActive, setCurrenPage } from "../../../Redux/stored_reducer";
 import "../unversal.scss";
@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="navbar-top">
         <div className="navbar_content">
           <div>
-            <Logo />
+            <LogoAdmin />
           </div>
           <div className="navbar_search">
             <input type="text" placeholder={"Search..."} />
@@ -32,7 +32,9 @@ export const Navbar = () => {
             return (
               <Link
                 to={page.path}
-                className={`nav-link ${pathname === page.path ? "activee" : ""}`}
+                className={`nav-link ${
+                  pathname === page.path ? "activee" : ""
+                }`}
               >
                 {page.text}
               </Link>
