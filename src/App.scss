@@ -88,6 +88,7 @@ hr {
   .card {
     width: 249px !important;
   }
+  
 }
 
 @media (max-width: 901px) {
@@ -469,4 +470,10 @@ hr {
 .hovereffect:hover a.info {
   // -webkit-transition-delay: 0.2s;
   // transition-delay: 0.2s;
+}
+
+.basket-btn {
+  outline: none;
+  border: none;
+  background: #fff;
 }

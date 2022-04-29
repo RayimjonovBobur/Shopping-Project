@@ -27,9 +27,9 @@ export const ProductTamplate = {
           gridColumn: "4 / 7",
         },
         {
-          name: "Kateqoriya",
+          name: "Kategoriya",
           type: SELECT,
-          placeholder: "Kateqoriya",
+          placeholder: "Kategoriya",
           gridColumn: "7 / 10",
         },
         {
@@ -78,7 +78,7 @@ export const ProductTamplate = {
       width: "80px",
     },
     {
-      text: "Kateqoriya",
+      text: "Kategoriya",
       width: "120px",
     },
     {

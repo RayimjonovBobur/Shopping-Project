@@ -1,7 +1,7 @@
 import { STRING } from "../../Components/Modal/InputTypes";
 
 export const BasicTemplate = {
-  text: "Doshboard",
+  text: "Dashboard",
   path: "/admin",
   isOpenModal: false,
   form: [

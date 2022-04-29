@@ -1,6 +1,11 @@
-import React from "react";
-import PageNavbar from "./PageNavbar";
-import Test from "./test";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { setActive } from "../../../Redux/stored_reducer";
+import { Avatar, Cart, Language, Logo, Treker } from "../../utilities/icons";
+import "./Header.scss";
+import { headerTemplate } from "./headerTemplate";
+import "../../../App.scss";
 
 const languages = [
   {
@@ -71,11 +76,64 @@ function GlobeIcon({ width = 33, marginTop = 3, left = 20, key }) {
 }
 
 const Header = () => {
+  const { active } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
+
+  const handleChange = (e) => {
+    dispatch(setActive(e));
+  };
   return (
     <div className="header">
-      <PageNavbar />
+      <nav className="navbar navbar-light bg-light">
+        <div className="container-fluid">
+          <Logo />
+          <form className="d-flex">
+            <input
+              className="header-search-input form-control"
+              type="search"
+              placeholder="Qidirish"
+              aria-label="Search"
+            />
+            <button className="btn btn-primary header-search-btn">
+              Qidirish
+            </button>
+          </form>
+          {/* <form className="d-flex">
+            <input
+              className="header-search-input"
+              type="search"
+              placeholder="Qidirish"
+              aria-label="Search"
+            />
+            <button className="btn btn-primary header-search-btn">
+              Qidirish
+            </button>
+          </form> */}
+          <div className="header-top-list ">
+            <div className="trek">
+              <Link to="/trek">
+                <Treker /> <br />
+                {/* <i className="fa-solid fa-truck"></i> <br /> */}
+              </Link>
+              <span>Trek</span>
+            </div>
+            <div className="lan">
+              <Language /> <br />
+              <span>O'zbekcha</span>
+            </div>
+            <div lassName="cart">
+              <Cart /> <br />
+              <span>Savatcha</span>
+            </div>
+            <div className="user">
+              <Avatar /> <br />
+              <span>Кабинет</span>
+            </div>
+          </div>
+        </div>
+      </nav>
       <hr />
-      {/* <nav className="navbar small navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className=" navbar-collapse " id="navbarNavDropdown">
             <ul className="navbar-nav">
@@ -93,9 +151,24 @@ const Header = () => {
                 );
               })}
             </ul>
+            <button
+              className="hidden"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style={{ marginLeft: "-248px", border: "none" }}
+            >
+              <div class="main-header_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
           </div>
         </div>
-      </nav> */}
+      </nav>
     </div>
   );
 };
