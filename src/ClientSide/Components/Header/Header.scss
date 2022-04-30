@@ -24,6 +24,15 @@
   //     color: #008dff;
   //   }
   // }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+  }
 
   .navbar > .container-fluid {
     // display: block;
@@ -95,9 +104,6 @@
   }
   .nav-link:hover {
     color: #0d6efd !important;
-  }
-  .bg-light {
-    padding: 11px 0px;
   }
 }
 .header-top-list div {

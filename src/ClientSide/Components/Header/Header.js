@@ -107,23 +107,8 @@ const Header = () => {
             </button>
           </form>
           <div className="header-top-list ">
-            <div className="trek">
-              <Link to="/trek">
-                <Treker /> <br />
-                {/* <i className="fa-solid fa-truck"></i> <br /> */}
-              </Link>
-              <span>Trek</span>
-            </div>
-            <div className="lan">
-              <Language /> <br />
-              <span>O'zbekcha</span>
-            </div>
             <div lassName="cart">
               <Basket />
-            </div>
-            <div className="user">
-              <Avatar /> <br />
-              <span>Кабинет</span>
             </div>
           </div>
         </div>
