@@ -3,6 +3,7 @@ import { IMG, STRING } from "../../Components/Modal/InputTypes";
 export const PartnerTamplate = {
   text: "Hamkorlarimiz",
   path: "/admin/partner",
+  icon: "PartnerIcon",
   isOpenModal: false,
   modal: {
     width: 600,

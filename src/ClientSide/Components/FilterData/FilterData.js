@@ -126,7 +126,7 @@ const FilterData = () => {
                   </label>
                 </div>
               </div>
-              <div className="panel panel-default sidebar-menu wow fadeInRight animated">
+              {/* <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                 <div className="panel-heading">
                   <h3 className="panel-title">Recommended</h3>
                 </div>
@@ -207,7 +207,7 @@ const FilterData = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-md-9  properties-page">

@@ -1,14 +1,19 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { LogoAdmin, Seacrch } from "../../../assates/icons/Icons";
+import { LeftIcon, LogoAdmin, Seacrch } from "../../../assates/icons/Icons";
 import adminLogo from "../../../assates/images/Ellipse3.png";
 import { setActive, setCurrenPage } from "../../../Redux/stored_reducer";
 import "../unversal.scss";
 import { AllPages } from "../../grouping/grouping";
+import SeacrchIcon from "../../Components/searchIcon/SeacrchIcon";
+import { useState } from "react";
 
 export const Navbar = () => {
   const { pathname } = useLocation();
   const dispatch = useDispatch();
+  const [active, setActive] = useState(true);
+
+  const handleLeft = () => {};
 
   return (
     <>
@@ -36,10 +41,16 @@ export const Navbar = () => {
                   pathname === page.path ? "activee" : ""
                 }`}
               >
-                {page.text}
+                <span className="me-1 seact_icon">
+                  <SeacrchIcon icon={page?.icon} />
+                </span>
+                <span>{page.text}</span>
               </Link>
             );
           })}
+          <span className="left-button" onClick={handleLeft}>
+            <LeftIcon />
+          </span>
         </div>
       </div>
     </>

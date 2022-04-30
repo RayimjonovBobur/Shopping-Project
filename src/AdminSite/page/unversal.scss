@@ -23,6 +23,17 @@
       letter-spacing: 1px;
     }
   }
+  .seact_icon {
+    svg {
+      margin-top: -4px;
+    }
+  }
+  .left-button {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 4.5rem;
+    cursor: pointer;
+  }
   .activee {
     background: #f4f7fd;
     color: #000;
@@ -100,16 +111,16 @@
   // animation: anim 0.5s forwards;
 }
 
-@keyframes anim {
-  0% {
-    opacity: 0;
-    transform: translateY(2%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+// @keyframes anim {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(2%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
 .btn {
   padding: 0.2rem 0.4rem;

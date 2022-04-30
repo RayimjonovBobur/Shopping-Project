@@ -2,7 +2,8 @@ import { SELECT, STRING } from "../../Components/Modal/InputTypes";
 
 export const KategoriyaTamplate = {
   text: "Kategoriyalar",
-  path: "/admin/kategoriya",
+  path: "/admin/category",
+  icon: "ListIcon",
   isOpenModal: false,
   modal: {
     width: 500,

@@ -26,6 +26,7 @@
   // }
 
   .navbar > .container-fluid {
+    // display: block;
     background-color: #fff;
 
     .nav-items-group {
@@ -106,8 +107,9 @@
 
 .main-header_menu {
   position: absolute;
-  top: -46%;
-  right: 87%;
+  top: -306%;
+  top: -379%;
+  right: 5%;
   width: 40px;
   height: 40px;
   box-shadow: 0px 4px 20px var(--box-shadow);

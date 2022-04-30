@@ -132,3 +132,13 @@
     margin: 12px 0;
   }
 }
+
+@media (max-width: 480px) {
+  .footer-content-icon {
+    display: block !important;
+    .footer-content-icons {
+      margin-top: 12px;
+    }
+  }
+  
+}
