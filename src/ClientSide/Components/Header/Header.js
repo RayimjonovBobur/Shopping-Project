@@ -7,6 +7,7 @@ import menu from "../../../assates/images/menu.png";
 import "./Header.scss";
 import { headerTemplate } from "./headerTemplate";
 import "../../../App.scss";
+import Basket from "../Basket/Basket";
 
 const languages = [
   {
@@ -83,6 +84,10 @@ const Header = () => {
   const handleChange = (e) => {
     dispatch(setActive(e));
   };
+
+  const handleClick = () => {
+    console.log("I working");
+  };
   return (
     <div className="header">
       <nav className="navbar navbar-light bg-light">
@@ -101,17 +106,6 @@ const Header = () => {
               Qidirish
             </button>
           </form>
-          {/* <form className="d-flex">
-            <input
-              className="header-search-input"
-              type="search"
-              placeholder="Qidirish"
-              aria-label="Search"
-            />
-            <button className="btn btn-primary header-search-btn">
-              Qidirish
-            </button>
-          </form> */}
           <div className="header-top-list ">
             <div className="trek">
               <Link to="/trek">
@@ -125,8 +119,7 @@ const Header = () => {
               <span>O'zbekcha</span>
             </div>
             <div lassName="cart">
-              <Cart /> <br />
-              <span>Savatcha</span>
+              <Basket />
             </div>
             <div className="user">
               <Avatar /> <br />
