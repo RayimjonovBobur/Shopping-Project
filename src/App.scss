@@ -64,6 +64,20 @@ hr {
   }
 }
 
+@media (max-width: 820px) {
+  .header .header-top-list {
+    margin-top: 15px;
+    margin-left: 220px;
+  }
+  .hidden1 {
+    display: none;
+  }
+
+  .hidden2 {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     // max-width: 890px;
@@ -146,6 +160,11 @@ hr {
   .card-container .card-content {
     display: block !important;
   }
+
+  .container-fluid {
+    display: block !important;
+  }
+
   .hidden2 {
     display: none;
   }
