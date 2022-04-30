@@ -87,7 +87,9 @@ const Header = () => {
     <div className="header">
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <Logo />
+          <div className="companyalogo">
+            <Logo />
+          </div>
           <form className="d-flex">
             <input
               className="header-search-input form-control"
