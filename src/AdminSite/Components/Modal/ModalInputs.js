@@ -4,6 +4,10 @@ import "./modal.scss";
 const ModalInputs = (props) => {
   const { placeholder, name, gridRow, gridColumn, type, haldleChange } = props;
 
+  const hanldeChageImg = (e) => {
+    console.log(e.value);
+  };
+
   let input = null;
   switch (type) {
     case STRING:
@@ -53,7 +57,7 @@ const ModalInputs = (props) => {
       input = (
         <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
           <label>{placeholder}</label>
-          <input type="file" />
+          <input type="file" onChange={hanldeChageImg} />
         </div>
       );
       break;

@@ -44,7 +44,7 @@ function GlobalModal() {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalToggleLabel">
-                Modal 1
+                {currentPage?.text}
               </h5>
 
               <div
