@@ -1,5 +1,10 @@
 .modal {
   // backdrop-filter: blur(1px);
+
+  .modal-body {
+    padding: 2.5rem 1rem;
+  }
+
   .modal-dialog {
     .modal-content {
       border: none;
@@ -14,7 +19,7 @@
     }
     .modal-footer {
       display: block;
-      padding: 0.3rem 0.8rem;
+      padding: 0.8rem 0.8rem;
       border: none;
       justify-content: start;
       text-align: center;
@@ -47,6 +52,12 @@
 
 .form-select {
   width: auto !important;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
 }
 
 @media (min-width: 576px) {

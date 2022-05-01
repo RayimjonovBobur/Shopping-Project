@@ -394,7 +394,7 @@ hr {
       }
 
       .card-movement {
-        margin-left: var(--card-left);
+        // margin-left: var(--card-left);
         // margin-top: 23em;
         // margin-bottom: 33px;
         height: 45px;
@@ -418,8 +418,9 @@ hr {
           border-radius: 10px;
           background-color: #008dff;
           color: #fff;
-          width: 74%;
+          width: 65%;
           margin-top: 8px;
+          margin-left: 20px;
         }
       }
     }
@@ -435,7 +436,7 @@ hr {
 
 // Test
 .hovereffect {
-  width: 90%;
+  width: 98%;
   margin: auto;
   height: 92%;
   float: left;

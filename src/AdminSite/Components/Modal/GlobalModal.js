@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { XIcon } from "../../../assates/icons/Icons";
 import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
@@ -11,11 +12,14 @@ function GlobalModal() {
   const [item, setItem] = useState(false);
 
   const haldleChange = (e) => {
-    setData({ ...data, ...e }); 
+    setData({ ...data, ...e });
     if (e == "") {
       setItem(false);
     } else {
       setItem(true);
+    }
+    if (e) {
+      dispatch(setValues({ ...values, ...e }));
     }
   };
   const handleSubmit = () => {
@@ -64,7 +68,9 @@ function GlobalModal() {
                 >
                   {form?.inputs?.map((input) => {
                     return (
-                      <ModalInputs {...input} haldleChange={haldleChange} />
+                      <>
+                        <ModalInputs {...input} haldleChange={haldleChange} />
+                      </>
                     );
                   })}
                 </div>

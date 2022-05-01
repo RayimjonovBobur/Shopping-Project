@@ -1,4 +1,9 @@
-import { IMG, SELECT, STRING } from "../../Components/Modal/InputTypes";
+import {
+  IMG,
+  SELECT,
+  STRING,
+  TEXTAREA,
+} from "../../Components/Modal/InputTypes";
 
 export const ProductTamplate = {
   text: "Mahsulotlar",
@@ -57,7 +62,7 @@ export const ProductTamplate = {
         },
         {
           name: "izoh",
-          type: STRING,
+          type: TEXTAREA,
           placeholder: "Izoh",
           gridColumn: "1 / 10",
           gridRow: "3 / 3",

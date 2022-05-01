@@ -16,6 +16,8 @@ import Product from "./AdminSite/page/Product/Product";
 import Slider from "./AdminSite/page/Slider/Slider";
 import Partner from "./AdminSite/page/Partner/Partner";
 import Customer from "./AdminSite/page/Customer/Customer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // const languages = [
 //   {
@@ -88,6 +90,7 @@ import Customer from "./AdminSite/page/Customer/Customer";
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<MinaPage />} />
         <Route path="/news" element={<News />} />

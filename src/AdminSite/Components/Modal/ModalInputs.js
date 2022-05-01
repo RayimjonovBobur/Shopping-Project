@@ -1,4 +1,4 @@
-import { IMG, NUMBER, SELECT, STRING } from "./InputTypes";
+import { IMG, NUMBER, SELECT, STRING, TEXTAREA } from "./InputTypes";
 import "./modal.scss";
 
 const ModalInputs = (props) => {
@@ -8,31 +8,42 @@ const ModalInputs = (props) => {
   switch (type) {
     case STRING:
       input = (
-        <input
-          name={name}
-          className="form-control"
-          placeholder={placeholder}
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-          type="text"
-          onChange={(e) =>
-            haldleChange({
-              [e.target.name]: e.target.value,
-            })
-          }
-        />
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label htmlFor="input">{placeholder}</label>
+          <input
+            name={name}
+            className="form-control"
+            placeholder={placeholder}
+            type="text"
+            onChange={(e) =>
+              haldleChange({
+                [e.target.name]: e.target.value,
+              })
+            }
+            id="input"
+          />
+        </div>
       );
       break;
     case SELECT:
       input = (
-        <select
-          class="form-select"
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-        >
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label>{placeholder}</label>
+          <select
+            name={name}
+            class="form-select"
+            onChange={(e) =>
+              haldleChange({
+                [e.target.name]: e.target.value,
+              })
+            }
+          >
+            <option selected>Open this select menu</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+          </select>
+        </div>
       );
       break;
     case NUMBER:
@@ -40,12 +51,25 @@ const ModalInputs = (props) => {
       break;
     case IMG:
       input = (
-        <input
-          type="file"
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-        />
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label>{placeholder}</label>
+          <input type="file" />
+        </div>
       );
       break;
+    case TEXTAREA:
+      input = (
+        <div
+          style={{ gridColumn: gridColumn, gridRow: gridRow, height: "60px" }}
+        >
+          <label>{placeholder}</label>
+          <textarea
+            className="form-control "
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          />
+        </div>
+      );
     default:
       break;
   }
