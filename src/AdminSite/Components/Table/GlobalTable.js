@@ -28,7 +28,7 @@ function GlobalTable() {
             </tr>
           </thead>
           <tbody>
-            {values?.map((value, i) => {
+            {/* {values?.map((value, i) => {
               return (
                 <tr>
                   <th scope="row">{i + 1}</th>
@@ -49,7 +49,7 @@ function GlobalTable() {
                   </td>
                 </tr>
               );
-            })}
+            })} */}
           </tbody>
         </table>
       </div>

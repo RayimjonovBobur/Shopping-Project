@@ -25,7 +25,6 @@ export const KategoriyaTamplate = {
           name: "select",
           type: SELECT,
           placeholder: "Kategoriya",
-          gridColumn: "4 / 8",
         },
       ],
     },

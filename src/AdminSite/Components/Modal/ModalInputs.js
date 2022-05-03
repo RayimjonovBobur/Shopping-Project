@@ -4,35 +4,50 @@ import "./modal.scss";
 const ModalInputs = (props) => {
   const { placeholder, name, gridRow, gridColumn, type, haldleChange } = props;
 
+  const hanldeChageImg = (e) => {
+    console.log(e.value);
+  };
+
   let input = null;
   switch (type) {
     case STRING:
       input = (
-        <input
-          name={name}
-          className="form-control"
-          placeholder={placeholder}
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-          type="text"
-          onChange={(e) =>
-            haldleChange({
-              [e.target.name]: e.target.value,
-            })
-          }
-        />
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label htmlFor="input">{placeholder}</label>
+          <input
+            name={name}
+            className="form-control"
+            placeholder={placeholder}
+            type="text"
+            onChange={(e) =>
+              haldleChange({
+                [e.target.name]: e.target.value,
+              })
+            }
+            id="input"
+          />
+        </div>
       );
       break;
     case SELECT:
       input = (
-        <select
-          class="form-select"
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-        >
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label>{placeholder}</label>
+          <select
+            name={name}
+            class="form-select"
+            onChange={(e) =>
+              haldleChange({
+                [e.target.name]: e.target.value,
+              })
+            }
+          >
+            <option selected>Open this select menu</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+          </select>
+        </div>
       );
       break;
     case TEXTAREA:
@@ -42,12 +57,33 @@ const ModalInputs = (props) => {
       break;
     case IMG:
       input = (
-        <input
-          type="file"
-          style={{ gridColumn: gridColumn, gridRow: gridRow }}
-        />
+        <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
+          <label>{placeholder}</label>
+          <label htmlFor="id" className="inputt">
+            {placeholder}
+          </label>
+          <input
+            type="file"
+            id="id"
+            style={{ display: "none", visibility: "hidden" }}
+            onChange={hanldeChageImg}
+          />
+        </div>
       );
       break;
+    case TEXTAREA:
+      input = (
+        <div
+          style={{ gridColumn: gridColumn, gridRow: gridRow, height: "60px" }}
+        >
+          <label>{placeholder}</label>
+          <textarea
+            className="form-control "
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          />
+        </div>
+      );
     default:
       break;
   }

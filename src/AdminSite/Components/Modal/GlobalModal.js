@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { XIcon } from "../../../assates/icons/Icons";
 import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
@@ -17,6 +18,9 @@ function GlobalModal() {
       setItem(false);
     } else {
       setItem(true);
+    }
+    if (e) {
+      dispatch(setValues({ ...values, ...e }));
     }
   };
   const handleSubmit = () => {
@@ -41,7 +45,7 @@ function GlobalModal() {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalToggleLabel">
-                Modal 1
+                {currentPage?.text}
               </h5>
 
               <div
@@ -65,7 +69,9 @@ function GlobalModal() {
                 >
                   {form?.inputs?.map((input) => {
                     return (
-                      <ModalInputs {...input} haldleChange={haldleChange} />
+                      <>
+                        <ModalInputs {...input} haldleChange={haldleChange} />
+                      </>
                     );
                   })}
                 </div>
