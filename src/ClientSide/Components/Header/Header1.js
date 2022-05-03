@@ -2,6 +2,7 @@ import React from "react";
 import { Seacrch } from "../../../assates/icons/Icons";
 import { IconUser, Logo, NewIcon1, NewIcon2 } from "../../utilities/icons";
 import "./header1.scss";
+import { headerTemplate } from "./headerTemplate";
 
 function Header1() {
   return (
@@ -62,21 +63,11 @@ function Header1() {
           <button className="btn ">All Collections</button>
           <nav className="navbar_link">
             <ul>
-              <li className="nav-items">
-                <a href="#">Home</a>
-              </li>{" "}
-              <li className="nav-items">
-                <a href="#">Shop</a>
-              </li>{" "}
-              <li className="nav-items">
-                <a href="#">Blog </a>
-              </li>
-              <li className="nav-items">
-                <a href="#">About</a>
-              </li>
-              <li className="nav-items">
-                <a href="#">Contact Us</a>
-              </li>
+              {headerTemplate?.map((page, i) => (
+                <li className="nav-items">
+                  <a href="#">{page.text}</a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
