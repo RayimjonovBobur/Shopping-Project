@@ -1,4 +1,4 @@
-import { IMG, NUMBER, SELECT, STRING } from "./InputTypes";
+import { IMG, NUMBER, SELECT, STRING, TEXTAREA } from "./InputTypes";
 import "./modal.scss";
 
 const ModalInputs = (props) => {
@@ -35,6 +35,8 @@ const ModalInputs = (props) => {
         </select>
       );
       break;
+    case TEXTAREA:
+      input = <textarea name="" id="" cols="30" rows="10"></textarea>;
     case NUMBER:
       input = <input type="number" />;
       break;

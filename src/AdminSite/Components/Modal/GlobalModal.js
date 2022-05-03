@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { XIcon } from "../../../assates/icons/Icons";
 import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
+import "./modal.scss"
 
 function GlobalModal() {
   const { currentPage, values } = useSelector((state) => state?.users_reducer);
@@ -11,7 +12,7 @@ function GlobalModal() {
   const [item, setItem] = useState(false);
 
   const haldleChange = (e) => {
-    setData({ ...data, ...e }); 
+    setData({ ...data, ...e });
     if (e == "") {
       setItem(false);
     } else {
@@ -79,10 +80,11 @@ function GlobalModal() {
                 Orqaga
               </button>
               <button
-                class="btn btn-primary"
+                class="btn btn-primary save"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle={item ? "modal" : ""}
                 onClick={handleSubmit}
+                style={{ padding: "5px 50px" }}
               >
                 Saqlash
               </button>
