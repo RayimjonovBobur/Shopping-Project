@@ -57,7 +57,15 @@ const ModalInputs = (props) => {
       input = (
         <div style={{ gridColumn: gridColumn, gridRow: gridRow }}>
           <label>{placeholder}</label>
-          <input type="file" onChange={hanldeChageImg} />
+          <label htmlFor="id" className="inputt">
+            {placeholder}
+          </label>
+          <input
+            type="file"
+            id="id"
+            style={{ display: "none", visibility: "hidden" }}
+            onChange={hanldeChageImg}
+          />
         </div>
       );
       break;

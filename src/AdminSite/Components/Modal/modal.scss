@@ -60,6 +60,14 @@ label {
   font-weight: 500;
 }
 
+.inputt {
+  border: 1px dotted #aaa;
+  padding: 0.4rem 1rem;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: none !important;
