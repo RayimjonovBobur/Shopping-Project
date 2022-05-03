@@ -1,12 +1,12 @@
 import React from "react";
 import FilterData from "../Components/FilterData/FilterData";
 import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
+import Header1 from "../Components/Header/Header1";
 
 function MinaPage() {
   return (
     <>
-      <Header />
+      <Header1 />
       <FilterData />
       <Footer />
     </>
