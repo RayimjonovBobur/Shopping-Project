@@ -12,7 +12,13 @@ function Header1() {
             <span>Onlayn do'konimizga xush kelibsiz</span>
           </div>
           <div className="site-header_content">
-            <span>English (USD)</span> | <span>Login or Sign up</span>
+            <span>
+              <select>
+                <option>English (USD)</option>
+                <option>English (USD)</option>
+              </select>
+            </span>{" "}
+            | <span>Login or Sign up</span>
           </div>
         </div>
       </div>
@@ -53,7 +59,7 @@ function Header1() {
       </div>
       <div className="navbar-content ">
         <div className="container d-flex">
-          <button className="btn btn-success">All Collections</button>
+          <button className="btn ">All Collections</button>
           <nav className="navbar_link">
             <ul>
               <li className="nav-items">
