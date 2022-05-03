@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { XIcon } from "../../../assates/icons/Icons";
 import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
+import "./modal.scss"
 
 function GlobalModal() {
   const { currentPage, values } = useSelector((state) => state?.users_reducer);
@@ -11,11 +13,14 @@ function GlobalModal() {
   const [item, setItem] = useState(false);
 
   const haldleChange = (e) => {
-    setData({ ...data, ...e }); 
+    setData({ ...data, ...e });
     if (e == "") {
       setItem(false);
     } else {
       setItem(true);
+    }
+    if (e) {
+      dispatch(setValues({ ...values, ...e }));
     }
   };
   const handleSubmit = () => {
@@ -40,7 +45,7 @@ function GlobalModal() {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalToggleLabel">
-                Modal 1
+                {currentPage?.text}
               </h5>
 
               <div
@@ -64,7 +69,9 @@ function GlobalModal() {
                 >
                   {form?.inputs?.map((input) => {
                     return (
-                      <ModalInputs {...input} haldleChange={haldleChange} />
+                      <>
+                        <ModalInputs {...input} haldleChange={haldleChange} />
+                      </>
                     );
                   })}
                 </div>
@@ -79,10 +86,11 @@ function GlobalModal() {
                 Orqaga
               </button>
               <button
-                class="btn btn-primary"
+                class="btn btn-primary save"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle={item ? "modal" : ""}
                 onClick={handleSubmit}
+                style={{ padding: "5px 50px" }}
               >
                 Saqlash
               </button>
