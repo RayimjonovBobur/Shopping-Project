@@ -15,15 +15,13 @@
   -webkit-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 8px 9px 0px rgba(34, 60, 80, 0.2);
-
   a {
     border-left: 4px solid #fff;
     transition: all 0.2s;
-    color: #000;
+    color: #333;
     &:hover {
       border-color: var(--inputColor);
-      background: var(--inputColor);
-      letter-spacing: 1px;
+      background: #15be77;
     }
   }
   .seact_icon {
@@ -34,14 +32,15 @@
 
   .active {
     background: #f4f7fd;
-    color: #000;
     border-color: var(--inputColor);
+    background-color: #15be77;
+    color: #fff;
     a {
-      color: #000;
+      color: #444 !important;
     }
     &:hover {
       background: #f4f7fd;
-      color: #000;
+      color: #444 !important;
     }
   }
 }

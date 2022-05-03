@@ -50,6 +50,8 @@ const ModalInputs = (props) => {
         </div>
       );
       break;
+    case TEXTAREA:
+      input = <textarea name="" id="" cols="30" rows="10"></textarea>;
     case NUMBER:
       input = <input type="number" />;
       break;

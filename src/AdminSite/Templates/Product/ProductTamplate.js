@@ -65,7 +65,7 @@ export const ProductTamplate = {
           type: TEXTAREA,
           placeholder: "Izoh",
           gridColumn: "1 / 10",
-          gridRow: "3 / 3",
+          gridRow: "3 / 4",
         },
       ],
     },

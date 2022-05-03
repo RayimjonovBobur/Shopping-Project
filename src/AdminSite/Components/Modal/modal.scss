@@ -26,10 +26,10 @@
     }
   }
   .header-modal_icon {
-    background: red;
+    // background: red;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    width: 23px;
+    height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,5 +72,19 @@ label {
   .modal-dialog {
     max-width: none !important;
     margin: 1.75rem auto;
+  }
+}
+
+.save {
+  background: #1ecd83;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1em;
+  cursor: pointer;
+  &:hover {
+    background: #1ecd83;
+    color: #fff;
   }
 }
