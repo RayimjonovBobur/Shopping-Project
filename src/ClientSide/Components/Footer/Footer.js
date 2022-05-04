@@ -89,9 +89,9 @@ function Footer() {
           ) : null}
           <div className="footer-bottom">
             <div className="row mb-5">
-              <div className="col-lg-6">
-                <div className="footer-content-item d-flex">
-                  <div className="col-lg-6 footer-content-text_1">
+              <div className="col-lg-4">
+                <div className="footer-content-item">
+                  <div className="footer-content-text_1">
                     <div className="mb-3">
                       <Logo />
                     </div>
@@ -117,19 +117,19 @@ function Footer() {
                     </div>
                     {/* </ul> */}
                   </div>
-                  <div className="col-lg-6 footer-content-text_2">
-                    <ul>
-                      <div className="fs-5 mb-3 fw-normal">Help</div>
-                      <li href="/">Privacy Policy</li>
-                      <li href="/">Shipping & Delivery</li>
-                      <li href="/">Refund Policy</li>
-                      <li href="/">Track Your Order</li>
-                    </ul>
-                  </div>
                 </div>
               </div>
-              <div className="col-lg-6 footer-links">
-                <div className="col-md-6 footer-content-ul_1">
+              <div className="col-lg-8 footer-links">
+                <div className="col-md-4 footer-content-text_2">
+                  <ul>
+                    <div className="fs-5 mb-3 fw-normal">Help</div>
+                    <li href="/">Privacy Policy</li>
+                    <li href="/">Shipping & Delivery</li>
+                    <li href="/">Refund Policy</li>
+                    <li href="/">Track Your Order</li>
+                  </ul>
+                </div>
+                <div className="col-md-4 footer-content-ul_1">
                   <ul>
                     <div className="fs-5 mb-3">Store</div>
                     <li href="/">Furniture</li>
@@ -138,7 +138,7 @@ function Footer() {
                     <li href="/">Other</li>
                   </ul>
                 </div>
-                <div className="col-md-6 footer-content-ul_2">
+                <div className="col-md-4 footer-content-ul_2 pl-0">
                   <ul>
                     <div className="fs-5 mb-3">Supports</div>
                     <li href="/">Feedbcak</li>

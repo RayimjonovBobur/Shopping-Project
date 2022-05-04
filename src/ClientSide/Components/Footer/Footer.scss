@@ -101,17 +101,22 @@
   .footer-bottom-little {
     text-align: right;
   }
+  .footer-links {
+    display: flex;
+  }
+  .footer-content-item {
+    padding: 0px 32px;
+  }
+  .footer-links div {
+    width: 20em;
+  }
 }
 
-.footer-links {
-  display: flex;
-}
 @media (max-width: 480px) {
   .footer-links {
     display: block;
   }
   .footer-content-text_2 {
-    margin-left: -27px;
     margin-top: 20px;
   }
   .footer-icon {
@@ -125,6 +130,15 @@
     margin-left: 20px;
   }
   .footer-bottom-little {
-    text-align: left !important;
+    text-align: center !important;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+  .footer-links {
+    display: block !important;
+  }
+  .footer-links div {
+    width: auto !important;
   }
 }
