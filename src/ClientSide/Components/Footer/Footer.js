@@ -4,12 +4,16 @@ import app from "../../../assates/images/app.png";
 import {
   AppStore,
   Email,
+  Facebook,
   Fecebook,
   GooglePlay,
   Instagram,
+  InstagramIcon,
   Location,
   Phone,
+  Pinterest,
   Telegram,
+  Twitter,
 } from "../../utilities/icons";
 import "./Footer.scss";
 import SliderFooter from "./SliderFooter";
@@ -83,60 +87,82 @@ function Footer() {
               </div>
             </div>
           ) : null}
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="footer-content-item d-flex">
-                <div className="col-md-6 footer-content-text_1">
-                  <Logo />
-                  <p>
-                    Funking is the a popular Ecommerce site. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  </p>
+          <div className="footer-bottom">
+            <div className="row mb-5">
+              <div className="col-lg-6">
+                <div className="footer-content-item d-flex">
+                  <div className="col-md-6 footer-content-text_1">
+                    <div className="mb-3">
+                      <Logo />
+                    </div>
+                    {/* <ul> */}
+                    <li className="fs-6">
+                      Funking is the a popular Ecommerce site. Lorem ipsum dolor
+                      sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor
+                    </li>
+                    <div className="">
+                      <span className="m-lg-1">
+                        <Facebook />
+                      </span>
+                      <span className="m-lg-1">
+                        <Twitter />
+                      </span>
+                      <span className="m-lg-1">
+                        <InstagramIcon />
+                      </span>
+                      <span className="m-lg-1">
+                        <Pinterest />
+                      </span>
+                    </div>
+                    {/* </ul> */}
+                  </div>
+                  <div className="col-md-6 footer-content-text_2">
+                    <ul>
+                      <div className="fs-5 mb-3 fw-normal">Help</div>
+                      <li href="/">Privacy Policy</li>
+                      <li href="/">Shipping & Delivery</li>
+                      <li href="/">Refund Policy</li>
+                      <li href="/">Track Your Order</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="col-md-6 footer-content-text_2">
+              </div>
+              <div className="col-lg-6 d-flex">
+                <div className="col-md-6 footer-content-ul_1">
                   <ul>
-                    <strong>Help</strong>
-                    <li href="/">Privacy Policy</li>
-                    <li href="/">Shipping & Delivery</li>
-                    <li href="/">Refund Policy</li>
-                    <li href="/">Track Your Order</li>
+                    <div className="fs-5 mb-3">Store</div>
+                    <li href="/">Furniture</li>
+                    <li href="/">Tabble</li>
+                    <li href="/">Sofa</li>
+                    <li href="/">Other</li>
+                  </ul>
+                </div>
+                <div className="col-md-6 footer-content-ul_2">
+                  <ul>
+                    <div className="fs-5 mb-3">Supports</div>
+                    <li href="/">Feedbcak</li>
+                    <li href="/">Contact us</li>
+                    <li href="/">Download app</li>
+                    <li href="/">Terms conditins</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 d-flex">
-              <div className="col-md-6 footer-content-ul_1">
-                <ul>
-                  <strong>Store</strong>
-                  <li href="/">Furniture</li>
-                  <li href="/">Tabble</li>
-                  <li href="/">Sofa</li>
-                  <li href="/">Other</li>
-                </ul>
+
+            <hr className="m-6" />
+            <div className="footer-container-bottom-bit d-flex">
+              <div className="col-md-6">
+                {" "}
+                <p className={"footer-text"}>
+                  © 2021 Funking - All rights reserved.
+                </p>
               </div>
-              <div className="col-md-6 footer-content-ul_2">
-                <ul>
-                  <strong>Supports</strong>
-                  <li href="/">Feedbcak</li>
-                  <li href="/">Contact us</li>
-                  <li href="/">Download app</li>
-                  <li href="/">Terms conditins</li>
-                </ul>
+              <div className="col-md-6 text-end">
+                <span className="m-4">Privacy</span>
+                <span className="m-4">Security</span>
+                <span className="m-4">Terms</span>
               </div>
-            </div>
-          </div>
-          <hr className="m-6" />
-          <div className="footer-container-bottom-bit d-flex">
-            <div className="col-md-6">
-              {" "}
-              <p className={"footer-text"}>
-                © 2021 Funking - All rights reserved.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <span>Privacy</span>
-              <span>Security</span>
-              <span>Terms</span>
             </div>
           </div>
         </div>

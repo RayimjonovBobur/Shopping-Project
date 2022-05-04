@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap);
+
 .footer {
   padding-bottom: 1rem;
   .footer-reklama {
@@ -56,6 +58,33 @@
     }
   }
 }
+.footer-bottom {
+  // background-color: rgb(201, 199, 199);
+  // width: 167px;
+  height: 200px;
+  left: 558px;
+  top: 6097.22px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #555555;
+  .footer-content-text_1 li {
+    list-style: none !important;
+  }
+  .footer-content-text_2 ul {
+    list-style: none;
+  }
+  .footer-content-ul_1 ul {
+    list-style: none;
+  }
+  .footer-content-ul_2 ul {
+    list-style: none;
+  }
+}
+
 @media (max-width: 480px) {
   .footer-content-icon {
     display: block !important;
@@ -64,4 +93,3 @@
     }
   }
 }
-
