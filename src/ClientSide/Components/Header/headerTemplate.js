@@ -1,38 +1,22 @@
 export const headerTemplate = [
   {
-    text: "Barcha bo`limlar",
+    text: "Home",
     to: "/",
   },
   {
-    text: "Yangiliklar",
+    text: "Shop",
     to: "/news",
   },
   {
-    text: "Yangi kelganlar",
+    text: "Blog",
     to: "/newcomers",
   },
   {
-    text: "Chegirmalar",
+    text: "About",
     to: "/discounts",
   },
   {
-    text: "Bo'lib to'lash",
+    text: "Contact Us",
     to: "/payininstallments",
-  },
-  {
-    text: "Kitoblar",
-    to: "/books",
-  },
-  {
-    text: "Mebel",
-    to: "/furniture",
-  },
-  {
-    text: "Telefonlar va gadjetlar",
-    to: "/phone",
-  },
-  {
-    text: "Konditsionerlar",
-    to: "/airconditioners",
   },
 ];

@@ -138,16 +138,12 @@ hr {
 }
 
 @media (max-width: 901px) {
-  .col-md-3 {
-    display: none;
-  }
   .col-md-9 {
     width: 100%;
     justify-content: center;
     margin: auto;
   }
   .footer-content-items .footer-content-item {
-    background: white;
     border-radius: 20px;
     display: grid !important;
     justify-content: space-evenly;

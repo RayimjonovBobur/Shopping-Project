@@ -2,11 +2,12 @@ import React from "react";
 import { Seacrch } from "../../../assates/icons/Icons";
 import { IconUser, Logo, NewIcon1, NewIcon2 } from "../../utilities/icons";
 import "./header1.scss";
+import { headerTemplate } from "./headerTemplate";
 
 function Header1() {
   return (
     <div className="background">
-      <div className="header-top">
+      {/* <div className="header-top">
         <div className="container header-top">
           <div className="site-header">
             <span>Onlayn do'konimizga xush kelibsiz</span>
@@ -21,7 +22,7 @@ function Header1() {
             | <span>Login or Sign up</span>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container">
         <div className="header-main">
           <div className="site-header_logo">
@@ -34,11 +35,6 @@ function Header1() {
               placeholder="Qidirish"
               aria-label="Search here..."
             />
-            <select name="" id="" className="header-select">
-              <option value="Categories">Categories</option>
-              <option value="Categories">Categories</option>
-              <option value="Categories">Categories</option>
-            </select>
             <span>
               <Seacrch />
             </span>
@@ -57,30 +53,28 @@ function Header1() {
           </div>
         </div>
       </div>
-      <div className="navbar-content ">
+      {/* <div className="navbar-content ">
         <div className="container d-flex">
-          <button className="btn ">All Collections</button>
+          <button className="btn ">
+            <div class="header-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            All Collections
+          </button>
+
           <nav className="navbar_link">
             <ul>
-              <li className="nav-items">
-                <a href="#">Home</a>
-              </li>{" "}
-              <li className="nav-items">
-                <a href="#">Shop</a>
-              </li>{" "}
-              <li className="nav-items">
-                <a href="#">Blog </a>
-              </li>
-              <li className="nav-items">
-                <a href="#">About</a>
-              </li>
-              <li className="nav-items">
-                <a href="#">Contact Us</a>
-              </li>
+              {headerTemplate?.map((page, i) => (
+                <li className="nav-items">
+                  <a href="#">{page.text}</a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
