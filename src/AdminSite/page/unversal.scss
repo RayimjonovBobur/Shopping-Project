@@ -21,7 +21,8 @@
     color: #333;
     &:hover {
       border-color: var(--inputColor);
-      background: #15be77;
+      background: #f4f7fd;
+      color: #333;
     }
   }
   .seact_icon {
@@ -31,16 +32,14 @@
   }
 
   .active {
-    background: #f4f7fd;
     border-color: var(--inputColor);
-    background-color: #15be77;
+    background: #15be77;
     color: #fff;
     a {
       color: #444 !important;
     }
     &:hover {
       background: #f4f7fd;
-      color: #444 !important;
     }
   }
 }
