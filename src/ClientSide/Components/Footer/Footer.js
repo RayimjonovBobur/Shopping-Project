@@ -91,7 +91,7 @@ function Footer() {
             <div className="row mb-5">
               <div className="col-lg-6">
                 <div className="footer-content-item d-flex">
-                  <div className="col-md-6 footer-content-text_1">
+                  <div className="col-lg-6 footer-content-text_1">
                     <div className="mb-3">
                       <Logo />
                     </div>
@@ -117,7 +117,7 @@ function Footer() {
                     </div>
                     {/* </ul> */}
                   </div>
-                  <div className="col-md-6 footer-content-text_2">
+                  <div className="col-lg-6 footer-content-text_2">
                     <ul>
                       <div className="fs-5 mb-3 fw-normal">Help</div>
                       <li href="/">Privacy Policy</li>
@@ -128,7 +128,7 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 d-flex">
+              <div className="col-lg-6 footer-links">
                 <div className="col-md-6 footer-content-ul_1">
                   <ul>
                     <div className="fs-5 mb-3">Store</div>
@@ -151,14 +151,14 @@ function Footer() {
             </div>
 
             <hr className="m-6" />
-            <div className="footer-container-bottom-bit d-flex">
+            <div className="footer-container-bottom-bit">
               <div className="col-md-6">
                 {" "}
-                <p className={"footer-text"}>
+                <p className="footer-text">
                   © 2021 Funking - All rights reserved.
                 </p>
               </div>
-              <div className="col-md-6 text-end">
+              <div className="col-md-6 footer-bottom-little">
                 <span className="m-4">Privacy</span>
                 <span className="m-4">Security</span>
                 <span className="m-4">Terms</span>

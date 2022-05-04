@@ -95,13 +95,36 @@
   .footer-icon {
     cursor: pointer;
   }
+  .footer-container-bottom-bit {
+    display: flex;
+  }
+  .footer-bottom-little {
+    text-align: right;
+  }
 }
 
+.footer-links {
+  display: flex;
+}
 @media (max-width: 480px) {
-  .footer-content-icon {
+  .footer-links {
+    display: block;
+  }
+  .footer-content-text_2 {
+    margin-left: -27px;
+    margin-top: 20px;
+  }
+  .footer-icon {
+    margin-top: 10px;
+  }
+  .footer-container-bottom-bit {
     display: block !important;
-    .footer-content-icons {
-      margin-top: 12px;
-    }
+  }
+  .footer-text {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .footer-bottom-little {
+    text-align: left !important;
   }
 }
