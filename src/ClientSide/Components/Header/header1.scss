@@ -30,22 +30,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  padding: 0.8rem 0;
   .site-header_form {
     border: 2px solid #7ac751;
     border-radius: 6px;
     display: flex;
+    width: 30%;
     input {
       border: none;
-      padding: 0.4rem;
+      padding: 0.4rem 0.8rem;
       border-radius: 6px;
       outline: none;
-    }
-    select {
-      border: none;
-      outline: none;
-      border-left: 1px solid #e3e3e3;
-      padding: 0 0.3rem;
+      width: 100%;
     }
     span {
       background: #7ac751;
@@ -70,25 +66,30 @@
   }
 }
 
-.navbar-content {
-  background: #f7f8fa;
-  height: 40px;
-  button {
-    background: #7ac751;
-    color: white;
-    padding: 0 1.5rem;
-  }
+@media (max-width: 768px) {
   .navbar_link {
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      padding-top: 5px;
-      li {
-        list-style: none;
-        a {
-          color: black;
-        }
+    display: none;
+  }
+  .header-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    .site-header_form {
+      border: 1.5px solid #7ac751;
+      width: 100%;
+    }
+    .site-header_icon {
+      position: absolute;
+      top: 0;
+      right: 8px;
+      .icon {
+        position: absolute;
+        top: 4px;
+        left: 20px;
+        border-radius: 50%;
+        font-size: 0.6rem;
+        padding: 0 0.3rem;
       }
     }
   }
