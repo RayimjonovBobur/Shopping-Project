@@ -7,7 +7,7 @@
   --border-bottom: 1px solid #e6e6e6;
   --card-padding: 10px 20px;
   --line-height: 19px;
-  --border-radius: 20px;
+  --border-radius: 15px;
   --marginTop: 12px;
   --card-left: 16px;
 }
@@ -44,10 +44,10 @@ body {
   background-color: #f4f7fd;
 }
 
-*:focus {
-  outline: 3px dotted #7ac751;
-  outline-offset: 3px;
-}
+// *:focus {
+//   outline: 3px dotted #7ac751;
+//   outline-offset: 3px;
+// }
 
 .bg-light {
   --bs-bg-opacity: 1;
@@ -70,11 +70,6 @@ hr {
 }
 
 @media (max-width: 820px) {
-  .header .header-top-list {
-    // margin-top: 15px;
-    // margin-left: 220px;
-  }
-
   .hidden2 {
     display: none;
   }
@@ -111,11 +106,6 @@ hr {
 
   .navbar > .container-fluid {
     display: flex;
-  }
-
-  .header .header-top-list {
-    // margin-top: 15px;
-    // margin-left: 220px;
   }
 
   .container-fluid {
@@ -182,9 +172,6 @@ hr {
   .hidden1 {
     display: block !important;
   }
-  // .header .header-top-list {
-  //   margin-left: 35px;
-  // }
 
   .hiddesn2 .navbar-collapse {
     display: block !important;
@@ -394,16 +381,12 @@ hr {
       }
 
       .card-movement {
-        // margin-left: var(--card-left);
-        // margin-top: 23em;
-        // margin-bottom: 33px;
         height: 45px;
         a {
           color: #000;
           margin-left: auto;
         }
         .product-item-basket {
-          // margin-left: 50px;
           border: 1px solid #babcc4;
           padding: 5px;
           border-radius: 50%;
@@ -506,11 +489,6 @@ hr {
     -webkit-transform: translatey(0);
     transform: translatey(0);
   }
-
-  &:hover a.info {
-    // -webkit-transition-delay: 0.2s;
-    // transition-delay: 0.2s;
-  }
 }
 
 .basket-btn {
@@ -521,4 +499,8 @@ hr {
 
 .hidden1 {
   display: none;
+}
+
+.offcanvas-end {
+  transform: translateY(-100%);
 }

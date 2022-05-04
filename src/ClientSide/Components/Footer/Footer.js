@@ -58,32 +58,6 @@ function Footer() {
                 <div className={"footer-content_img"}>
                   <GooglePlay />
                 </div>
-                <h6>Endi bozorga borishga hojat yo`q</h6>
-                <p> Bizda qulay narxlar va uyga yetkazib berish mavjud </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_igm"}>
-                  <GooglePlay />
-                </div>
-                <h6>Tez yetkazib berish</h6>
-                <p> Bizning xizmatimiz sizni ajablantiradi </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_img"}>
-                  <GooglePlay />
-                </div>
-                <h6>Siz uchun qulayliklar</h6>
-                <p>
-                  Nosozlik yuzaga kelganda tez rasmiylashtirish va qaytarish
-                  kafolati
-                </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_img"}>
-                  <GooglePlay />
-                </div>
-                <h6>Bo'lib to'lash</h6>
-                <p>12 yoki 18 oy davomida oldindan to'lov yo'q</p>
               </div>
             </div>
           ) : null}
@@ -149,7 +123,6 @@ function Footer() {
                 </div>
               </div>
             </div>
-
             <hr className="m-6" />
             <div className="footer-container-bottom-bit">
               <div className="col-md-6">

@@ -54,7 +54,7 @@
         box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
         ul {
           position: fixed;
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          transform: translateX(-100%);
           background: #fff;
           width: 80%;
           top: 0;
@@ -76,10 +76,10 @@
           }
         }
         .active {
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          -webkit-box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
-          -moz-box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
-          box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          transform: translateY(0%);
+          //   -webkit-box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          //   -moz-box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          //   box-shadow: 15px 0px 8px 0px rgba(34, 60, 80, 0.2);
         }
       }
     }
