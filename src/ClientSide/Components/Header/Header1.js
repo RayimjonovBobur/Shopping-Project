@@ -44,12 +44,6 @@ function Header1() {
               <NewIcon1 />
               <span className="icon">4</span>
             </span>
-            <span>
-              <NewIcon2 />
-            </span>
-            <span>
-              <IconUser />
-            </span>
           </div>
         </div>
       </div>

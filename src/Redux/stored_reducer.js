@@ -4,7 +4,7 @@ export const allData = createSlice({
   name: "Admin panel",
   initialState: {
     values: {},
-    active: null,
+    active: 0,
     currentPage: {},
   },
   reducers: {

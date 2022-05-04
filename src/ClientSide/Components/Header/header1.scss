@@ -30,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 0;
+  padding: 0.4rem 0;
   .site-header_form {
     border: 2px solid #7ac751;
     border-radius: 6px;
@@ -48,11 +48,14 @@
       padding: 0 0.8rem;
       padding-top: 4px;
       cursor: pointer;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 4px;
     }
   }
 
   .site-header_icon {
     position: relative;
+    cursor: pointer;
     .icon {
       position: absolute;
       top: -6px;
@@ -76,13 +79,13 @@
     align-items: flex-start;
     gap: 10px;
     .site-header_form {
-      border: 1.5px solid #7ac751;
+      border: 1.2px solid #7ac751;
       width: 100%;
     }
     .site-header_icon {
       position: absolute;
       top: 0;
-      right: 8px;
+      right: 18px;
       .icon {
         position: absolute;
         top: 4px;
