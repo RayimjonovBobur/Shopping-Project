@@ -76,12 +76,24 @@
   }
   .footer-content-text_2 ul {
     list-style: none;
+    li {
+      cursor: pointer;
+    }
   }
   .footer-content-ul_1 ul {
     list-style: none;
+    li {
+      cursor: pointer;
+    }
   }
   .footer-content-ul_2 ul {
     list-style: none;
+    li {
+      cursor: pointer;
+    }
+  }
+  .footer-icon {
+    cursor: pointer;
   }
 }
 

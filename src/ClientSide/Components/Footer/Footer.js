@@ -101,7 +101,7 @@ function Footer() {
                       sit amet, consectetur adipiscing elit, sed do eiusmod
                       tempor
                     </li>
-                    <div className="">
+                    <div className="footer-icon">
                       <span className="m-lg-1">
                         <Facebook />
                       </span>
