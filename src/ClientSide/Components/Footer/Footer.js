@@ -3,16 +3,10 @@ import { Logo, LogoAdmin } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
   AppStore,
-  Email,
   Facebook,
-  Fecebook,
   GooglePlay,
-  Instagram,
   InstagramIcon,
-  Location,
-  Phone,
   Pinterest,
-  Telegram,
   Twitter,
 } from "../../utilities/icons";
 import "./Footer.scss";
