@@ -5,6 +5,9 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store";
 import { BrowserRouter as Router } from "react-router-dom";
+// import { getTotals } from "./Redux/stored_reducer";
+
+// store.dispatch(getTotals());
 
 ReactDOM.render(
   <React.StrictMode>

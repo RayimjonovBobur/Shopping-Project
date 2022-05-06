@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import komp from "../../../assates/images/komp.jpg";
 import komp1 from "../../../assates/images/komp1.jpeg";
 import komp2 from "../../../assates/images/komp2.webp";
 import komp3 from "../../../assates/images/komp3.jpg";
 import "../../../App.scss";
 import { Link } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import { getTotals } from "../../../Redux/stored_reducer";
 
 const Card = () => {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getTotals());
+  // }, [dispatch]);
+
   return (
     <div className="container">
       <div className="row">

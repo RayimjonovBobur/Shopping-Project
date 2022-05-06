@@ -3,16 +3,10 @@ import { Logo, LogoAdmin } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
   AppStore,
-  Email,
   Facebook,
-  Fecebook,
   GooglePlay,
-  Instagram,
   InstagramIcon,
-  Location,
-  Phone,
   Pinterest,
-  Telegram,
   Twitter,
 } from "../../utilities/icons";
 import "./Footer.scss";
@@ -58,32 +52,6 @@ function Footer() {
                 <div className={"footer-content_img"}>
                   <GooglePlay />
                 </div>
-                <h6>Endi bozorga borishga hojat yo`q</h6>
-                <p> Bizda qulay narxlar va uyga yetkazib berish mavjud </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_igm"}>
-                  <GooglePlay />
-                </div>
-                <h6>Tez yetkazib berish</h6>
-                <p> Bizning xizmatimiz sizni ajablantiradi </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_img"}>
-                  <GooglePlay />
-                </div>
-                <h6>Siz uchun qulayliklar</h6>
-                <p>
-                  Nosozlik yuzaga kelganda tez rasmiylashtirish va qaytarish
-                  kafolati
-                </p>
-              </div>
-              <div className={"footer-content-text"}>
-                <div className={"footer-content_img"}>
-                  <GooglePlay />
-                </div>
-                <h6>Bo'lib to'lash</h6>
-                <p>12 yoki 18 oy davomida oldindan to'lov yo'q</p>
               </div>
             </div>
           ) : null}
@@ -149,13 +117,16 @@ function Footer() {
                 </div>
               </div>
             </div>
-
             <hr className="m-6" />
             <div className="footer-container-bottom-bit">
               <div className="col-md-6">
                 {" "}
                 <p className="footer-text">
-                  © 2021 Funking - All rights reserved.
+<<<<<<< HEAD
+                  © 2022 Funking - All rights reserved.
+=======
+                  © 2022  Funking - All rights reserved.
+>>>>>>> 2bd9f763c503a9c195185d7ff7548f8972fc96e2
                 </p>
               </div>
               <div className="col-md-6 footer-bottom-little">

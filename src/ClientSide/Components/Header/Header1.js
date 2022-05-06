@@ -1,6 +1,7 @@
 import React from "react";
 import { Seacrch } from "../../../assates/icons/Icons";
 import { IconUser, Logo, NewIcon1, NewIcon2 } from "../../utilities/icons";
+import Basket from "../Basket/Basket";
 import "./header1.scss";
 import { headerTemplate } from "./headerTemplate";
 
@@ -40,16 +41,7 @@ function Header1() {
             </span>
           </div>
           <div className="site-header_icon d-flex gap-3">
-            <span>
-              <NewIcon1 />
-              <span className="icon">4</span>
-            </span>
-            <span>
-              <NewIcon2 />
-            </span>
-            <span>
-              <IconUser />
-            </span>
+            <Basket />
           </div>
         </div>
       </div>

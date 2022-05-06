@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { setActive } from "../../../Redux/stored_reducer";
-import { Cart } from "../../utilities/icons";
+import { Cart, NewIcon1 } from "../../utilities/icons";
 
 const Basket = ({ headerTemplate }) => {
   const { active } = useSelector((state) => state?.users_reducer);
@@ -21,8 +21,8 @@ const Basket = ({ headerTemplate }) => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <Cart /> <br />
-        <span>Savatcha</span>
+        <NewIcon1 />
+        <span className="icon">4</span> 
       </button>
       <div
         class="offcanvas offcanvas-end"

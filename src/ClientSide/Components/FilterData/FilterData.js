@@ -5,18 +5,30 @@ import Books from "../../../assates/images/kitob.jpg";
 import { XIcon } from "../../../assates/icons/Icons";
 import "../../../App.scss";
 import "./new.scss";
+import { data } from "./Data";
+import { useDispatch, useSelector } from "react-redux";
 
 const FilterData = () => {
-  const [active, setActive] = useState(false);
+  const { active } = useSelector((state) => state?.users_reducer);
+  const [isactive, setActive] = useState(false);
+  const dispatch = useDispatch();
 
   const handleClick = () => {
-    setActive(!active);
+    setActive(!isactive);
+  };
+
+  window.addEventListener("scroll", () => {
+    setActive(false);
+  });
+
+  const handleLink = (i) => {
+    dispatch(setActive(i));
   };
 
   return (
     <div>
       <div className="container">
-        <div className="d-flex">
+        <div className="site-navbar_header">
           <div className="navbar_header">
             <div className="site-navbar">
               <button className="btn button-icon " onClick={handleClick}>
@@ -28,89 +40,65 @@ const FilterData = () => {
                 All Collections
               </button>
             </div>
-            <ul className={`${active ? "active" : ""}`}>
-              <button className="header_icon " onClick={handleClick}>
-                <XIcon />
-              </button>
-              <li>
-                <a href="#">All</a>
-              </li>
-              <li>
-                <a href="#">New Arrivals</a>
-              </li>
-              <li>
-                <a href="#">Hot Sale</a>
-              </li>
-              <li>
-                <a href="#">Furniture</a>
-              </li>
-              <li>
-                <a href="#">Amrature</a>
-              </li>
-              <li>
-                <a href="#">Tabble</a>
-              </li>
-
-              <li>
-                <a href="#">Chair</a>
-              </li>
-              <li>
-                <a href="#">Sofa</a>
-              </li>
-              <li>
-                <a href="#">Mirrors</a>
-              </li>
-              <li>
-                <a href="#">Stools</a>
-              </li>
-              <li>
-                <a href="#">Benches</a>
-              </li>
-            </ul>
+            <nav className="site-navbar-nav">
+              <ul className={`${isactive ? "active" : ""}`}>
+                <button className="header_icon " onClick={handleClick}>
+                  <XIcon />
+                </button>
+                {data?.map((item, i) => (
+                  <li
+                    className={`${active == i ? "active" : ""}`}
+                    onClick={() => handleLink(i)}
+                  >
+                    <a href="#">{item?.text}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
-        </div>
-        <div className="col-md-9">
-          <div className="properties-page">
-            <div
-              id="carouselExampleFade"
-              className="carousel slide carousel-fade"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src={Kon} className="d-block w-100" alt="..." />
+          <div className="col-md-9">
+            <div className="properties-page">
+              <div
+                id="carouselExampleFade"
+                className="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={Kon} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={Maxsus} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={Books} className="d-block w-100" alt="..." />
+                  </div>
                 </div>
-                <div className="carousel-item">
-                  <img src={Maxsus} className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src={Books} className="d-block w-100" alt="..." />
-                </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleFade"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
               </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleFade"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
