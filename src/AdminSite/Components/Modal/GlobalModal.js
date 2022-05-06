@@ -24,6 +24,7 @@ function GlobalModal() {
     }
   };
   const handleSubmit = () => {
+
     if (item) {
       dispatch(setValues([...values, data]));
     }

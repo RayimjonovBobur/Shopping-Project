@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import komp from "../../../assates/images/komp.jpg";
 import komp1 from "../../../assates/images/komp1.jpeg";
 import komp2 from "../../../assates/images/komp2.webp";
 import komp3 from "../../../assates/images/komp3.jpg";
 import "../../../App.scss";
 import { Link } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import { getTotals } from "../../../Redux/stored_reducer";
 
 const Card = () => {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getTotals());
+  // }, [dispatch]);
+
+
   return (
     <div className="container">
       <div className="row">
@@ -127,88 +135,6 @@ const Card = () => {
                 </label>
               </div>
             </div>
-            {/* <div className="panel panel-default sidebar-menu wow fadeInRight animated">
-                <div className="panel-heading">
-                  <h3 className="panel-title">Recommended</h3>
-                </div>
-                <div className="panel-body recent-property-widget">
-                  <ul>
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-2.jpg" />
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          {" "}
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="col-md-3 col-sm-3  col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-1.jpg" />
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          {" "}
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-3.jpg" />
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          {" "}
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-2.jpg" />
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          {" "}
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
           </div>
         </div>
         <div className="col-md-9 card-container mb-3 mt-4">

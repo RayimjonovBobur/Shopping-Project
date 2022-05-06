@@ -128,7 +128,7 @@ function Footer() {
               <div className="col-md-6">
                 {" "}
                 <p className="footer-text">
-                  © 2022  Funking - All rights reserved.
+                  © 2022 Funking - All rights reserved.
                 </p>
               </div>
               <div className="col-md-6 footer-bottom-little">
