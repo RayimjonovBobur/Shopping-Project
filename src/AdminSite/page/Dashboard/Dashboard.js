@@ -1,5 +1,4 @@
-// import React from "react";
-import React, { PureComponent } from "react";
+import React from "react";
 import { Navbar } from "../Navbar/Navbar";
 import {
   BarChart,
@@ -8,7 +7,6 @@ import {
   YAxis,
   CartesianGrid,
   Legend,
-  Cell,
   Tooltip,
   PieChart,
   Pie,
@@ -61,6 +59,7 @@ const data01 = [
   { name: "Group E", value: 278 },
   { name: "Group F", value: 189 },
 ];
+
 const data02 = [
   { name: "Group A", value: 2400 },
   { name: "Group B", value: 4567 },
@@ -71,7 +70,6 @@ const data02 = [
 ];
 
 function Dashboard() {
-  // static demoUrl = 'https://codesandbox.io/s/tiny-area-chart-uw0k8';
   return (
     <>
       <Navbar />
