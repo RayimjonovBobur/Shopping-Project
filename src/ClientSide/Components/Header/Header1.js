@@ -1,9 +1,9 @@
 import React from "react";
 import { Seacrch } from "../../../assates/icons/Icons";
-import { IconUser, Logo, NewIcon1, NewIcon2 } from "../../utilities/icons";
+import { Logo } from "../../utilities/icons";
 import Basket from "../Basket/Basket";
 import "./header1.scss";
-import { headerTemplate } from "./headerTemplate";
+// import { headerTemplate } from "./headerTemplate";
 
 function Header1() {
   return (
