@@ -6,6 +6,8 @@ export const allData = createSlice({
     values: {},
     active: 0,
     currentPage: {},
+    cartTotalQuantity: 0,
+    cartTotalAmount: 0,
   },
   reducers: {
     setValues: (state, { payload }) => {
@@ -22,10 +24,30 @@ export const allData = createSlice({
       console.log(payload);
       state.currentPage.isOpenModal = payload;
     },
+    // getTotals(state, action) {
+    //   let { total, quantity } = state.cartItems.reduce(
+    //     (cartTotal, cartItem) => {
+    //       const { price, cartQuantity } = cartItem;
+    //       const itemTotal = price * cartQuantity;
+
+    //       cartTotal.total += itemTotal;
+    //       cartTotal.quantity += cartQuantity;
+
+    //       return cartTotal;
+    //     },
+    //     {
+    //       total: 0,
+    //       quantity: 0,
+    //     }
+    //   );
+    //   total = parseFloat(total.toFixed(2));
+    //   state.cartTotalQuantity = quantity;
+    //   state.cartTotalAmount = total;
+    // },
   },
 });
 
-export const { setValues, setActive, setCurrenPage, toggleModal } =
+export const { setValues, setActive, setCurrenPage, toggleModal, getTotals } =
   allData.actions;
 
 export default allData.reducer;
