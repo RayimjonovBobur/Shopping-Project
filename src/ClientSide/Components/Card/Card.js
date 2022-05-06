@@ -1,8 +1,4 @@
-import React, { useEffect } from "react";
-import komp from "../../../assates/images/komp.jpg";
-import komp1 from "../../../assates/images/komp1.jpeg";
-import komp2 from "../../../assates/images/komp2.webp";
-import komp3 from "../../../assates/images/komp3.jpg";
+import React from "react";
 import "../../../App.scss";
 import { Link } from "react-router-dom";
 import { CardData } from "./CardData";
