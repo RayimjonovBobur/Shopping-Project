@@ -1,5 +1,5 @@
 import Customer from "../AdminSite/page/Customer/Customer";
-import Doshboard from "../AdminSite/page/Doshboard/Doshboard";
+import Dashboard from "../AdminSite/page/Dashboard/Dashboard";
 import Kategorya from "../AdminSite/page/Kategorya/Kategorya";
 import Partner from "../AdminSite/page/Partner/Partner";
 import Product from "../AdminSite/page/Product/Product";
@@ -24,7 +24,7 @@ export const pages = [
   },
   {
     path: "/admin",
-    page: <Doshboard />,
+    page: <Dashboard />,
   },
   {
     path: "/admin/category",
