@@ -122,7 +122,11 @@ function Footer() {
               <div className="col-md-6">
                 {" "}
                 <p className="footer-text">
+<<<<<<< HEAD
                   © 2022 Funking - All rights reserved.
+=======
+                  © 2022  Funking - All rights reserved.
+>>>>>>> 2bd9f763c503a9c195185d7ff7548f8972fc96e2
                 </p>
               </div>
               <div className="col-md-6 footer-bottom-little">
