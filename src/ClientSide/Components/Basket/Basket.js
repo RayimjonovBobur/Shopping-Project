@@ -6,7 +6,7 @@ import { setActive } from "../../../Redux/stored_reducer";
 import { Cart, NewIcon1 } from "../../utilities/icons";
 import "./basket.scss";
 
-const Basket = ({ headerTemplate }) => {
+const Basket = () => {
   const { active, product } = useSelector((state) => state?.users_reducer);
   const dispatch = useDispatch();
 
