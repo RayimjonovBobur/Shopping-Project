@@ -24,14 +24,13 @@ function GlobalModal() {
     }
   };
   const handleSubmit = () => {
-
     if (item) {
       dispatch(setValues([...values, data]));
     }
     setItem(false);
   };
   return (
-    <>
+    <div className="admin_modal">
       <div
         class="modal fade"
         id="exampleModalToggle"
@@ -107,7 +106,7 @@ function GlobalModal() {
       >
         Qo'shish
       </a>
-    </>
+    </div>
   );
 }
 

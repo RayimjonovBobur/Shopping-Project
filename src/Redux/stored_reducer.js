@@ -8,6 +8,7 @@ export const allData = createSlice({
     currentPage: {},
     cartTotalQuantity: 0,
     cartTotalAmount: 0,
+    product: [],
   },
   reducers: {
     setValues: (state, { payload }) => {
@@ -23,6 +24,9 @@ export const allData = createSlice({
     toggleModal: (state, { payload }) => {
       console.log(payload);
       state.currentPage.isOpenModal = payload;
+    },
+    setProduct: (state, { payload }) => {
+      state.product = payload;
     },
     // getTotals(state, action) {
     //   let { total, quantity } = state.cartItems.reduce(
@@ -47,7 +51,13 @@ export const allData = createSlice({
   },
 });
 
-export const { setValues, setActive, setCurrenPage, toggleModal, getTotals } =
-  allData.actions;
+export const {
+  setValues,
+  setActive,
+  setCurrenPage,
+  toggleModal,
+  getTotals,
+  setProduct,
+} = allData.actions;
 
 export default allData.reducer;
