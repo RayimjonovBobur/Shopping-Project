@@ -74,7 +74,7 @@ function Dashboard() {
     <>
       <Navbar />
       <div className="main-nav ">
-        <PieChart width={1000} height={270}>
+        <PieChart width={1000} height={250}>
           <Pie
             dataKey="value"
             isAnimationActive={false}
@@ -95,7 +95,7 @@ function Dashboard() {
           />
           <Tooltip />
         </PieChart>
-        <BarChart width={1000} height={300} data={data}>
+        <BarChart width={1000} height={280} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />

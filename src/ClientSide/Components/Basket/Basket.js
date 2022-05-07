@@ -1,11 +1,13 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Delete } from "../../../assates/icons/Icons";
 import { setActive } from "../../../Redux/stored_reducer";
 import { Cart, NewIcon1 } from "../../utilities/icons";
+import "./basket.scss";
 
 const Basket = ({ headerTemplate }) => {
-  const { active } = useSelector((state) => state?.users_reducer);
+  const { active, product } = useSelector((state) => state?.users_reducer);
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
@@ -14,36 +16,89 @@ const Basket = ({ headerTemplate }) => {
   return (
     <>
       <button
-        className="basket-btn"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        type="button"
+        class="basket-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
       >
-        <NewIcon1 />
-        <span className="icon">4</span> 
-      </button>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-        style={{ margin: "auto" }}
-      >
-        <div class="offcanvas-header">
-          <h1>Savatda bor maxsulotlar royxati</h1>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+        <div className="korzinka">
+          <NewIcon1 />
+          <span>Savatcha</span>
         </div>
-        <div class="offcanvas-body">
-          <ul className="navbar-nav ">
-            <li className="nav-item">MacBook i7 maxsulotlar</li>
-          </ul>
+        <span className="icon">{product?.length}</span>
+      </button>
+
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style={{ width: "800px" }}>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Savatcha
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              {product?.length == 0 ? (
+                <>
+                  <div className="site-korzinka">
+                    <NewIcon1 />
+                    <p>Savatchada hozirda hech nima yo'q</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {product?.map((item) => (
+                    <div className="site-product_content">
+                      <div className="site-product_img">
+                        <img src={item?.image} alt="" />
+                      </div>
+                      <div className="site-product_items">
+                        <div>
+                          <p>{item?.name}</p>
+                          <h6>{item?.nowprice}</h6>
+                        </div>
+                        <div className="site-product_item">
+                          <div>
+                            <button className="site_btn">-</button>
+                            <span>0</span>
+                            <button className="site_btn">+</button>
+                          </div>
+                          <button className="site_btn delete_btn">
+                            <Delete />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+
+                  <div className="text-center">
+                    <button
+                      className="btn btn-outline-secondary"
+                      data-bs-toggle="modal"
+                    >
+                      Xaridlarni davom ettirish
+                    </button>
+                    <button className="btn btn-outline-primary mx-4">
+                      Sotib olish
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>

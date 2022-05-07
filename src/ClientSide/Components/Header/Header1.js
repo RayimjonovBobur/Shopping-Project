@@ -42,6 +42,7 @@ function Header1() {
           </div>
           <div className="site-header_icon d-flex gap-3">
             <Basket />
+            
           </div>
         </div>
       </div>

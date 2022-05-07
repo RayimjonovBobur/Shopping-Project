@@ -30,7 +30,7 @@ function GlobalModal() {
     setItem(false);
   };
   return (
-    <>
+    <div className="admin_modal">
       <div
         class="modal fade"
         id="exampleModalToggle"
@@ -106,7 +106,7 @@ function GlobalModal() {
       >
         Qo'shish
       </a>
-    </>
+    </div>
   );
 }
 
