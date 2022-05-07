@@ -43,6 +43,30 @@ export const allData = createSlice({
       state.cartTotalQuantity = quantity;
       state.cartTotalAmount = total;
     },
+    setDelete: (state, { payload }) => {
+      let data = state?.product?.filter((item) => item.id !== payload.id);
+      state.product = data;
+    },
+    // getTotals(state, action) {
+    //   let { total, quantity } = state.cartItems.reduce(
+    //     (cartTotal, cartItem) => {
+    //       const { price, cartQuantity } = cartItem;
+    //       const itemTotal = price * cartQuantity;
+
+    //       cartTotal.total += itemTotal;
+    //       cartTotal.quantity += cartQuantity;
+
+    //       return cartTotal;
+    //     },
+    //     {
+    //       total: 0,
+    //       quantity: 0,
+    //     }
+    //   );
+    //   total = parseFloat(total.toFixed(2));
+    //   state.cartTotalQuantity = quantity;
+    //   state.cartTotalAmount = total;
+    // },
   },
 });
 
@@ -54,6 +78,7 @@ export const {
   toggleModal,
   getTotals,
   setProduct,
+  setDelete,
 } = allData.actions;
 
 export default allData.reducer;

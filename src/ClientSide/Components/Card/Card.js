@@ -9,11 +9,14 @@ const Card = () => {
   const { product } = useSelector((state) => state?.users_reducer);
   const dispatch = useDispatch();
 
-
   const hanldeSubmit = (item) => {
-    dispatch(setProduct([...product, item]));
+    const data = product.find((list) => list.id == item.id);
+    if (data) {
+      return data;
+    } else {
+      dispatch(setProduct([...product, item]));
+    }
   };
-
 
   return (
     <div className="container">
