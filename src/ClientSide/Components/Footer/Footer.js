@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo, LogoAdmin } from "../../../assates/icons/Icons";
+import { Logo } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
   AppStore,
@@ -122,11 +122,7 @@ function Footer() {
               <div className="col-md-6">
                 {" "}
                 <p className="footer-text">
-<<<<<<< HEAD
                   © 2022 Funking - All rights reserved.
-=======
-                  © 2022  Funking - All rights reserved.
->>>>>>> 2bd9f763c503a9c195185d7ff7548f8972fc96e2
                 </p>
               </div>
               <div className="col-md-6 footer-bottom-little">

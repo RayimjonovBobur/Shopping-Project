@@ -44,7 +44,6 @@ body {
   background-color: #f4f7fd;
 }
 
-
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: #fff !important;
@@ -213,7 +212,7 @@ hr {
     justify-content: center;
     margin-bottom: 20px;
   }
-  
+
   .navbar > .container-xxl {
     flex-direction: row-reverse;
   }
@@ -496,6 +495,9 @@ hr {
   display: none;
 }
 
-.offcanvas-end {
-  transform: translateY(-100%);
+// .offcanvas-end {
+//   transform: translateY(-100%);
+// }
+.btn {
+  padding: 0.2rem 1.4rem !important;
 }

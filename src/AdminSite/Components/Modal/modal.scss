@@ -1,50 +1,50 @@
-.modal {
-  // backdrop-filter: blur(1px);
-
-  .modal-body {
-    padding: 2.5rem 1rem;
-  }
-
-  .modal-dialog {
-    .modal-content {
-      border: none;
+.admin_modal {
+  .modal {
+    .modal-body {
+      padding: 2.5rem 1rem;
     }
-    .modal-header {
-      padding: 0.3rem 0.8rem;
-      background: #1ecd83;
-      color: #fff;
-      h5 {
-        font-size: 1.1em;
+
+    .modal-dialog {
+      .modal-content {
+        border: none;
       }
-    }
-    .modal-footer {
-      display: block;
-      padding: 0.8rem 0.8rem;
-      border: none;
-      justify-content: start;
-      text-align: center;
-    }
-  }
-  .header-modal_icon {
-    // background: red;
-    border-radius: 50%;
-    width: 23px;
-    height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    &:hover {
-      svg {
-        path {
-          fill: #000;
+      .modal-header {
+        padding: 0.3rem 0.8rem;
+        background: #1ecd83;
+        color: #fff;
+        h5 {
+          font-size: 1.1em;
         }
       }
+      .modal-footer {
+        display: block;
+        padding: 0.8rem 0.8rem;
+        border: none;
+        justify-content: start;
+        text-align: center;
+      }
     }
-    svg {
-      path {
-        transition: 0.2s;
+    .header-modal_icon {
+      // background: red;
+      border-radius: 50%;
+      width: 23px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          path {
+            fill: #000;
+          }
+        }
+      }
+      svg {
+        path {
+          transition: 0.2s;
+        }
       }
     }
   }
