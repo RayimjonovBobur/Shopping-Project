@@ -38,15 +38,6 @@ export const CardData = [
       "Ноутбук Honor MagicBook X 15 Core-i3, 8GB/256GB SSD (Space Gray)",
     oldprice: "7 500 000",
     nowprice: "7 150 000",
-    image: komp3,
-  },
-  {
-    id: 4,
-    name: "Model - Honor",
-    description:
-      "Ноутбук Honor MagicBook X 15 Core-i3, 8GB/256GB SSD (Space Gray)",
-    oldprice: "7 500 000",
-    nowprice: "7 150 000",
-    image: komp3,
+    image: komp2,
   },
 ];

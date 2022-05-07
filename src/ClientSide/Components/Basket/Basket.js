@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Delete } from "../../../assates/icons/Icons";
@@ -8,11 +8,24 @@ import "./basket.scss";
 
 const Basket = () => {
   const { active, product } = useSelector((state) => state?.users_reducer);
-  const dispatch = useDispatch();
+  const [count, setCount] = useState(1);
+  const [price, setPrice] = useState(100);
+  const [activePrice, setActivePrice] = useState(100);
 
-  const handleChange = (e) => {
-    dispatch(setActive(e));
+  let incrementCount = () => {
+    if (count < 5) {
+      setCount(count + 1);
+      setActivePrice(activePrice + price);
+    }
   };
+
+  let decrementCount = () => {
+    if (count > 1) {
+      setCount(count - 1);
+      setActivePrice(activePrice - price);
+    }
+  };
+
   return (
     <>
       <button
@@ -72,9 +85,19 @@ const Basket = () => {
                         </div>
                         <div className="site-product_item">
                           <div>
-                            <button className="site_btn">-</button>
-                            <span>0</span>
-                            <button className="site_btn">+</button>
+                            <button
+                              className="site_btn"
+                              onClick={decrementCount}
+                            >
+                              -
+                            </button>
+                            <span>{count}</span>
+                            <button
+                              className="site_btn"
+                              onClick={incrementCount}
+                            >
+                              +
+                            </button>
                           </div>
                           <button className="site_btn delete_btn">
                             <Delete />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo, LogoAdmin } from "../../../assates/icons/Icons";
+import { Logo } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
   AppStore,
