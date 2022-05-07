@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Delete } from "../../../assates/icons/Icons";
-import { setActive } from "../../../Redux/stored_reducer";
+import { setActive, setDelete } from "../../../Redux/stored_reducer";
 import { Cart, NewIcon1 } from "../../utilities/icons";
 import "./basket.scss";
 
@@ -11,6 +11,7 @@ const Basket = () => {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
+  const dispatch = useDispatch();
 
   let incrementCount = () => {
     if (count < 5) {
@@ -24,6 +25,10 @@ const Basket = () => {
       setCount(count - 1);
       setActivePrice(activePrice - price);
     }
+  };
+
+  const handleDelete = (item) => {
+    dispatch(setDelete(item));
   };
 
   return (
@@ -99,7 +104,10 @@ const Basket = () => {
                               +
                             </button>
                           </div>
-                          <button className="site_btn delete_btn">
+                          <button
+                            className="site_btn delete_btn"
+                            onClick={() => handleDelete(item)}
+                          >
                             <Delete />
                           </button>
                         </div>

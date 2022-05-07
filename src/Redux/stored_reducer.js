@@ -28,6 +28,10 @@ export const allData = createSlice({
     setProduct: (state, { payload }) => {
       state.product = payload;
     },
+    setDelete: (state, { payload }) => {
+      let data = state?.product?.filter((item) => item.id !== payload.id);
+      state.product = data;
+    },
     // getTotals(state, action) {
     //   let { total, quantity } = state.cartItems.reduce(
     //     (cartTotal, cartItem) => {
@@ -58,6 +62,7 @@ export const {
   toggleModal,
   getTotals,
   setProduct,
+  setDelete,
 } = allData.actions;
 
 export default allData.reducer;
