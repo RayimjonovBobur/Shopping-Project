@@ -50,6 +50,7 @@ export const {
   setValues,
   setActive,
   setCurrenPage,
+  
   toggleModal,
   getTotals,
   setProduct,
