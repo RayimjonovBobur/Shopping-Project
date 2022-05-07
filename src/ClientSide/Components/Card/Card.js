@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "../../../App.scss";
 import { Link } from "react-router-dom";
 import { CardData } from "./CardData";
