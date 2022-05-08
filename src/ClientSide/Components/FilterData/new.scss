@@ -1,7 +1,8 @@
 .site-navbar_header {
   display: flex;
-  gap: 3rem;
+  // gap: 3rem;
   padding-top: 1rem;
+  justify-content: space-between;
   .navbar_header {
     background: #f7f8fa;
     margin-top: 5px;
@@ -85,7 +86,7 @@
       }
     }
     .button-icon {
-      padding: 0.5rem 3em;
+      padding: 0.5rem 3em !important;
       width: 100%;
     }
 

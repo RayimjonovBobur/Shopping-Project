@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../App.scss";
 import { Link } from "react-router-dom";
 import { CardData } from "./CardData";
+import { useDispatch, useSelector } from "react-redux";
+import { setProduct } from "../../../Redux/stored_reducer";
 
 const Card = () => {
-  console.log(CardData);
+  const { product } = useSelector((state) => state?.users_reducer);
+  const dispatch = useDispatch();
+
+  const hanldeSubmit = (item) => {
+    const data = product.find((list) => list.id == item.id);
+    if (data) {
+      return data;
+    } else {
+      dispatch(setProduct([...product, item]));
+    }
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -237,7 +250,11 @@ const Card = () => {
                     Sotib Olish
                   </button>
                   {/* </Link> */}
-                  <Link to="/" className="product-item-basket">
+                  <Link
+                    to="/"
+                    className="product-item-basket"
+                    onClick={() => hanldeSubmit(product)}
+                  >
                     <i className="fa-solid fa-basket-shopping"></i>
                   </Link>
                 </div>
