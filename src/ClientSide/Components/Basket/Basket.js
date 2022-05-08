@@ -69,7 +69,7 @@ const Basket = () => {
               ></button>
             </div>
             <div class="modal-body">
-              {product?.length == 0 ? (
+              {product?.length === 0 ? (
                 <>
                   <div className="site-korzinka">
                     <NewIcon1 />
