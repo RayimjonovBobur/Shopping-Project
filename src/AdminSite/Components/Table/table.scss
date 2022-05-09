@@ -5,17 +5,17 @@
 
 .table {
   thead {
+    position: sticky;
+    top: 0;
     tr {
-      position: sticky;
-      top: 0;
       border-color: #dbdbdb;
       background: #f4f7fd;
     }
   }
+
   tbody {
     border-top: none !important;
     tr {
-      border-color: #f0f0f0;
       background: #fff;
     }
     tr:nth-child(2n) {
