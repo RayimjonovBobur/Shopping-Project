@@ -47,7 +47,7 @@ const FilterData = () => {
                 </button>
                 {data?.map((item, i) => (
                   <li
-                    className={`${active == i ? "active" : ""}`}
+                    className={`${active === i ? "active" : ""}`}
                     onClick={() => handleLink(i)}
                   >
                     <a href="/">{item?.text}</a>
