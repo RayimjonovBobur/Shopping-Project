@@ -50,7 +50,7 @@ const FilterData = () => {
                     className={`${active == i ? "active" : ""}`}
                     onClick={() => handleLink(i)}
                   >
-                    <a href="#">{item?.text}</a>
+                    <a href="/">{item?.text}</a>
                   </li>
                 ))}
               </ul>
