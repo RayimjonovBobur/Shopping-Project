@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination, Navigation, Scrollbar } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { Img1, Img2, Img3, Img4, Img5 } from "../../utilities/icons";
 
 const SliderFooter = () => {
