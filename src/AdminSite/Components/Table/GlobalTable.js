@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import "./table.scss";
 
 function GlobalTable() {
-  const { currentPage, values } = useSelector((state) => state?.users_reducer);
+  const { currentPage } = useSelector((state) => state?.users_reducer);
 
   return (
     <>
