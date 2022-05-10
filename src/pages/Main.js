@@ -6,7 +6,7 @@ import Product from "../AdminSite/page/Product/Product";
 import Slider from "../AdminSite/page/Slider/Slider";
 import Books from "../ClientSide/Components/Books/Books";
 import Furniture from "../ClientSide/Components/Furniture/Furniture";
-import Header1 from "../ClientSide/Components/Header/Header1";
+import HeaderShop2 from "../ClientSide/Components/Header/HeaderShop2";
 import MinaPage from "../ClientSide/Pages/MinaPage";
 
 export const pages = [
@@ -48,6 +48,6 @@ export const pages = [
   },
   {
     path: "/header",
-    page: <Header1 />,
+    page: <HeaderShop2 />,
   },
 ];

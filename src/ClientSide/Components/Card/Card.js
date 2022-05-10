@@ -9,7 +9,7 @@ const Card = () => {
   const { product } = useSelector((state) => state?.users_reducer);
   const dispatch = useDispatch();
 
-  const hanldeSubmit = (item) => {
+  const hanldeSubmit  = (item) => {
     const data = product.find((list) => list.id == item.id);
     if (data) {
       return data;

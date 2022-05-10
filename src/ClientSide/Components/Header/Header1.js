@@ -31,7 +31,7 @@ function Header1() {
           </div>
           <div className="site-header_form">
             <input
-              className="header-search-input "
+              className="header-search-input"
               type="search"
               placeholder="Qidirish"
               aria-label="Search here..."
@@ -42,7 +42,6 @@ function Header1() {
           </div>
           <div className="site-header_icon d-flex gap-3">
             <Basket />
-            
           </div>
         </div>
       </div>

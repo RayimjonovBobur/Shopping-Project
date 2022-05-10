@@ -1,0 +1,76 @@
+.background2 {
+  background: var(--backgroundColorNew);
+  .container {
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem 0;
+      .site-header_logo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        color: #fff;
+      }
+      .site-header_form {
+        background: #354b61;
+        border-radius: 24.5px;
+        display: flex;
+        width: 50%;
+
+        input {
+          border: none;
+          padding: 0.4rem 1rem;
+          border-radius: 6px;
+          outline: none;
+          width: 100%;
+          background: transparent;
+          color: white;
+        }
+        span {
+          padding: 0 0.8rem;
+          padding-top: 4px;
+          cursor: pointer;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+
+      .site-header_icon {
+        position: relative;
+        cursor: pointer;
+        .icon {
+          position: absolute;
+          top: -5px;
+          left: 45px;
+          background: #7ac751;
+          color: white;
+          border-radius: 50%;
+          font-size: 0.58rem;
+          padding: 0 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+.site-background_img {
+  background: url(../../../assates/images/backgorund_img.svg) rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  .site-content {
+    color: #fff;
+    padding-top: 80px;
+    p {
+      width: 25%;
+    }
+    button {
+      padding: 0.4rem 3rem;
+      border-radius: 20px;
+    }
+  }
+}
