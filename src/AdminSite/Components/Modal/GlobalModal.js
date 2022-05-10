@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toast } from "react-toastify";
 import { XIcon } from "../../../assates/icons/Icons";
 import { setValues } from "../../../Redux/stored_reducer";
 import ModalInputs from "./ModalInputs";
@@ -14,7 +13,7 @@ function GlobalModal() {
 
   const haldleChange = (e) => {
     setData({ ...data, ...e });
-    if (e == "") {
+    if (e === "") {
       setItem(false);
     } else {
       setItem(true);

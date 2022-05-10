@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { Delete } from "../../../assates/icons/Icons";
-import { setActive, setDelete } from "../../../Redux/stored_reducer";
-import { Cart, NewIcon1 } from "../../utilities/icons";
+import { setDelete } from "../../../Redux/stored_reducer";
+import { NewIcon1 } from "../../utilities/icons";
 import "./basket.scss";
 
 const Basket = () => {
@@ -69,7 +68,7 @@ const Basket = () => {
               ></button>
             </div>
             <div class="modal-body">
-              {product?.length == 0 ? (
+              {product?.length === 0 ? (
                 <>
                   <div className="site-korzinka">
                     <NewIcon1 />

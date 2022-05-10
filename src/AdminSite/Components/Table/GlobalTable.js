@@ -1,18 +1,11 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Delete, Edit } from "../../../assates/icons/Icons";
-import { toggleModal } from "../../../Redux/stored_reducer";
+import { useSelector } from "react-redux";
 import "./table.scss";
 import Tbody from "./Tbody";
 import Thead from "./Thead";
 
 function GlobalTable() {
-  const { currentPage, values } = useSelector((state) => state?.users_reducer);
-  const dispatch = useDispatch();
-
-  const handleEdit = () => {
-    dispatch(toggleModal(true));
-  };
+  const { currentPage } = useSelector((state) => state?.users_reducer);
 
   return (
     <>
