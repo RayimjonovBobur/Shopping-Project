@@ -17,9 +17,9 @@ function Footer() {
     <>
       <div className="footer container">
         <div className={"footer-item"}>
-          <div className="footer-reklama ">
+          {/* <div className="footer-reklama ">
             <SliderFooter />
-          </div>
+          </div> */}
           {apple ? (
             <div className="footer-app">
               <div className="footer-app-img">
