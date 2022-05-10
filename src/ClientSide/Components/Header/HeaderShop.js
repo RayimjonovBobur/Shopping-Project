@@ -11,7 +11,7 @@ const HeaderShop = () => {
           <div className="site-header_logo">
             <strong>Onlayn</strong> <span>savdo</span>
           </div>
-          <div className="site-header-input-container">
+          <div className="site-header_form">
             <input
               className="header-search-input "
               type="search"

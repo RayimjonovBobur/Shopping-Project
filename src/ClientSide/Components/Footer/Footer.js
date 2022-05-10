@@ -6,8 +6,7 @@ import {
   Facebook,
   GooglePlay,
   InstagramIcon,
-  Pinterest,
-  Twitter,
+  TelegramIcon,
 } from "../../utilities/icons";
 import "./Footer.scss";
 import SliderFooter from "./SliderFooter";
@@ -44,7 +43,7 @@ function Footer() {
           ) : null}
         </div>
       </div>
-      <div className={"footer-content-items "}>
+      <div className={"footer-content-items footer-backgorund"}>
         <div className="container">
           {apple ? (
             <div className={"footer-content-item"}>
@@ -61,36 +60,33 @@ function Footer() {
                 <div className="footer-content-item">
                   <div className="footer-content-text_1">
                     <div className="mb-3">
-                      <Logo />
+                      <h3>
+                        Onlayn <span>savdo</span>
+                      </h3>
+                      <span style={{ marginTop: "-20px" }}>onlayn do’koni</span>
                     </div>
-                    {/* <ul> */}
-                    <li className="fs-6">
-                      Funking is the a popular Ecommerce site. Lorem ipsum dolor
-                      sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor
-                    </li>
-                    <div className="footer-icon">
-                      <span className="m-lg-1">
-                        <Facebook />
-                      </span>
-                      <span className="m-lg-1">
-                        <Twitter />
-                      </span>
-                      <span className="m-lg-1">
-                        <InstagramIcon />
-                      </span>
-                      <span className="m-lg-1">
-                        <Pinterest />
-                      </span>
+                    <div className="imsoft-text">
+                      <p>Savollar bo’yicha murojat uchun:</p>
+                      <span>info@imsoft.uz</span>
+                      <div className="footer-icon">
+                        <span className="m-lg-1">
+                          <Facebook />
+                        </span>
+                        <span className="m-lg-1">
+                          <InstagramIcon />
+                        </span>
+                        <span className="m-lg-1">
+                          <TelegramIcon />
+                        </span>
+                      </div>
                     </div>
-                    {/* </ul> */}
                   </div>
                 </div>
               </div>
               <div className="col-lg-8 footer-links">
                 <div className="col-md-4 footer-content-text_2">
                   <ul>
-                    <div className="fs-5 mb-3 fw-normal">Help</div>
+                    <div className="fs-5 ">Help</div>
                     <li href="/">Privacy Policy</li>
                     <li href="/">Shipping & Delivery</li>
                     <li href="/">Refund Policy</li>
@@ -99,7 +95,7 @@ function Footer() {
                 </div>
                 <div className="col-md-4 footer-content-ul_1">
                   <ul>
-                    <div className="fs-5 mb-3">Store</div>
+                    <div className="fs-5 ">Store</div>
                     <li href="/">Furniture</li>
                     <li href="/">Tabble</li>
                     <li href="/">Sofa</li>
@@ -108,7 +104,7 @@ function Footer() {
                 </div>
                 <div className="col-md-4 footer-content-ul_2 pl-0">
                   <ul>
-                    <div className="fs-5 mb-3">Supports</div>
+                    <div className="fs-5 ">Supports</div>
                     <li href="/">Feedbcak</li>
                     <li href="/">Contact us</li>
                     <li href="/">Download app</li>
@@ -116,20 +112,9 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-            </div>
-            <hr className="m-6" />
-            <div className="footer-container-bottom-bit">
-              <div className="col-md-6">
-                {" "}
-                <p className="footer-text">
-                  © 2022 Funking - All rights reserved.
-                </p>
-              </div>
-              <div className="col-md-6 footer-bottom-little">
-                <span className="m-4">Privacy</span>
-                <span className="m-4">Security</span>
-                <span className="m-4">Terms</span>
-              </div>
+              <p style={{ textAlign: "center", color: "#64697E" }}>
+                2022 © Barcha huquqlar himoyalangan va litsenziyalangan
+              </p>
             </div>
           </div>
         </div>

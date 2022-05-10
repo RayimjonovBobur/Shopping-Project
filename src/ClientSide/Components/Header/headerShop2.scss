@@ -1,10 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-.background {
+.background2 {
   background: var(--backgroundColorNew);
   .container {
     .header-main {
@@ -24,7 +18,7 @@ body {
         background: #354b61;
         border-radius: 24.5px;
         display: flex;
-        width: 30%;
+        width: 50%;
 
         input {
           border: none;
@@ -54,10 +48,29 @@ body {
           background: #7ac751;
           color: white;
           border-radius: 50%;
-          font-size: 0.7rem;
-          padding: 0 0.3rem;
+          font-size: 0.58rem;
+          padding: 0 0.25rem;
         }
       }
+    }
+  }
+}
+
+.site-background_img {
+  background: url(../../../assates/images/backgorund_img.svg) rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  .site-content {
+    color: #fff;
+    padding-top: 80px;
+    p {
+      width: 25%;
+    }
+    button {
+      padding: 0.4rem 3rem;
+      border-radius: 20px;
     }
   }
 }

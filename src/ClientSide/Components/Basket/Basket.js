@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Delete } from "../../../assates/icons/Icons";
 import { setDelete } from "../../../Redux/stored_reducer";
-import { NewIcon1 } from "../../utilities/icons";
+import { AdminIcon, NewIcon1, NewIcon3 } from "../../utilities/icons";
 import "./basket.scss";
 
 const Basket = () => {
@@ -34,13 +34,13 @@ const Basket = () => {
     <>
       <button
         type="button"
-        class="basket-btn"
+        class="basket-btn btnSavatcha"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        <div className="korzinka">
+        <div className="d-flex gap-2">
+          <NewIcon3 />
           <NewIcon1 />
-          <span>Savatcha</span>
         </div>
         <span className="icon">{product?.length}</span>
       </button>
