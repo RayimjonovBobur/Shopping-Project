@@ -86,29 +86,53 @@ function Footer() {
               <div className="col-lg-8 footer-links">
                 <div className="col-md-4 footer-content-text_2">
                   <ul>
-                    <div className="fs-5 ">Help</div>
-                    <li href="/">Privacy Policy</li>
-                    <li href="/">Shipping & Delivery</li>
-                    <li href="/">Refund Policy</li>
-                    <li href="/">Track Your Order</li>
+                    <span className="fs-5 text-span">Help</span>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                      <a href="#">Refund Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Track Your Order</a>
+                    </li>
                   </ul>
                 </div>
                 <div className="col-md-4 footer-content-ul_1">
                   <ul>
-                    <div className="fs-5 ">Store</div>
-                    <li href="/">Furniture</li>
-                    <li href="/">Tabble</li>
-                    <li href="/">Sofa</li>
-                    <li href="/">Other</li>
+                    <span className="fs-5 text-span">Store</span>
+                    <li>
+                      <a href="#">Furniture</a>
+                    </li>
+                    <li>
+                      <a href="#">Tabble</a>
+                    </li>
+                    <li>
+                      <a href="#">Sofa</a>
+                    </li>
+                    <li>
+                      <a href="#">Other</a>
+                    </li>
                   </ul>
                 </div>
                 <div className="col-md-4 footer-content-ul_2 pl-0">
                   <ul>
-                    <div className="fs-5 ">Supports</div>
-                    <li href="/">Feedbcak</li>
-                    <li href="/">Contact us</li>
-                    <li href="/">Download app</li>
-                    <li href="/">Terms conditins</li>
+                    <span className="fs-5 text-span">Supports</span>
+                    <li>
+                      <a href="#">Feedbcak</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">Download app</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms conditins</a>
+                    </li>
                   </ul>
                 </div>
               </div>
