@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.background {
+  .container {
+    .header-main {
+      .site-header_logo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        color: #fff;
+      }
+      .site-header-input-container {
+        .header-search-input {
+          width: 459px;
+          height: 49px;
+          left: 489px;
+          top: 28px;
+          border: none;
+          background: #354b61;
+          border-radius: 24.5px;
+        }
+      }
+    }
+  }
+}
