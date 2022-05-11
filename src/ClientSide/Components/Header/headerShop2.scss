@@ -56,7 +56,8 @@
 }
 
 .site-background_img {
-  background: url(../../../assates/images/backgorund_img.svg) rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assates/images/backgorund_img.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +87,7 @@
         justify-content: center;
         align-items: flex-start;
         gap: 12px;
-        padding:  .8rem 0;
+        padding: 0.8rem 0;
         .site-header_form {
           width: 100%;
         }
