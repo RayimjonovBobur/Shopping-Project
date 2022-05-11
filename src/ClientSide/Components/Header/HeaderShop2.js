@@ -33,14 +33,16 @@ function HeaderShop2() {
         </div>
       </div>
       <div className="site-background_img">
-        <div className="container">
-          <div className="site-content">
-            <h2>Cinturato</h2>
-            <p>
-              CINTURATO WHEELS shinalariniSG959 promokodi orqali 50%chegirma
-              bilan harid qiling!
-            </p>
-            <button className="btn btn-secondary">Batafsil</button>
+        <div className="header-main">
+          <div className="container">
+            <div className="site-content">
+              <h2>Cinturato</h2>
+              <p>
+                CINTURATO WHEELS shinalariniSG959 promokodi orqali 50%chegirma
+                bilan harid qiling!
+              </p>
+              <button className="btn btn-secondary">Batafsil</button>
+            </div>
           </div>
         </div>
       </div>
