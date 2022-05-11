@@ -1,6 +1,8 @@
 import React from "react";
 import { NewIcon4, SearchHr } from "../../utilities/icons";
 import Basket from "../Basket/Basket";
+import CardShop from "../Card Shop/CardShop";
+import Footer from "../Footer/Footer";
 import "./headerShop2.scss";
 
 function HeaderShop2() {
@@ -42,6 +44,8 @@ function HeaderShop2() {
           </div>
         </div>
       </div>
+      <CardShop />
+      <Footer />
     </>
   );
 }
