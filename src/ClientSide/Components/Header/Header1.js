@@ -14,7 +14,7 @@ function Header1() {
             <span>Onlayn do'konimizga xush kelibsiz</span>
           </div>
           <div className="site-header_content">
-            <span>
+            <span>2
               <select>
                 <option>English (USD)</option>
                 <option>English (USD)</option>

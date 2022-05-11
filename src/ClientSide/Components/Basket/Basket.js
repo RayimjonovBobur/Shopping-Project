@@ -54,7 +54,10 @@ const Basket = () => {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" style={{ width: "800px" }}>
+        <div
+          class="modal-dialog"
+          style={{ maxWidth: "375px", marigin: "auto", width: "800px" }}
+        >
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="staticBackdropLabel">
