@@ -14,7 +14,7 @@ function Tbody() {
           values?.map((value, i) => {
             return (
               <tr>
-                <td scope="row">{i + 1}</td>
+                <td>{i + 1}</td>
                 <td>{value?.name}</td>
                 <td>{value?.age}</td>
                 <td width={140}>

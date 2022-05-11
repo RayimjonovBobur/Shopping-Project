@@ -5,7 +5,7 @@ function Thead() {
   const { currentPage, values } = useSelector((state) => state?.users_reducer);
   return (
     <>
-      <thead>
+      <thead className="table-fixed">
         <tr>
           {currentPage?.columns?.map((column, i) => {
             return (
