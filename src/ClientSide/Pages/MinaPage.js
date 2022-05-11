@@ -1,4 +1,5 @@
 import React from "react";
+import CardShop from "../Components/Card Shop/CardShop";
 import Card from "../Components/Card/Card";
 import FilterData from "../Components/FilterData/FilterData";
 import Footer from "../Components/Footer/Footer";
@@ -9,9 +10,10 @@ function MinaPage() {
   return (
     <>
       {/* <Header1 /> */}
-      <HeaderShop/>
+      <HeaderShop />
       <FilterData />
-      <Card />
+      <CardShop />
+      {/* <Card /> */}
       <Footer />
     </>
   );
