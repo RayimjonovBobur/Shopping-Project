@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Reference.scss";
 
 const Reference = () => {
@@ -13,7 +14,9 @@ const Reference = () => {
                 “Cinturato wheels” shinalarini “OS777” promokod orqali 80%
                 chegirma bilan qo’lga kiriting!
               </p>
-              <button className="reference-btn">Batafsil</button>
+              <Link to={"/header"} className="reference-btn">
+                Batafsil
+              </Link>
               <div className="reference-background"></div>
             </div>
             <div className="reference-background2"></div>

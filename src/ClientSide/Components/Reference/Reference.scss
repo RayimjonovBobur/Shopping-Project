@@ -20,6 +20,7 @@
       border-bottom-left-radius: 20px;
       height: 100%;
       padding: 46px 36px;
+      position: relative;
       h3 {
         font-family: "Montserrat";
         font-style: normal;
@@ -42,17 +43,15 @@
         color: #ffffff;
       }
       .reference-btn {
-        width: 117px;
-        height: 49px;
-        left: 119px;
-        top: 480px;
+        position: absolute;
+        bottom: 42px;
         border: none;
         background: #939eb4;
         border-radius: 8px;
         font-weight: 400;
         font-size: 14px;
         color: #ffffff;
-        margin-top: 31px;
+        padding: 0.9rem 1.8rem;
       }
     }
     .reference-content-item-1 {
@@ -101,7 +100,7 @@
       }
     }
     .reference-background {
-      width: 274px;
+      width: 273px;
       background: linear-gradient(
         180.38deg,
         rgba(44, 62, 80, 0) 0.33%,
@@ -112,7 +111,7 @@
       );
       transform: rotate(90deg);
       margin-left: 164px;
-      margin-top: -192px;
+      margin-top: -112.2px;
       height: 100%;
     }
     .reference-background-1 {
