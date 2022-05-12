@@ -1,3 +1,63 @@
+.new-header {
+  background: var(--backgroundColorNew);
+  .container {
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem 0;
+      .site-header_logo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        color: #fff;
+      }
+
+      .site-header_icon {
+        position: relative;
+        cursor: pointer;
+        .icon {
+          position: absolute;
+          top: -5px;
+          right: -12px;
+          background: #ff1212;
+          color: white;
+          border-radius: 50%;
+          font-size: 0.7rem;
+          padding: 0 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------- styles navbar_link --------------------------- */
+.site-header_link {
+  .site-form-select {
+    border: none;
+    background: transparent;
+    color: #939eb4;
+    outline: none;
+    option {
+      background: #2c3e50;
+      color: #939eb4;
+    }
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    color: #939eb4;
+    text-decoration: none;
+    font-size: 0.88rem;
+    &:hover {
+      color: #c3c7cf;
+    }
+  }
+}
+
 .background2 {
   background: var(--backgroundColorNew);
   .container {
@@ -14,28 +74,6 @@
         line-height: 27px;
         color: #fff;
       }
-      .site-header_form {
-        background: #354b61;
-        border-radius: 24.5px;
-        display: flex;
-        width: 50%;
-        input {
-          border: none;
-          padding: 0.4rem 1rem;
-          border-radius: 6px;
-          outline: none;
-          width: 100%;
-          background: transparent;
-          color: white;
-        }
-        span {
-          padding: 0 0.8rem;
-          padding-top: 4px;
-          cursor: pointer;
-          border-top-right-radius: 3px;
-          border-bottom-right-radius: 4px;
-        }
-      }
 
       .site-header_icon {
         position: relative;
@@ -43,8 +81,8 @@
         .icon {
           position: absolute;
           top: -5px;
-          left: 45px;
-          background: #7ac751;
+          right: -12px;
+          background: #ff1212;
           color: white;
           border-radius: 50%;
           font-size: 0.58rem;
@@ -55,6 +93,31 @@
   }
 }
 
+/* ---------------------------------- styles input --------------------------------- */
+.site-header_form {
+  background: #354b61;
+  border-radius: 24.5px;
+  display: flex;
+  width: 50%;
+  input {
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: white;
+  }
+  span {
+    padding: 0 0.8rem;
+    padding-top: 4px;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+/* ----------------------------------- styles img ---------------------------------- */
 .site-background_img {
   background: url(../../../assates/images/backgorund_img.svg);
   background-size: cover;

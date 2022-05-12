@@ -19,7 +19,7 @@
       div:nth-child(1) {
         cursor: pointer;
         border: 1px solid #2c3e50;
-        width: 35%;
+        width: 47%;
         height: 60px;
         border-radius: 10px;
         text-align: center;
@@ -37,7 +37,7 @@
       div:nth-child(2) {
         cursor: pointer;
         border: 1px solid #939eb4;
-        width: 35%;
+        width: 47%;
         height: 60px;
         border-radius: 10px;
         text-align: center;
@@ -69,19 +69,6 @@
         text-decoration: line-through !important;
       }
     }
-    .btn_add {
-      border: 1px solid #2c3e50;
-      background: #2c3e50;
-      color: #fff;
-      border-radius: 5px;
-      padding: 0.4rem 3rem;
-      margin-top: 20px;
-      transition: 0.3s;
-      &:hover {
-        letter-spacing: 0.5px;
-        background: #3a4c5e;
-      }
-    }
 
     .site_btn {
       border: none;
@@ -98,11 +85,7 @@
         border: 1px solid #ccc;
         border-radius: 20px;
         button {
-          padding: 0 15px;
-        }
-
-        span {
-          padding: 0 3px;
+          padding: 0 12px;
         }
 
         button:nth-child(1) {
@@ -112,6 +95,63 @@
         button:nth-child(3) {
           border-left: 1px solid #ccc;
         }
+      }
+    }
+    .btn_add {
+      border: 1px solid #2c3e50;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 5px;
+      padding: 0.4rem 12.5rem;
+      margin-top: 20px;
+      transition: 0.3s;
+      &:hover {
+        letter-spacing: 0.5px;
+        background: #3a4c5e;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 0.7em;
+  .list {
+    background: #f2f2f2;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.8vh;
+    padding: 0 0.5rem;
+    div {
+      button {
+        padding: 0.5rem 12rem;
+        background: transparent;
+        border: none;
+      }
+      .active {
+        background: #fff;
+      }
+    }
+  }
+  .site-read_more {
+    padding: 1rem 0.2rem;
+    width: 80%;
+    margin: auto;
+    p {
+      font-weight: 700;
+    }
+    div {
+        width: 100%;
+      p {
+        border: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+        padding: 0.3rem;
+        background: #e7efff;
+        width: 100%;
       }
     }
   }
