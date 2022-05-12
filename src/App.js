@@ -9,15 +9,16 @@ import { pages } from "./pages/Main";
 
 function App() {
   return (
-    <div className="App">
-      <ToastContainer />
-
-      <Routes>
-        {pages.map((page) => (
-          <Route path={page?.path} element={page?.page} />
-        ))}
-      </Routes>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="App">
+        <ToastContainer />
+        <Routes>
+          {pages.map((page) => (
+            <Route path={page?.path} element={page?.page} />
+          ))}
+        </Routes>
+      </div>
+    </Suspense>
   );
 }
 

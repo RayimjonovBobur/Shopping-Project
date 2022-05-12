@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Delete } from "../../../assates/icons/Icons";
 import { setDelete } from "../../../Redux/stored_reducer";
-import { AdminIcon, NewIcon1, NewIcon3 } from "../../utilities/icons";
+import { NewIcon1 } from "../../utilities/icons";
 import "./basket.scss";
 
 const Basket = () => {
@@ -39,7 +39,6 @@ const Basket = () => {
         data-bs-target="#staticBackdrop"
       >
         <div className="d-flex gap-2">
-          <NewIcon3 />
           <NewIcon1 />
         </div>
         <span className="icon">{product?.length}</span>
