@@ -7,6 +7,7 @@ import Slider from "../AdminSite/page/Slider/Slider";
 import Books from "../ClientSide/Components/Books/Books";
 import Furniture from "../ClientSide/Components/Furniture/Furniture";
 import HeaderShop2 from "../ClientSide/Components/Header/HeaderShop2";
+import NewHeader from "../ClientSide/Components/Header/NewHeader/NewHeader";
 import MinaPage from "../ClientSide/Pages/MinaPage";
 
 export const pages = [
@@ -49,5 +50,9 @@ export const pages = [
   {
     path: "/header",
     page: <HeaderShop2 />,
+  },
+  {
+    path: "/header_shop",
+    page: <NewHeader />,
   },
 ];

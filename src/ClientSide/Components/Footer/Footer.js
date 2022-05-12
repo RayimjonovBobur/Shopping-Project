@@ -54,7 +54,7 @@ function Footer() {
               </div>
             </div>
           ) : null}
-          <div className="footer-bottom">
+          <div className="footer-bottom  footer-backgorund">
             <div className="row mb-5">
               <div className="col-lg-4">
                 <div className="footer-content-item">
@@ -136,7 +136,13 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <p style={{ textAlign: "center", color: "#64697E" }}>
+              <p
+                className="text-p"
+                style={{
+                  textAlign: "center",
+                  color: "#64697E",
+                }}
+              >
                 2022 © Barcha huquqlar himoyalangan va litsenziyalangan
               </p>
             </div>
