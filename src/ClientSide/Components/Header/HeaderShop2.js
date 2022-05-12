@@ -48,8 +48,6 @@ function HeaderShop2() {
           </div>
         </div>
       </div>
-      <CardShop />
-      <Footer />
     </>
   );
 }
