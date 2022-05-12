@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import tire from "../../../assates/images/tire.png";
+import tire from "../../../assates/images/image.png";
 import CardShop from "../Card Shop/CardShop";
 import Footer from "../Footer/Footer";
 import "./style.scss";
@@ -57,7 +57,7 @@ function AboutTires() {
                 <button className="site_btn" onClick={decrementCount}>
                   -
                 </button>
-                <span>{count}</span>
+                <spa>{count}</spa>
                 <button className="site_btn" onClick={incrementCount}>
                   +
                 </button>
@@ -71,6 +71,33 @@ function AboutTires() {
           </div>
         </div>
       </div>
+
+      <div className="container">
+        <div className="list">
+          <div>
+            <button className="btn btn-light ">Tavsif</button>
+          </div>
+          <div>
+            <button className="btn btn-light active">Batafsil</button>
+          </div>
+        </div>
+        <div className="site-read_more">
+          <p>Batafsil</p>
+          <div className="d-flex">
+            <div>
+              <p>Ishlab chiqaruvchi:</p>
+              <p>Turi:</p>
+              <p>Status:</p>
+            </div>
+            <div>
+              <p>Ishlab chiqaruvchi:</p>
+              <p>Turi:</p>
+              <p>Status:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <CardShop />
       <Footer />
     </>

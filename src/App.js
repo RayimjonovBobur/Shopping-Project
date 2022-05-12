@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
+import CardShop from "./ClientSide/Components/Card Shop/CardShop";
+import HeaderShop2 from "./ClientSide/Components/Header/HeaderShop2";
 import { pages } from "./pages/Main";
 
 function App() {
