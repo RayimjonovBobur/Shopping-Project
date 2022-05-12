@@ -95,7 +95,7 @@ function NewHeader() {
           </div>
         </div>
       </div>
-    
+
       <AboutTires />
     </>
   );

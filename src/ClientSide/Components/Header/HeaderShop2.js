@@ -90,7 +90,7 @@ function HeaderShop2() {
               <span onClick={handleClick}>
                 <SearchHr />
               </span>
-              <NewIcon3/>  
+              <NewIcon3 />
               <Basket />
             </div>
           </div>
