@@ -69,19 +69,6 @@
         text-decoration: line-through !important;
       }
     }
-    .btn_add {
-      border: 1px solid #2c3e50;
-      background: #2c3e50;
-      color: #fff;
-      border-radius: 5px;
-      padding: 0.4rem 3rem;
-      margin-top: 20px;
-      transition: 0.3s;
-      &:hover {
-        letter-spacing: 0.5px;
-        background: #3a4c5e;
-      }
-    }
 
     .site_btn {
       border: none;
@@ -98,11 +85,7 @@
         border: 1px solid #ccc;
         border-radius: 20px;
         button {
-          padding: 0 15px;
-        }
-
-        span {
-          padding: 0 3px;
+          padding: 0 14px;
         }
 
         button:nth-child(1) {
@@ -112,6 +95,19 @@
         button:nth-child(3) {
           border-left: 1px solid #ccc;
         }
+      }
+    }
+    .btn_add {
+      border: 1px solid #2c3e50;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 5px;
+      padding: 0.4rem 3rem;
+      margin-top: 20px;
+      transition: 0.3s;
+      &:hover {
+        letter-spacing: 0.5px;
+        background: #3a4c5e;
       }
     }
   }
