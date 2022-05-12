@@ -56,11 +56,17 @@
 }
 
 .site-background_img {
-  background-image: url(../../../assates/images/backgorund_img.svg);
+  background: url(../../../assates/images/backgorund_img.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 421px;
+  backdrop-filter: blur(5px);
+
+  .header-main {
+    background-image: linear-gradient(to left, rgba(255, 0, 6, 0), #2c3e50);
+    height: 100%;
+  }
   .site-content {
     color: #fff;
     display: flex;

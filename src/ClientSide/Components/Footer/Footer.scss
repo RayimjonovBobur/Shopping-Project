@@ -3,7 +3,6 @@
 .footer-backgorund {
   background: #2c3e50;
   padding: 1.5rem 0;
-  height: 100% !important;
 }
 
 .footer {
@@ -70,7 +69,6 @@
   height: 200px;
   left: 558px;
   top: 6097.22px;
-
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -122,6 +120,7 @@
   }
   .footer-content-ul_2 ul {
     list-style: none;
+
     span {
       color: #fff;
     }
@@ -148,6 +147,18 @@
   .footer-links div {
     width: 20em;
   }
+  a {
+    color: #939eb4;
+    &:hover {
+      color: #aeb7c9;
+    }
+  }
+}
+
+.text-p {
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
 }
 
 @media (max-width: 480px) {

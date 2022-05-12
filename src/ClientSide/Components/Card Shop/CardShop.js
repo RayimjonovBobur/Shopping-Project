@@ -4,9 +4,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProduct } from "../../../Redux/stored_reducer";
 import img1 from "../../../assates/images/img1.png";
 import { Combined, Combined2 } from "../../../assates/icons/Icons";
+import { useLocation } from "react-router-dom";
 
 const CardShop = () => {
   const { product } = useSelector((state) => state?.users_reducer);
+  const { pathname } = useLocation();
   const dispatch = useDispatch();
 
   const hanldeSubmit = (item) => {
@@ -22,7 +24,15 @@ const CardShop = () => {
     <div className="container">
       <div className="card-container mb-3 mt-4">
         <div className="d-flex">
-          <h6 className="card-title m-3">Jaziramadagi xaloskor</h6>
+          {pathname == "/header_shop" ? (
+            <h6 className="card-title m-3">
+              <strong>O’xshahs</strong> maxsulotlar
+            </h6>
+          ) : (
+            <h6 className="card-title m-3">
+              <strong>Mashhur</strong> maxsulotlar
+            </h6>
+          )}
         </div>
         <div className="card-content">
           <div class="card-shop">

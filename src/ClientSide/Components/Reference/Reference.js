@@ -30,7 +30,7 @@ const Reference = () => {
                 Hoziroq sotib oling!
               </p>
               <button className="reference-btn">Batafsil</button>
-              <div className="reference-background-1"></div>
+              {/* <div className="reference-background-1"></div>     */}
             </div>
           </div>
         </div>
