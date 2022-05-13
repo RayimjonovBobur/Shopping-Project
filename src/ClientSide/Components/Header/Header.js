@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { NewIcon3, SearchHr } from "../../utilities/icons";
+import { Link } from "react-router-dom";
+import { NewIcon1, NewIcon3, SearchHr } from "../../utilities/icons";
 import Basket from "../Basket/Basket";
 import "./headerShop.scss";
 
@@ -15,9 +16,9 @@ function Header() {
       <div className="new-header">
         <div className="container">
           <div className="header-main">
-            <div className="site-header_logo">
+            <Link to={"/"} className="site-header_logo">
               <strong>Onlayn</strong> <span>savdo</span>
-            </div>
+            </Link>
             {search ? (
               <div className="site-header_form">
                 <input
@@ -89,7 +90,10 @@ function Header() {
                 <SearchHr />
               </span>
               <NewIcon3 />
-              <Basket />
+              <Link to={"/products_basket"} className="d-flex gap-2">
+                <NewIcon1 />
+              </Link>
+              <span className="icon">4</span>
             </div>
           </div>
         </div>

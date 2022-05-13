@@ -86,52 +86,49 @@ function Footer() {
               <div className="col-lg-8 footer-links">
                 <div className="col-md-4 footer-content-text_2">
                   <ul>
-                    <span className="fs-5 text-span">Help</span>
+                    <span className="fs-5 text-span">Kompaniya</span>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <a href="#">Yangiliklar</a>
                     </li>
                     <li>
-                      <a href="#">Shipping & Delivery</a>
+                      <a href="#">Kompaniya haqida</a>
                     </li>
                     <li>
-                      <a href="#">Refund Policy</a>
+                      <a href="#">Do’kon manzili</a>
                     </li>
                     <li>
-                      <a href="#">Track Your Order</a>
+                      <a href="#">Do’kon manzili</a>
                     </li>
                   </ul>
                 </div>
                 <div className="col-md-4 footer-content-ul_1">
                   <ul>
-                    <span className="fs-5 text-span">Store</span>
+                    <span className="fs-5 text-span">Ma’lumotlar</span>
                     <li>
-                      <a href="#">Furniture</a>
+                      <a href="#">To'lov rejasi (Рассрочка)</a>
                     </li>
                     <li>
-                      <a href="#">Tabble</a>
+                      <a href="#">Yetkazib berish</a>
                     </li>
                     <li>
-                      <a href="#">Sofa</a>
-                    </li>
-                    <li>
-                      <a href="#">Other</a>
+                      <a href="#">Aloqa</a>
                     </li>
                   </ul>
                 </div>
                 <div className="col-md-4 footer-content-ul_2 pl-0">
                   <ul>
-                    <span className="fs-5 text-span">Supports</span>
+                    <span className="fs-5 text-span">Biz bilan bog’lanish</span>
                     <li>
-                      <a href="#">Feedbcak</a>
+                      <a href="#">Manzil: 100096, Toshkent, Muqumiy, 13</a>
                     </li>
                     <li>
-                      <a href="#">Contact us</a>
+                      <a href="#">Qisqa raqam: 1216</a>
                     </li>
                     <li>
-                      <a href="#">Download app</a>
+                      <a href="#">Faks: +998 71 150 53 95</a>
                     </li>
                     <li>
-                      <a href="#">Terms conditins</a>
+                      <a href="#">E-mail: company@imsoft.uz</a>
                     </li>
                   </ul>
                 </div>

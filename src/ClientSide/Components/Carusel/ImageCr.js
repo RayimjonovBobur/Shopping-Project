@@ -5,7 +5,6 @@ import tire from "../../../assates/images/image.png";
 import diska2 from "../../../assates/images/diska2.png";
 import diska3 from "../../../assates/images/disk3.png";
 import diska4 from "../../../assates/images/diska3.png";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";

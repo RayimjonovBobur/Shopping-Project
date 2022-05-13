@@ -4,6 +4,7 @@ import Kategorya from "../AdminSite/page/Kategorya/Kategorya";
 import Partner from "../AdminSite/page/Partner/Partner";
 import Product from "../AdminSite/page/Product/Product";
 import Slider from "../AdminSite/page/Slider/Slider";
+import AboutUs from "../ClientSide/Components/AboutUs/AboutUs";
 import Furniture from "../ClientSide/Components/Furniture/Furniture";
 import MinaPage from "../ClientSide/Components/Main/MinaPage";
 import ProductsBasket from "../ClientSide/Components/ProductsBasket/ProductsBasket";
@@ -50,4 +51,8 @@ export const pages = [
     path: "/products_basket",
     page: <ProductsBasket />,
   },
+  {
+    path: "/about_us",
+    page: <AboutUs/>
+  }
 ];

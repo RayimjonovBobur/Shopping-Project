@@ -37,12 +37,7 @@ const Basket = () => {
         class="basket-btn btnSavatcha"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
-      >
-        <div className="d-flex gap-2">
-          <NewIcon1 />
-        </div>
-        <span className="icon">{product?.length}</span>
-      </button>
+      ></button>
 
       <div
         class="modal fade"
