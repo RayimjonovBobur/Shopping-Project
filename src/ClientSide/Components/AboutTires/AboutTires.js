@@ -3,10 +3,9 @@ import tire from "../../../assates/images/image.png";
 import CardShop from "../Card Shop/CardShop";
 import ImageCr from "../Carusel/ImageCr";
 import Footer from "../Footer/Footer";
-import "./style.scss";
 import { Controlled as ControlledZoom } from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import Zoom from "react-img-zoom";
+import "./style.scss";
 
 function AboutTires() {
   const [count, setCount] = useState(1);
@@ -125,7 +124,6 @@ function AboutTires() {
           </div>
         </div>
       </div>
-
       <CardShop />
       <Footer />
     </>
