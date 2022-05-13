@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import tire from "../../../assates/images/image.png";
 import CardShop from "../Card Shop/CardShop";
+import ImageCr from "../Carusel/ImageCr";
 import Footer from "../Footer/Footer";
+import { Controlled as ControlledZoom } from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 import "./style.scss";
 
 function AboutTires() {
@@ -23,13 +26,35 @@ function AboutTires() {
     }
   };
 
+  // Zoom function
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  const handleImgLoad = useCallback(() => {
+    setIsZoomed(true);
+  }, []);
+
+  const handleZoomChange = useCallback((shouldZoom) => {
+    setIsZoomed(shouldZoom);
+  }, []);
+
   return (
     <>
       <div className="container">
         <div className="d-flex justify-content-evenly mt-2">
-          <div className="site-tire">
-            <div className="site-tire_title">
-              <img src={tire} alt="" />
+          <div className="site-tsire">
+            <div className="site-tire_titdle">
+              <ControlledZoom
+                isZoomed={isZoomed}
+                onZoomChange={handleZoomChange}
+              >
+                <img
+                  alt="that wanaka tree"
+                  onLoad={handleImgLoad}
+                  src={tire}
+                  width="500"
+                />
+              </ControlledZoom>
+              {/* <img src={tire} alt="" /> */}
             </div>
           </div>
           <div className="site-tire_content mt-3">
@@ -97,7 +122,7 @@ function AboutTires() {
           </div>
         </div>
       </div>
-
+      <ImageCr />
       <CardShop />
       <Footer />
     </>
