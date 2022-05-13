@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { NewIcon3, NewIcon4, SearchHr } from "../../utilities/icons";
+import { NewIcon3, SearchHr } from "../../utilities/icons";
 import Basket from "../Basket/Basket";
-import CardShop from "../Card Shop/CardShop";
-import Footer from "../Footer/Footer";
-import "./headerShop2.scss";
+import "./headerShop.scss";
 
-function HeaderShop2() {
+function Header() {
   const [search, setSearch] = useState(false);
 
   const handleClick = () => {
@@ -14,7 +12,7 @@ function HeaderShop2() {
 
   return (
     <>
-      <div className="background2">
+      <div className="new-header">
         <div className="container">
           <div className="header-main">
             <div className="site-header_logo">
@@ -86,7 +84,7 @@ function HeaderShop2() {
                 </ul>
               </div>
             )}
-            <div className="site-header_icon d-flex gap-3">
+            <div className="site-header_icon d-flex gap-3 align-items-center">
               <span onClick={handleClick}>
                 <SearchHr />
               </span>
@@ -96,26 +94,8 @@ function HeaderShop2() {
           </div>
         </div>
       </div>
-      <div className="site-background_img">
-        <div className="header-main">
-          <div className="container">
-            <div className="site-content">
-              <div>
-                <h2>Cinturato</h2>
-                <p>
-                  CINTURATO WHEELS shinalariniSG959 promokodi orqali 50%chegirma
-                  bilan harid qiling!
-                </p>
-                <button className="btn btn-secondary">Batafsil</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <CardShop />
-      <Footer />
     </>
   );
 }
 
-export default HeaderShop2;
+export default Header;

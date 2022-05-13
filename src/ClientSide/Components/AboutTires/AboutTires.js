@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import "./style.scss";
 import { Controlled as ControlledZoom } from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import Zoom from "react-img-zoom";
 
 function AboutTires() {
   const [count, setCount] = useState(1);
@@ -41,9 +42,9 @@ function AboutTires() {
     <>
       <div className="container">
         <div className="d-flex justify-content-evenly mt-2">
-          <div className="site-tsire">
-            <div className="site-tire_titdle">
-              <ControlledZoom
+          <div className="site-tire">
+            <div className="site-tire_title">
+              {/* <ControlledZoom
                 isZoomed={isZoomed}
                 onZoomChange={handleZoomChange}
               >
@@ -53,8 +54,10 @@ function AboutTires() {
                   src={tire}
                   width="500"
                 />
-              </ControlledZoom>
+              </ControlledZoom> */}
               {/* <img src={tire} alt="" /> */}
+              <ImageCr />
+              {/* <Zoom img={tire} zoomScale={2} width={406} height={406} /> */}
             </div>
           </div>
           <div className="site-tire_content mt-3">
@@ -123,7 +126,6 @@ function AboutTires() {
         </div>
       </div>
 
-      <ImageCr />
       <CardShop />
       <Footer />
     </>

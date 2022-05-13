@@ -6,8 +6,8 @@
 }
 
 .swiper {
-  width: 100%;
-  height: 300px;
+  width: 500px;
+  /* height: 300px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,8 +18,8 @@
 }
 
 .mySwiper2 {
-  height: 80%;
-  width: 100%;
+  /* height: 80%;
+  width: 100%; */
 }
 
 .mySwiper {
@@ -43,4 +43,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  cursor: pointer;
+}
+
+.zoom-image {
+  cursor: crosshair;
 }
