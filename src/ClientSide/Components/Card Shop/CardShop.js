@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProduct } from "../../../Redux/stored_reducer";
 import img1 from "../../../assates/images/img1.png";
 import { Combined, Combined2 } from "../../../assates/icons/Icons";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const CardShop = () => {
   const { product } = useSelector((state) => state?.users_reducer);
@@ -60,7 +60,9 @@ const CardShop = () => {
                   <Combined2 />
                 </li>
               </div>
-              <button className=" card-more-btn">Batafsil</button>
+              <Link to="header_shop" className=" card-more-btn">
+                Batafsil
+              </Link>
             </ul>
           </div>{" "}
           <div class="card-shop">
