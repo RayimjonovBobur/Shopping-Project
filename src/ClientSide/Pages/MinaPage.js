@@ -11,10 +11,10 @@ function MinaPage() {
       <HeaderShop2 />
       {/* <Reference /> */}
       {/* <FilterData /> */}
-      <ImageCr />
-      <CardShop />
+      {/* <ImageCr /> */}
+      {/* <CardShop /> */}
       {/* <Card /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
