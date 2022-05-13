@@ -5,8 +5,9 @@ import Partner from "../AdminSite/page/Partner/Partner";
 import Product from "../AdminSite/page/Product/Product";
 import Slider from "../AdminSite/page/Slider/Slider";
 import Furniture from "../ClientSide/Components/Furniture/Furniture";
-import NewHeader from "../ClientSide/Components/Header/NewHeader/NewHeader";
-import MinaPage from "../ClientSide/Pages/MinaPage";
+import MinaPage from "../ClientSide/Components/Main/MinaPage";
+import ProductsBasket from "../ClientSide/Components/ProductsBasket/ProductsBasket";
+import TirePage from "../ClientSide/Components/TirePage/TirePage";
 
 export const pages = [
   {
@@ -43,6 +44,10 @@ export const pages = [
   },
   {
     path: "/header_shop",
-    page: <NewHeader />,
+    page: <TirePage />,
+  },
+  {
+    path: "/products_basket",
+    page: <ProductsBasket />,
   },
 ];
