@@ -97,7 +97,7 @@ function Footer() {
                       <a href="#">Do’kon manzili</a>
                     </li>
                     <li>
-                      <a href="#">Do’kon manzili</a>
+                      <a href="#">Biznes uchun</a>
                     </li>
                   </ul>
                 </div>
