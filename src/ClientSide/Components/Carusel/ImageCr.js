@@ -47,32 +47,14 @@ const ImageCr = () => {
         <SwiperSlide className="zoom-image">
           <Zoom img={tire} zoomScale={2} width={406} height={406} />
         </SwiperSlide>
-        <SwiperSlide>
-          <Zoom
-            style={{ cursor: "crosshair" }}
-            img={diska2}
-            zoomScale={2}
-            width={406}
-            height={406}
-          />
+        <SwiperSlide className="zoom-image">
+          <Zoom img={diska2} zoomScale={2} width={406} height={406} />
         </SwiperSlide>
-        <SwiperSlide>
-          <Zoom
-            style={{ cursor: "crosshair" }}
-            img={diska3}
-            zoomScale={2}
-            width={406}
-            height={406}
-          />
+        <SwiperSlide className="zoom-image">
+          <Zoom img={diska3} zoomScale={2} width={406} height={406} />
         </SwiperSlide>
-        <SwiperSlide>
-          <Zoom
-            style={{ cursor: "crosshair" }}
-            img={diska4}
-            zoomScale={2}
-            width={406}
-            height={406}
-          />
+        <SwiperSlide className="zoom-image">
+          <Zoom img={diska4} zoomScale={2} width={406} height={406} />
         </SwiperSlide>
       </Swiper>
       <Swiper
