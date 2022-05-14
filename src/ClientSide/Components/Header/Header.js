@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { XIcon } from "../../../assates/icons/Icons";
 import { NewIcon1, NewIcon3, SearchHr } from "../../utilities/icons";
-import Basket from "../Basket/Basket";
+import MaskGroup from "../../../assates/images/MaskGroup.png";
 import "./headerShop.scss";
 
 function Header() {
@@ -87,6 +87,7 @@ function Header() {
               </div>
             )}
             <div className="site-header_icon d-flex gap-3 align-items-center">
+              <span style={{ color: "#939EB4", fontSize: ".8rem" }}>UZ</span>
               <span onClick={handleClick}>
                 <SearchHr />
               </span>
@@ -95,6 +96,7 @@ function Header() {
                 <NewIcon1 />
               </Link>
               <span className="icon">4</span>
+              <img  src={MaskGroup} alt="" />
             </div>
           </div>
         </div>

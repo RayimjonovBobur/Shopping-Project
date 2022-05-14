@@ -20,13 +20,18 @@
         cursor: pointer;
         .icon {
           position: absolute;
-          top: -5px;
-          right: -12px;
+          top: 2px;
+          right: 55px;
           background: #ff1212;
           color: white;
           border-radius: 50%;
           font-size: 0.7rem;
           padding: 0 0.3rem;
+        }
+        img {
+          background: #192734;
+          height: 80%;
+          border-radius: 50%;
         }
       }
     }
