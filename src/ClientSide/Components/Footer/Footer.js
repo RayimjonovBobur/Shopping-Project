@@ -111,7 +111,7 @@ function Footer() {
                       </Link>
                     </li>
                     <li>
-                      <a>Yetkazib berish</a>
+                      <Link to="/delivery">Yetkazib berish</Link>
                     </li>
                     <li>
                       <Link to="/contact_us">Aloqa</Link>
