@@ -38,7 +38,7 @@ function AboutTires() {
   return (
     <>
       <div className="container">
-        <div className="d-flex justify-content-evenly mt-2">
+        <div className="site-content_items mt-2">
           <div className="site-tire">
             <div className="site-tire_title">
               {/* <ControlledZoom

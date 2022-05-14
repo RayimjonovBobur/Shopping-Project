@@ -7,6 +7,11 @@ import "./headerShop.scss";
 
 function Header() {
   const [search, setSearch] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const handleMenu = () => {
+    setActive(!active);
+  };
 
   const handleClick = () => {
     setSearch(!search);
@@ -20,6 +25,16 @@ function Header() {
             <Link to={"/"} className="site-header_logo">
               <strong>Onlayn</strong> <span>savdo</span>
             </Link>
+            <div class="hidden ">
+              <div
+                class={`main-header_menu ${active ? "active" : ""}`}
+                onClick={handleMenu}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
             {search ? (
               <div className="site-header_form">
                 <input
@@ -34,7 +49,7 @@ function Header() {
               </div>
             ) : (
               <div className="site-header_link">
-                <ul className="nav">
+                <ul className={`nav ${active ? "active_nav" : ""}`}>
                   <li className="nav-item">
                     <a className="nav-link" href="#">
                       Elektronika
@@ -96,7 +111,7 @@ function Header() {
                 <NewIcon1 />
               </Link>
               <span className="icon">4</span>
-              <img  src={MaskGroup} alt="" />
+              <img src={MaskGroup} alt="" />
             </div>
           </div>
         </div>
