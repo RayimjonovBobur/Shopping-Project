@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Logo } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
@@ -105,13 +106,18 @@ function Footer() {
                   <ul>
                     <span className="fs-5 text-span">Ma’lumotlar</span>
                     <li>
-                      <a href="#">To'lov rejasi (Рассрочка)</a>
+                      <Link to={"/payment_plan"}>
+                        To'lov rejasi (Рассрочка)
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">Yetkazib berish</a>
+                      <a>Yetkazib berish</a>
                     </li>
                     <li>
-                      <a href="#">Aloqa</a>
+                      <Link to="/contact_us">Aloqa</Link>
+                    </li>
+                    <li>
+                      <Link to="/about_us">Biz haqimizda</Link>
                     </li>
                   </ul>
                 </div>

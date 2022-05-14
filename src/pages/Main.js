@@ -4,9 +4,11 @@ import Kategorya from "../AdminSite/page/Kategorya/Kategorya";
 import Partner from "../AdminSite/page/Partner/Partner";
 import Product from "../AdminSite/page/Product/Product";
 import Slider from "../AdminSite/page/Slider/Slider";
-import AboutUs from "../ClientSide/Components/AboutUs/AboutUs";
+import AboutUs from "../ClientSide/Components/aboutUs/About_us";
+import Communication from "../ClientSide/Components/Communication/Communication";
 import Furniture from "../ClientSide/Components/Furniture/Furniture";
 import MinaPage from "../ClientSide/Components/Main/MinaPage";
+import PaymentPlan from "../ClientSide/Components/PaymentPlan/PaymentPlan";
 import ProductsBasket from "../ClientSide/Components/ProductsBasket/ProductsBasket";
 import TirePage from "../ClientSide/Components/TirePage/TirePage";
 
@@ -53,6 +55,14 @@ export const pages = [
   },
   {
     path: "/about_us",
-    page: <AboutUs/>
-  }
+    page: <AboutUs />,
+  },
+  {
+    path: "/contact_us",
+    page: <Communication />,
+  },
+  {
+    path: "/payment_plan",
+    page: <PaymentPlan />,
+  },
 ];
