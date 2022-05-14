@@ -5,7 +5,7 @@
       height: 100%;
     }
   }
-  .site-content {
+  .site-content_items {
     display: flex;
     justify-content: space-evenly;
     .site-tire_content {
@@ -303,7 +303,7 @@
 
 @media (max-width: 768px) {
   .container {
-    .site-content {
+    .site-content_items {
       flex-direction: column;
       .site-tire_content {
         .site-tire_item {
