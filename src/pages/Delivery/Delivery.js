@@ -10,7 +10,7 @@ const Delivery = () => {
       <Header />
       <div className="container">
         <div className="delivery-container justify-content-center m-auto m-xl-5">
-          <h3 className="delivery-title fs-4">
+          <h3 className="delivery-title fs-4 mb-5">
             <span className="online-savdo"> Onlayn savdo</span> turli xil yuqori
             sifatli yetkazib berish xizmatlarini taklif etadi.
           </h3>
