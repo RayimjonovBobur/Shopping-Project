@@ -12,6 +12,7 @@ import PaymentPlan from "../ClientSide/Components/PaymentPlan/PaymentPlan";
 import ProductsBasket from "../ClientSide/Components/ProductsBasket/ProductsBasket";
 import TirePage from "../ClientSide/Components/TirePage/TirePage";
 import Delivery from "./Delivery/Delivery";
+import Business from "./ForBusiness/Business";
 import Offices from "./Offices/Offices";
 
 export const pages = [
@@ -74,5 +75,9 @@ export const pages = [
   {
     path: "/payment_plan",
     page: <PaymentPlan />,
+  },
+  {
+    path: "/business",
+    page: <Business />,
   },
 ];
