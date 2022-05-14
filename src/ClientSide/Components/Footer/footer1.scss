@@ -1,0 +1,43 @@
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  .container {
+    .site-footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      .site-footer_icon {
+        margin-top: 15px;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        span {
+          color: #939eb4;
+        }
+        svg {
+          margin-right: 10px;
+        }
+      }
+
+      .site-footer_companya {
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            a {
+              color: #939eb4;
+            }
+          }
+        }
+      }
+    }
+    .site-footer_text {
+      text-align: center;
+      padding: 0.4rem;
+      color: #64697e;
+    }
+  }
+}
