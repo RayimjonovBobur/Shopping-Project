@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { XIcon } from "../../../assates/icons/Icons";
 import { NewIcon1, NewIcon3, SearchHr } from "../../utilities/icons";
 import Basket from "../Basket/Basket";
 import "./headerShop.scss";
@@ -27,8 +28,8 @@ function Header() {
                   placeholder="Qidirish"
                   aria-label="Search here..."
                 />
-                <span>
-                  <SearchHr />
+                <span onClick={handleClick}>
+                  <XIcon />
                 </span>
               </div>
             ) : (
@@ -47,7 +48,7 @@ function Header() {
                   <li className="nav-item">
                     <a className="nav-link" href="#">
                       <select
-                        class="site-form-select"
+                        className="site-form-select"
                         aria-label="Default select example"
                       >
                         <option selected> Gildiraklar</option>
