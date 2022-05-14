@@ -14,38 +14,35 @@ const Business = () => {
         <div className="business-container">
           <div className="business-content d-flex">
             <h3 className="business-title">
-              Biznes uchun <br /> qo’ng’iroq
+              <span className="biznes">Biznes uchun</span> <br /> qo’ng’iroq
             </h3>
-            <div className="">
+            <div className="form-container">
               <form>
                 <div class="mb-3">
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    placeholder="F.I.SH"
                   />
                 </div>
                 <div class="mb-3">
                   <input
-                    type="password"
+                    type="number"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    placeholder="Telefon raqam"
                   />
                 </div>{" "}
+                <select
+                  class="form-select mb-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>Region</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
                 <div class="mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>{" "}
-                <div class="mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
+                  <input type="Matn" class="form-control" placeholder="Matn" />
                 </div>
                 <button type="submit" class="btn btn-primary w-100">
                   Yuborish
