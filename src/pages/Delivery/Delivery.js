@@ -44,8 +44,8 @@ const Delivery = () => {
                   boshlab 1,5 soat ichida amalga oshiriladi. <br /> Toshkent
                   shahri ichida tez yetkazib berish narxi 50 000 so‘m. <br />
                   Batafsil ma'lumotni MacBro do'konining call-markaziga{" "}
-                  <span className=" fw-light">+998 (xx) xxx-xx-xx</span>{" "}
-                  raqamiga qo'ng'iroq qilib olishingiz mumkin.
+                  <span className="fw-light">+998 (xx) xxx-xx-xx</span> raqamiga
+                  qo'ng'iroq qilib olishingiz mumkin.
                 </p>
               </div>
             </div>
