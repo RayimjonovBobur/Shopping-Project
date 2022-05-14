@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Logo } from "../../../assates/icons/Icons";
 import app from "../../../assates/images/app.png";
 import {
@@ -108,7 +109,7 @@ function Footer() {
                       <a href="#">To'lov rejasi (Рассрочка)</a>
                     </li>
                     <li>
-                      <a href="#">Yetkazib berish</a>
+                      <Link to="/delivery">Yetkazib berish</Link>
                     </li>
                     <li>
                       <a href="#">Aloqa</a>

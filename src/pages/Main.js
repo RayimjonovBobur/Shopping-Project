@@ -9,6 +9,7 @@ import Furniture from "../ClientSide/Components/Furniture/Furniture";
 import MinaPage from "../ClientSide/Components/Main/MinaPage";
 import ProductsBasket from "../ClientSide/Components/ProductsBasket/ProductsBasket";
 import TirePage from "../ClientSide/Components/TirePage/TirePage";
+import Delivery from "./Delivery/Delivery";
 
 export const pages = [
   {
@@ -53,6 +54,10 @@ export const pages = [
   },
   {
     path: "/about_us",
-    page: <AboutUs/>
-  }
+    page: <AboutUs />,
+  },
+  {
+    path: "/delivery",
+    page: <Delivery />,
+  },
 ];
