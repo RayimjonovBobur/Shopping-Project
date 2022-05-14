@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, InstagramIcon, TelegramIcon } from "../../utilities/icons";
-import "./footer1.scss";
+import "./footer.scss";
 
 function Footer() {
   return (

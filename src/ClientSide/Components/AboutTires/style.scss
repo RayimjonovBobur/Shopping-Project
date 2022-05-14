@@ -5,108 +5,112 @@
       height: 100%;
     }
   }
+  .site-content {
+    display: flex;
+    justify-content: space-evenly;
+    .site-tire_content {
+      h2 {
+        font-weight: 600;
+      }
+      .text {
+        width: 80%;
+      }
+      .site-tire_color {
+        display: flex;
+        gap: 1rem;
+        div:nth-child(1) {
+          cursor: pointer;
+          border: 1px solid #2c3e50;
+          width: 47%;
+          height: 60px;
+          border-radius: 10px;
+          text-align: center;
+          .qora {
+            width: 25px;
+            height: 25px;
+            background: #222222;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            margin-top: 4px;
+          }
+        }
+        div:nth-child(2) {
+          cursor: pointer;
+          border: 1px solid #939eb4;
+          width: 47%;
+          height: 60px;
+          border-radius: 10px;
+          text-align: center;
+          .oq {
+            width: 25px;
+            height: 25px;
+            background: #dcdcdc;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            margin-top: 4px;
+          }
+        }
+      }
 
-  .site-tire_content {
-    h2 {
-      font-weight: 600;
-    }
-    .text {
-      width: 80%;
-    }
-    .site-tire_color {
-      display: flex;
-      gap: 1rem;
-      div:nth-child(1) {
-        cursor: pointer;
+      .site-price {
+        margin-top: 20px;
+        p {
+          color: #2c3e50;
+          margin: 0;
+          padding: 0;
+        }
+        .site-text {
+          color: #939eb4;
+          margin: 0;
+          padding: 0;
+          font-size: 0.8rem;
+          text-decoration: line-through !important;
+        }
+      }
+
+      .site_btn {
+        border: none;
+        background: transparent;
+        font-size: 1.5rem;
+        margin: 0 0.8rem;
+        margin-top: -5px;
+      }
+      .site-tire_item {
+        width: 25%;
+        overflow: hidden;
+        margin-top: 15px;
+        div {
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          button {
+            padding: 0 12px;
+          }
+
+          button:nth-child(1) {
+            border-right: 1px solid #ccc;
+          }
+
+          button:nth-child(3) {
+            border-left: 1px solid #ccc;
+          }
+        }
+      }
+      .btn_add {
         border: 1px solid #2c3e50;
-        width: 47%;
-        height: 60px;
-        border-radius: 10px;
-        text-align: center;
-        .qora {
-          width: 25px;
-          height: 25px;
-          background: #222222;
-          border-radius: 50%;
-          margin: 0;
-          padding: 0;
-          margin: auto;
-          margin-top: 4px;
+        background: #2c3e50;
+        color: #fff;
+        border-radius: 5px;
+        padding: 0.4rem 0.5rem;
+        width: 100%;
+        margin-top: 20px;
+        transition: 0.3s;
+        &:hover {
+          background: #3a4c5e;
         }
-      }
-      div:nth-child(2) {
-        cursor: pointer;
-        border: 1px solid #939eb4;
-        width: 47%;
-        height: 60px;
-        border-radius: 10px;
-        text-align: center;
-        .oq {
-          width: 25px;
-          height: 25px;
-          background: #dcdcdc;
-          border-radius: 50%;
-          margin: 0;
-          padding: 0;
-          margin: auto;
-          margin-top: 4px;
-        }
-      }
-    }
-
-    .site-price {
-      margin-top: 20px;
-      p {
-        color: #2c3e50;
-        margin: 0;
-        padding: 0;
-      }
-      .site-text {
-        color: #939eb4;
-        margin: 0;
-        padding: 0;
-        font-size: 0.8rem;
-        text-decoration: line-through !important;
-      }
-    }
-
-    .site_btn {
-      border: none;
-      background: transparent;
-      font-size: 1.5rem;
-      margin: 0 0.8rem;
-      margin-top: -5px;
-    }
-    .site-tire_item {
-      width: 25%;
-      overflow: hidden;
-      margin-top: 15px;
-      div {
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        button {
-          padding: 0 12px;
-        }
-
-        button:nth-child(1) {
-          border-right: 1px solid #ccc;
-        }
-
-        button:nth-child(3) {
-          border-left: 1px solid #ccc;
-        }
-      }
-    }
-    .btn_add {
-      border: 1px solid #2c3e50;
-      background: #2c3e50;
-      color: #fff;
-      border-radius: 5px;
-      padding: 0.4rem 12.5rem;
-      margin-top: 20px;
-      transition: 0.3s;
-      &:hover {
-        background: #3a4c5e;
       }
     }
   }
@@ -295,4 +299,34 @@
   background-size: 100% 1px, 1px 100%;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    .site-content {
+      flex-direction: column;
+      .site-tire_content {
+        .site-tire_item {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .container {
+    .list {
+      width: 100%;
+      margin-top: 1rem;
+      div {
+        button {
+          padding: 0.5rem 3.8rem;
+          background: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+  .swiper {
+    width: 100% !important;
+  }
 }
