@@ -62,3 +62,49 @@
     }
   }
 }
+
+@media (max-width: 1114px) {
+  .payment {
+    .payment-plan {
+      .payment-plan_form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .payment {
+    .payment-plan {
+      padding: 2.9rem 4rem;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .payment {
+    .payment-plan {
+      flex-direction: column;
+      padding: 1.39rem 2rem;
+
+      .payment-plan-title {
+        width: 100%;
+      }
+      .payment-plan_form {
+        width: 100%;
+      }
+      .payment-input_img {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .payment {
+    .payment-plan {
+      flex-direction: column;
+      padding: 1rem 1.4rem;
+    }
+  }
+}
