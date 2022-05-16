@@ -22,7 +22,16 @@ import { FullIcon } from "../../utilities/icons";
 const ImageCr = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+  // Zoom function
+  const [isZoomed, setIsZoomed] = useState(false);
 
+  const handleImgLoad = useCallback(() => {
+    setIsZoomed(true);
+  }, []);
+
+  const handleZoomChange = useCallback((shouldZoom) => {
+    setIsZoomed(shouldZoom);
+  }, []);
   return (
     <div className="slider-header">
       <Swiper
