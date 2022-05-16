@@ -16,6 +16,7 @@ import "./ImageCr.css";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper";
+import Basket from "../Basket/Basket";
 
 const ImageCr = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -31,7 +32,7 @@ const ImageCr = () => {
     setIsZoomed(shouldZoom);
   }, []);
   return (
-    <>
+    <div className="slider-header">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -44,18 +45,31 @@ const ImageCr = () => {
         className="mySwiper2"
       >
         <SwiperSlide className="zoom-image">
-          <Zoom img={tire} zoomScale={2} width={406} height={406} />
+          <SwiperSlide>
+            <img src={tire} />
+          </SwiperSlide>{" "}
+          {/* <Zoom img={tire} zoomScale={2} width={406} height={406} /> */}
         </SwiperSlide>
         <SwiperSlide className="zoom-image">
-          <Zoom img={diska2} zoomScale={2} width={406} height={406} />
+          <SwiperSlide>
+            <img src={diska3} />
+          </SwiperSlide>
+          {/* <Zoom img={diska2} zoomScale={2} width={406} height={406} /> */}
         </SwiperSlide>
         <SwiperSlide className="zoom-image">
-          <Zoom img={diska3} zoomScale={2} width={406} height={406} />
+          <SwiperSlide>
+            <img src={diska4} />
+          </SwiperSlide>
+          {/* <Zoom img={diska3} zoomScale={2} width={406} height={406} /> */}
         </SwiperSlide>
         <SwiperSlide className="zoom-image">
-          <Zoom img={diska4} zoomScale={2} width={406} height={406} />
+          <SwiperSlide>
+            <img src={diska2} />
+          </SwiperSlide>
+          {/* <Zoom img={diska4} zoomScale={2} width={406} height={406} /> */}
         </SwiperSlide>
       </Swiper>
+      <Basket />
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
@@ -78,7 +92,7 @@ const ImageCr = () => {
           <img src={diska4} />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
