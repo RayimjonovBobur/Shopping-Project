@@ -22,9 +22,6 @@ function Header() {
       <div className="new-header">
         <div className="container">
           <div className="header-main">
-            <Link to={"/"} className="site-header_logo">
-              <strong>Onlayn</strong> <span>savdo</span>
-            </Link>
             <div class="hidden ">
               <div
                 class={`main-header_menu ${active ? "active" : ""}`}
@@ -35,6 +32,9 @@ function Header() {
                 <span></span>
               </div>
             </div>
+            <Link to={"/"} className="site-header_logo">
+              <strong>Onlayn</strong> <span>savdo</span>
+            </Link>
             {search ? (
               <div className="site-header_form">
                 <input
@@ -102,7 +102,12 @@ function Header() {
               </div>
             )}
             <div className="site-header_icon d-flex gap-3 align-items-center">
-              <span style={{ color: "#939EB4", fontSize: ".8rem" }}>UZ</span>
+              <span
+                className="maskGroup"
+                style={{ color: "#939EB4", fontSize: ".8rem" }}
+              >
+                UZ
+              </span>
               <span onClick={handleClick}>
                 <SearchHr />
               </span>
@@ -111,7 +116,7 @@ function Header() {
                 <NewIcon1 />
               </Link>
               <span className="icon">4</span>
-              <img src={MaskGroup} alt="" />
+              <img className="maskGroup" src={MaskGroup} alt="" />
             </div>
           </div>
         </div>
