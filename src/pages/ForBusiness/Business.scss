@@ -1,0 +1,91 @@
+.business-container {
+  justify-content: center;
+  //   align-items: center;
+  .business-content {
+    width: 750px;
+    height: 420px;
+    left: 366px;
+    top: 166px;
+    margin: auto;
+    justify-content: center;
+    background: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px rgba(223, 223, 223, 0.4);
+    border-radius: 20px;
+    display: flex;
+    .business-title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: -0.04em;
+      margin-top: 40px;
+      color: #08080a;
+      width: 260px;
+
+      .biznes {
+        font-weight: 600;
+      }
+    }
+
+    .form-container {
+      width: 25em;
+      height: 81vh;
+      margin-top: 44px;
+      margin-left: 10px;
+
+      form div input,
+      select {
+        width: 400px !important;
+        height: 45px;
+        left: 0px;
+        top: 0px;
+        border: 1px solid #939eb4;
+        border-radius: 10px;
+      }
+      form button {
+        width: 400px;
+        height: 45px;
+        left: 640px;
+        top: 504px;
+        background: #2c3e50;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .business-container .business-content {
+    width: 407px;
+    display: block;
+
+    .business-title {
+      width: 300px;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+    .form-container {
+      width: 23em;
+      margin: auto;
+      margin-top: 44px;
+
+      form div input,
+      .business-container .business-content .form-container select {
+        width: 23em !important;
+        height: 45px;
+        left: 0px;
+        top: 0px;
+        border: 1px solid #939eb4;
+        border-radius: 10px;
+      }
+      .form-select {
+        width: 23em !important;
+      }
+    }
+  }
+}

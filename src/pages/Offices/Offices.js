@@ -22,19 +22,19 @@ const Offices = () => {
               <thead className="table-head">
                 <tr>
                   <th scope="col" style={{ borderTopLeftRadius: "15px" }}>
-                    <span className="m-2">
+                    <span className="">
                       <Building />
                     </span>
                     Filiallar
                   </th>
                   <th scope="col">
-                    <span className="m-2">
+                    <span className="">
                       <LocationIcon />
                     </span>{" "}
                     Lokatsiya
                   </th>
                   <th scope="col" style={{ borderTopRightRadius: "15px" }}>
-                    <span className="m-2">
+                    <span className="">
                       <Clock />
                     </span>{" "}
                     Ish vaqti
