@@ -47,7 +47,7 @@ function AboutTires() {
               >
                 <img
                   alt="that wanaka tree"
-                  onLoad={handleImgLoad}
+                  onLoad={handleImgLoad}  
                   src={tire}
                   width="500"
                 />

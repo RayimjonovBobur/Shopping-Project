@@ -12,9 +12,9 @@ const Business = () => {
       <Header />
       <div className="container">
         <div className="business-container">
-          <div className="business-content d-flex">
+          <div className="business-content">
             <h3 className="business-title">
-              <span className="biznes">Biznes uchun</span> <br /> qo’ng’iroq
+              <span className="biznes">Biznes uchun</span> qo’ng’iroq
             </h3>
             <div className="form-container">
               <form>
