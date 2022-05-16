@@ -1,0 +1,110 @@
+.payment {
+  .payment-plan {
+    display: flex;
+    gap: 3rem;
+    padding: 0.88rem 4rem;
+    .payment-plan-title {
+      max-width: 700px;
+      width: 100%;
+      .payment-plan-content {
+        p {
+          color: #939eb4;
+        }
+      }
+    }
+    .payment-plan_form {
+      padding: 1.5rem 2rem;
+      width: 36%;
+      height: 100%;
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
+      border-radius: 10px;
+      .form-control {
+        margin: 8px 0;
+        width: 100%;
+        &::placeholder {
+          color: #939eb4;
+        }
+      }
+      .btn-submit {
+        border: 1px solid #2c3e50;
+        background: #2c3e50;
+        color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        padding: 0.5rem;
+        transition: 0.3s;
+        &:hover {
+          background: #3a4c5e;
+        }
+      }
+    }
+    .form-select {
+      width: 100% !important;
+      color: #939eb4;
+    }
+
+    .payment-input_img {
+      display: flex;
+      justify-content: space-between;
+      .payment-input {
+        text-align: center;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        span {
+          font-size: 0.6rem;
+          color: #939eb4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1114px) {
+  .payment {
+    .payment-plan {
+      .payment-plan_form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .payment {
+    .payment-plan {
+      padding: 2.9rem 4rem;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .payment {
+    .payment-plan {
+      flex-direction: column;
+      padding: 1.39rem 2rem;
+
+      .payment-plan-title {
+        width: 100%;
+      }
+      .payment-plan_form {
+        width: 100%;
+      }
+      .payment-input_img {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .payment {
+    .payment-plan {
+      flex-direction: column;
+      padding: 1rem 1.4rem;
+    }
+  }
+}

@@ -20,13 +20,18 @@
         cursor: pointer;
         .icon {
           position: absolute;
-          top: -5px;
-          right: -12px;
+          top: 4px;
+          right: 55px;
           background: #ff1212;
           color: white;
           border-radius: 50%;
           font-size: 0.7rem;
           padding: 0 0.3rem;
+        }
+        img {
+          background: #192734;
+          height: 80%;
+          border-radius: 50%;
         }
       }
     }
@@ -40,6 +45,7 @@
     background: transparent;
     color: #939eb4;
     outline: none;
+    margin-left: -5px;
     option {
       background: #2c3e50;
       color: #939eb4;
@@ -58,47 +64,13 @@
   }
 }
 
-.background2 {
-  background: var(--backgroundColorNew);
-  .container {
-    .header-main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.4rem 0;
-      .site-header_logo {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 22px;
-        line-height: 27px;
-        color: #fff;
-      }
-
-      .site-header_icon {
-        position: relative;
-        cursor: pointer;
-        .icon {
-          position: absolute;
-          top: -5px;
-          right: -12px;
-          background: #ff1212;
-          color: white;
-          border-radius: 50%;
-          font-size: 0.58rem;
-          padding: 0 0.25rem;
-        }
-      }
-    }
-  }
-}
-
 /* ---------------------------------- styles input --------------------------------- */
 .site-header_form {
   background: #354b61;
   border-radius: 24.5px;
   display: flex;
-  width: 50%;
+  max-width: 400px;
+  width: 100%;
   input {
     border: none;
     padding: 0.4rem 1rem;
@@ -117,7 +89,7 @@
   }
 }
 
-/* ----------------------------------- styles img ---------------------------------- */
+/* ----------------------------------- styles img щ---------------------------------- */
 .site-background_img {
   background: url(../../../assates/images/backgorund_img.svg);
   background-size: cover;
@@ -145,41 +117,123 @@
   }
 }
 
+.main-header_menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #192734;
+}
+.main-header_menu span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #939eb4;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.main-header_menu span:nth-child(1) {
+  transform: translateY(-10px);
+  width: 25px;
+  left: 5px;
+}
+
+.main-header_menu span:nth-child(2) {
+  transform: translateY(10px);
+  width: 20px;
+  left: 5px;
+}
+
+.main-header_menu.active span:nth-child(3) {
+  transform: translateX(40px);
+}
+
+.main-header_menu.active span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  width: 30px;
+}
+
+.main-header_menu.active span:nth-child(2) {
+  transform: translateY(0) rotate(315deg);
+  width: 30px;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2c3e50;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    z-index: 10;
+    padding-left: 1rem;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    .active_link {
+      background: #192734;
+      width: 90%;
+      border-radius: 10px;
+    }
+  }
+  .hidden {
+    display: block;
+  }
+  .active_nav {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 768px) {
   .navbar_link {
     display: none;
-  }
-  .background2 {
-    .container {
-      .header-main {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 0.8rem 0;
-        .site-header_form {
-          width: 100%;
-        }
-        .site-header_icon {
-          position: absolute;
-          top: -10px;
-          right: 18px;
-          .icon {
-            position: absolute;
-            top: 13px;
-            left: 45px;
-            border-radius: 50%;
-            font-size: 0.6rem;
-            padding: 0 0.3rem;
-          }
-        }
-      }
-    }
   }
   .site-background_img {
     .site-content {
       p {
         width: 100%;
+      }
+    }
+  }
+  .maskGroup {
+    display: none;
+  }
+
+  .site-header_link .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .new-header {
+    .container {
+      .header-main {
+        padding: 0;
+        .site-header_logo {
+          margin-left: 10px;
+        }
+        .site-header_icon {
+          .icon {
+            top: 12px;
+            right: -6px;
+          }
+        }
+        .site-header_form {
+          margin-top: 25px;
+        }
       }
     }
   }

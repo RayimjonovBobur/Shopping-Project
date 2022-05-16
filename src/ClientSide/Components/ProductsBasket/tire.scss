@@ -1,0 +1,131 @@
+.basket {
+  .container {
+    .site-container_basket {
+      display: flex;
+      justify-content: space-between;
+      gap: 5rem;
+      .content {
+        width: 75%;
+      }
+    }
+    .site-container {
+      //   height: 61.55vh;
+      padding: 2rem 0;
+      .site-basket {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.8em 0;
+        .site-basket_content {
+          display: flex;
+          gap: 2em;
+          align-items: center;
+          .site-tire-items {
+            span {
+              color: #939eb4;
+            }
+            div {
+              padding: 0;
+              margin-top: -18px;
+            }
+          }
+        }
+      }
+      .site-payment {
+        border: 2px solid #e0e0e0;
+        padding: 1rem;
+        height: 100%;
+        border-radius: 10px;
+        .btn_payment {
+          border: 1px solid #2c3e50;
+          background: #2c3e50;
+          color: #fff;
+          border-radius: 5px;
+          padding: 0.4rem 1.5rem;
+          width: 260px;
+          margin-top: 20px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            background: #3a4c5e;
+          }
+        }
+        .btn_home {
+          margin-top: 10px;
+          background: #f2f2f2;
+          border: 1px solid #f2f2f2;
+          border-radius: 5px;
+          padding: 0.4rem 1.5rem;
+          text-align: center;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background: #e0e0e0;
+          }
+        }
+        .payment_text {
+          color: #828282;
+        }
+      }
+    }
+
+    .site-tire_count {
+      //   width: 11%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 15px;
+      gap: 0.3rem;
+      div:first-child {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        button {
+          padding: 0 12px;
+        }
+
+        button:nth-child(1) {
+          border-right: 1px solid #ccc;
+        }
+
+        button:nth-child(3) {
+          border-left: 1px solid #ccc;
+        }
+      }
+      .site-cost {
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+      }
+      button {
+        background: transparent;
+        border: none;
+      }
+    }
+
+    .site_btn {
+      border: none;
+      background: transparent;
+      font-size: 1.5rem;
+      margin: 0 0.8rem;
+      margin-top: -5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .basket {
+    .container {
+      .site-container_basket {
+        flex-direction: column;
+        .content {
+          width: 100%;
+        }
+      }
+      .site-container {
+        .site-basket {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

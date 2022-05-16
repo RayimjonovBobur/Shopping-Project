@@ -1,0 +1,81 @@
+.communication {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.70rem 4rem;
+  .communication-content {
+    max-width: 700px;
+    width: 100%;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    .communication-content_text {
+      margin-top: 15px;
+    }
+  }
+  .communication-content_form {
+    padding: 1.5rem 2rem;
+    width: 30%;
+    height: 100%;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    .form-control {
+      margin: 15px 0;
+      width: 100%;
+      &::placeholder {
+        color: #939eb4;
+      }
+    }
+    .btn-submit {
+      border: 1px solid #2c3e50;
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 5px;
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 20px;
+      transition: 0.3s;
+      &:hover {
+        background: #3a4c5e;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .communication {
+    padding: 3.8rem 4rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .communication {
+    flex-direction: column;
+    .communication-content_form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .communication {
+    flex-direction: column;
+    .communication-content_form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .communication {
+    flex-direction: column;
+    padding: 2.2rem 2rem;
+
+    .communication-content_form {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.delivery-container {
+  .delivery-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    color: #08080a;
+    .online-savdo {
+      font-weight: 550;
+    }
+  }
+  .deliver-content {
+    .deliver-icon {
+      left: 4.17%;
+      right: 4.17%;
+      top: 20.83%;
+      bottom: 12.47%;
+    }
+    .deliver-type {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 520;
+      font-size: 22px;
+      line-height: 29px;
+      letter-spacing: -0.04em;
+      color: #2c3e50;
+    }
+    .deliver-text {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: #2c3e50;
+    }
+  }
+}

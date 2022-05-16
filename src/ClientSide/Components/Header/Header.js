@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { NewIcon3, SearchHr } from "../../../utilities/icons";
-import AboutTires from "../../AboutTires/AboutTires";
-import Basket from "../../Basket/Basket";
-import "../headerShop2.scss";
+import { Link } from "react-router-dom";
+import { XIcon } from "../../../assates/icons/Icons";
+import { NewIcon1, NewIcon3, SearchHr } from "../../utilities/icons";
+import MaskGroup from "../../../assates/images/MaskGroup.png";
+import "./headerShop.scss";
 
-function NewHeader() {
+function Header() {
   const [search, setSearch] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const handleMenu = () => {
+    setActive(!active);
+  };
 
   const handleClick = () => {
     setSearch(!search);
@@ -16,9 +22,19 @@ function NewHeader() {
       <div className="new-header">
         <div className="container">
           <div className="header-main">
-            <div className="site-header_logo">
-              <strong>Onlayn</strong> <span>savdo</span>
+            <div class="hidden ">
+              <div
+                class={`main-header_menu ${active ? "active" : ""}`}
+                onClick={handleMenu}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+            <Link to={"/"} className="site-header_logo">
+              <strong>Onlayn</strong> <span>savdo</span>
+            </Link>
             {search ? (
               <div className="site-header_form">
                 <input
@@ -27,13 +43,13 @@ function NewHeader() {
                   placeholder="Qidirish"
                   aria-label="Search here..."
                 />
-                <span>
-                  <SearchHr />
+                <span onClick={handleClick}>
+                  <XIcon />
                 </span>
               </div>
             ) : (
               <div className="site-header_link">
-                <ul className="nav">
+                <ul className={`nav ${active ? "active_nav" : ""}`}>
                   <li className="nav-item">
                     <a className="nav-link" href="#">
                       Elektronika
@@ -47,7 +63,7 @@ function NewHeader() {
                   <li className="nav-item">
                     <a className="nav-link" href="#">
                       <select
-                        class="site-form-select"
+                        className="site-form-select"
                         aria-label="Default select example"
                       >
                         <option selected> Gildiraklar</option>
@@ -86,19 +102,27 @@ function NewHeader() {
               </div>
             )}
             <div className="site-header_icon d-flex gap-3 align-items-center">
+              <span
+                className="maskGroup"
+                style={{ color: "#939EB4", fontSize: ".8rem" }}
+              >
+                UZ
+              </span>
               <span onClick={handleClick}>
                 <SearchHr />
               </span>
               <NewIcon3 />
-              <Basket />
+              <Link to={"/products_basket"} className="d-flex gap-2">
+                <NewIcon1 />
+              </Link>
+              <span className="icon">4</span>
+              <img className="maskGroup" src={MaskGroup} alt="" />
             </div>
           </div>
         </div>
       </div>
-    
-      <AboutTires />
     </>
   );
 }
 
-export default NewHeader;
+export default Header;

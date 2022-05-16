@@ -1,0 +1,21 @@
+.offices-container {
+  height: 330px;
+  .offices-title {
+    font-size: 28px;
+    .ours {
+      font-weight: 500px !important;
+    }
+  }
+  .table-head {
+    --bs-table-bg: #2c3e50;
+    color: #fff;
+    tr th {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+}
