@@ -20,7 +20,7 @@
         cursor: pointer;
         .icon {
           position: absolute;
-          top: 2px;
+          top: 4px;
           right: 55px;
           background: #ff1212;
           color: white;
@@ -63,40 +63,40 @@
   }
 }
 
-.background2 {
-  background: var(--backgroundColorNew);
-  .container {
-    .header-main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.4rem 0;
-      .site-header_logo {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 25px;
-        line-height: 27px;
-        color: #fff;
-      }
+// .background2 {
+//   background: var(--backgroundColorNew);
+//   .container {
+//     .header-main {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding: 0.4rem 0;
+//       .site-header_logo {
+//         font-family: "Montserrat";
+//         font-style: normal;
+//         font-weight: 800;
+//         font-size: 25px;
+//         line-height: 27px;
+//         color: #fff;
+//       }
 
-      .site-header_icon {
-        position: relative;
-        cursor: pointer;
-        .icon {
-          position: absolute;
-          top: -5px;
-          right: -12px;
-          background: #ff1212;
-          color: white;
-          border-radius: 50%;
-          font-size: 0.58rem;
-          padding: 0 0.25rem;
-        }
-      }
-    }
-  }
-}
+//       .site-header_icon {
+//         position: relative;
+//         cursor: pointer;
+//         .icon {
+//           position: absolute;
+//           top: -5px;
+//           right: -12px;
+//           background: #ff1212;
+//           color: white;
+//           border-radius: 50%;
+//           font-size: 0.58rem;
+//           padding: 0 0.25rem;
+//         }
+//       }
+//     }
+//   }
+// }
 
 /* ---------------------------------- styles input --------------------------------- */
 .site-header_form {
@@ -234,33 +234,6 @@
 @media (max-width: 768px) {
   .navbar_link {
     display: none;
-  }
-  .background2 {
-    .container {
-      .header-main {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 0.8rem 0;
-        .site-header_form {
-          width: 100%;
-        }
-        .site-header_icon {
-          position: absolute;
-          top: -10px;
-          right: 18px;
-          .icon {
-            position: absolute;
-            top: 13px;
-            left: 45px;
-            border-radius: 50%;
-            font-size: 0.6rem;
-            padding: 0 0.3rem;
-          }
-        }
-      }
-    }
   }
   .site-background_img {
     .site-content {

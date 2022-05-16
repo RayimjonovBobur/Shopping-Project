@@ -60,3 +60,13 @@
 .zoom-image {
   cursor: zoom-in;
 }
+
+.slider-header {
+  position: relative;
+}
+
+.slider-icon {
+  position: absolute;
+  right: 40px;
+  bottom: 140px;
+}

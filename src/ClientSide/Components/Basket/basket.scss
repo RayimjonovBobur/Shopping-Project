@@ -1,76 +1,12 @@
-.btnSavatcha {
-  background: transparent;
-}
-
-.korzinka {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  span {
-    font-size: 0.9rem;
-    color: #aaa;
-    font-weight: 500;
+.modal_client {
+  .modal {
+    height: auto !important;
   }
-}
-
-.site-korzinka {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  svg {
-    width: 80px !important;
-    height: 50px !important;
-    path {
-      fill: #aaa;
-    }
+  .modal-dialog {
+    margin-top: 0 !important;
   }
-}
 
-.site-product_content {
-  display: flex;
-  //   align-items: center;
-  gap: 1.5rem;
-  .site-product_img {
-    max-width: 180px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .site-product_items {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem;
-    h6 {
-      padding: 0;
-      margin: 0;
-      margin-top: -12px;
-    }
-    .site_btn {
-      border: none;
-      background: transparent;
-      font-size: 1.5rem;
-      margin: 0 0.8rem;
-      margin-top: -5px;
-    }
-    .site-product_item {
-      
-      div {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-
-      .delete_btn {
-        position: absolute;
-        right: 25px;
-        svg {
-          path {
-            fill: #ccc;
-          }
-        }
-      }
-    }
+  .modal-content {
+    height: 100vh;
   }
 }
