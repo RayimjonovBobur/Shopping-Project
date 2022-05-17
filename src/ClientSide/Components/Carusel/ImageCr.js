@@ -21,6 +21,7 @@ import { FullIcon } from "../../utilities/icons";
 
 const ImageCr = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiperr, setThumbsSwiperr] = useState(null);
 
   // Zoom function
   const [isZoomed, setIsZoomed] = useState(false);
@@ -44,42 +45,54 @@ const ImageCr = () => {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
       >
         <SwiperSlide className="zoom-image">
           <SwiperSlide>
             <img src={tire} />
           </SwiperSlide>{" "}
-          {/* <Zoom img={tire} zoomScale={2} width={406} height={406} /> */}
-        </SwiperSlide>
-        <SwiperSlide className="zoom-image">
-          <SwiperSlide>
-            <img src={diska3} />
-          </SwiperSlide>
-          {/* <Zoom img={diska2} zoomScale={2} width={406} height={406} /> */}
-        </SwiperSlide>
-        <SwiperSlide className="zoom-image">
-          <SwiperSlide>
-            <img src={diska4} />
-          </SwiperSlide>
-          {/* <Zoom img={diska3} zoomScale={2} width={406} height={406} /> */}
         </SwiperSlide>
         <SwiperSlide className="zoom-image">
           <SwiperSlide>
             <img src={diska2} />
           </SwiperSlide>
-          {/* <Zoom img={diska4} zoomScale={2} width={406} height={406} /> */}
+        </SwiperSlide>
+        <SwiperSlide className="zoom-image">
+          <SwiperSlide>
+            <img src={diska3} />
+          </SwiperSlide>
+        </SwiperSlide>
+        <SwiperSlide className="zoom-image">
+          <SwiperSlide>
+            <img src={diska4} />
+          </SwiperSlide>
         </SwiperSlide>
       </Swiper>
-      <button
-        type="button"
-        class="basket-btn btnSavatcha"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
       >
-        <span className="slider-icon">
-          <FullIcon />
-        </span>
-      </button>
+        <SwiperSlide>
+          <img src={tire} />
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <img src={diska2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={diska3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={diska4} />
+        </SwiperSlide>
+      </Swiper>
+
+      {/* modal_Slider */}
       <div className="modal_client">
         <div
           class="modal fade"
@@ -106,7 +119,7 @@ const ImageCr = () => {
                   }}
                   spaceBetween={10}
                   navigation={true}
-                  thumbs={{ swiper: thumbsSwiper }}
+                  thumbs={{ swiper: thumbsSwiperr }}
                   modules={[FreeMode, Navigation, Thumbs]}
                   className="mySwiper2"
                 >
@@ -124,7 +137,7 @@ const ImageCr = () => {
                   </SwiperSlide>
                 </Swiper>
                 <Swiper
-                  onSwiper={setThumbsSwiper}
+                  onSwiper={setThumbsSwiperr}
                   spaceBetween={10}
                   slidesPerView={4}
                   freeMode={true}
@@ -150,28 +163,6 @@ const ImageCr = () => {
           </div>
         </div>
       </div>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src={tire} />
-        </SwiperSlide>{" "}
-        <SwiperSlide>
-          <img src={diska2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={diska3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={diska4} />
-        </SwiperSlide>
-      </Swiper>
     </div>
   );
 };
