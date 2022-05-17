@@ -1,11 +1,21 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
 .new-header {
   background: var(--backgroundColorNew);
+  transition: all 5s;
   .container {
     .header-main {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0.4rem 0;
+      transition: 0.5s;
       .site-header_logo {
         font-family: "Montserrat";
         font-style: normal;

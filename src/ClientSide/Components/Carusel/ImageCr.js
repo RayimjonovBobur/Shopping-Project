@@ -105,13 +105,13 @@ const ImageCr = () => {
         >
           <div class="modal-dialog" style={{ width: "100%" }}>
             <div class="modal-content">
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
               <div class="modal-body">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
                 <Swiper
                   style={{
                     "--swiper-navigation-color": "#fff",

@@ -8,6 +8,7 @@ import "./headerShop.scss";
 function Header() {
   const [search, setSearch] = useState(false);
   const [active, setActive] = useState(false);
+  const [header, setHeader] = useState(false);
 
   const handleMenu = () => {
     setActive(!active);
@@ -17,9 +18,18 @@ function Header() {
     setSearch(!search);
   };
 
+  window.onscroll = () => {
+    if (window.pageYOffset > 62) {
+      setHeader(true);
+      console.log("true");
+    } else {
+      setHeader(false);
+    }
+  };
+
   return (
     <>
-      <div className="new-header">
+      <div className={`new-header ${header ? "header" : ""} `}>
         <div className="container">
           <div className="header-main">
             <div class="hidden ">

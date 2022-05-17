@@ -4,9 +4,26 @@
   }
   .modal-dialog {
     margin-top: 0 !important;
+    margin-left: 0 !important;
   }
 
   .modal-content {
     height: 100vh;
+    .modal-body {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    height: auto;
+  }
+  .modal_client {
+    .modal-content {
+      .modal-body {
+        margin-top: 60px;
+      }
+    }
   }
 }

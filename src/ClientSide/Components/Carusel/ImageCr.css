@@ -65,8 +65,8 @@
   position: relative;
 }
 
-.slider-icon {
+.btn-close {
   position: absolute;
-  right: 0px;
-  bottom: 10px;
+  top: 10px;
+  right: 10px;
 }
