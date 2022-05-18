@@ -15,7 +15,7 @@ function Footer() {
                 Onlayn <span>savdo</span>
               </h3>
               <span style={{ marginTop: "-20px", color: "#AAAAAA" }}>
-                onlayn do’kon
+                onlayn do’koni
               </span>
               <div className="site-footer_icon">
                 <p>Savollar bo’yicha murojat uchun:</p>
