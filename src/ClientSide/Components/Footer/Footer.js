@@ -10,6 +10,7 @@ function Footer() {
         <div className="container">
           <div className="site-footer">
             <div>
+
               <h3>
                 Onlayn <span>savdo</span>
               </h3>
