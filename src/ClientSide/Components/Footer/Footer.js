@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, InstagramIcon, TelegramIcon } from "../../utilities/icons";
-import "./footer.scss";
+import "./Footer.scss";
 
 function Footer() {
   return (
@@ -30,16 +30,16 @@ function Footer() {
               <span className="fs-5">Kompaniya</span>
               <ul>
                 <li>
-                  <a href="#">Yangiliklar</a>
+                  <a href="/">Yangiliklar</a>
                 </li>
                 <li>
-                  <a href="#">Kompaniya haqida</a>
+                  <a href="/">Kompaniya haqida</a>
                 </li>
                 <li>
-                  <a href="#">Do’kon manzili</a>
+                  <a href="/">Do’kon manzili</a>
                 </li>
                 <li>
-                  <a href="#">Biznes uchun</a>
+                  <a href="/">Biznes uchun</a>
                 </li>
               </ul>
             </div>
@@ -64,16 +64,16 @@ function Footer() {
               <span className="fs-5">Biz bilan bog’lanish</span>
               <ul>
                 <li>
-                  <a href="#">Manzil: 100096, Toshkent, Muqumiy, 13</a>
+                  <a href="/">Manzil: 100096, Toshkent, Muqumiy, 13</a>
                 </li>
                 <li>
-                  <a href="#">Qisqa raqam: 1216</a>
+                  <a href="/">Qisqa raqam: 1216</a>
                 </li>
                 <li>
-                  <a href="#">Faks: +998 71 150 53 95</a>
+                  <a href="/">Faks: +998 71 150 53 95</a>
                 </li>
                 <li>
-                  <a href="#">E-mail: company@imsoft.uz</a>
+                  <a href="/">E-mail: company@imsoft.uz</a>
                 </li>
               </ul>
             </div>
