@@ -13,18 +13,18 @@ const FilterData = () => {
   const [isactive, setActive] = useState(false);
   const dispatch = useDispatch();
 
-  const handleClick = () => {
-    setActive(!isactive);
-  };
-
   window.addEventListener("scroll", () => {
     setActive(false);
   });
 
+  const handleClick = () => {
+    setActive(!isactive);
+  };
+
   const handleLink = (i) => {
     dispatch(setActive(i));
   };
-
+  console.log(active);
   return (
     <div>
       <div className="container">
@@ -47,8 +47,8 @@ const FilterData = () => {
                 </button>
                 {data?.map((item, i) => (
                   <li
-                    className={`${active === i ? "active" : ""}`}
-                    onClick={() => handleLink(i)}
+                      className={`${active === i ? "active" : ""}`}
+                    onClick={() => handleLink(i)} 
                   >
                     <a href="/">{item?.text}</a>
                   </li>
@@ -87,7 +87,7 @@ const FilterData = () => {
                   <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  className="carousel-control-next"
+                    className="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleFade"
                   data-bs-slide="next"

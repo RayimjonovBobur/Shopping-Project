@@ -6,7 +6,6 @@ import { setCurrenPage } from "../../../Redux/stored_reducer";
 import "../unversal.scss";
 import { AllPages } from "../../grouping/grouping";
 import SeacrchIcon from "../../Components/searchIcon/SeacrchIcon";
-import { useState } from "react";
 
 export const Navbar = () => {
   const { pathname } = useLocation();
@@ -34,7 +33,7 @@ export const Navbar = () => {
             return (
               <Link
                 to={page.path}
-                className={`nav-link ${pathname === page.path ? "active" : ""}`}
+                className={`nav-link${pathname === page.path ? "active" : ""}`}
               >
                 <span className="me-1 seact_icon">
                   <SeacrchIcon icon={page?.icon} />
